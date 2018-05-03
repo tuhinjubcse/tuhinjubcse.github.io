@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Tuhin Chakrabarty
 
 My name is Tuhin Chakrabarty . I am a graduate student in Columbia University in the city of New York.
 
