@@ -2,9 +2,12 @@
 
 ![Image](images/dp.jpg)
 
-My name is Tuhin Chakrabarty . I am a graduate student in Columbia University in the city of New York.
+## About
+I am a 2nd year Masters student in Computer Science in Columbia University ,working under Professor Kathleen McKeown on Natural Language Processing . I closely collaborate with Christopher Hidey . I am highly interested in computational models of social science and Argumentation Mining . Prior to joining Grad school I was a backend engineer at UBER and Amazon .
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+I took COMS 4705(Natural Language Processing) with Professor Michael Collins in Fall 2017 .
+In Spring 2018 I took COMS E6998(NLP in Context : Computational Models of Social Meaning) with Smaranda Muresan
+I will be spending my summers at Amazon Alexa, Natural Language Understanding Group in Boston  as an Applied  Scientis Intern
 
 ### Markdown
 
