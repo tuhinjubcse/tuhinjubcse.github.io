@@ -1,6 +1,6 @@
 ## Welcome to GitHub Pages
 
-My name is Tuhin Chakrabarty.
+My name is Tuhin Chakrabarty . I am a graduate student in Columbia University in the city of New York.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
