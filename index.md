@@ -1,6 +1,6 @@
 ## Tuhin Chakrabarty
 
-![Image]("images/dp.jpg")
+![Image](images/dp.jpg)
 
 My name is Tuhin Chakrabarty . I am a graduate student in Columbia University in the city of New York.
 
