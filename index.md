@@ -7,11 +7,9 @@ I am a 2nd year Masters student in Computer Science at Columbia University ,work
 
 My current research involves building better models for end to end argumentation mining of dialogic corpus . One of the end goals is also to identify semantics of argumentative components to help generate persuasive language .
 
-Paper from the Deep Learning course I took in Columbia
-[pdf] (https://github.com/tuhinjubcse/COMS4995/blob/master/Deep_Learning_Project_Report.pdf)
 
-<p>This is <a href="http://example.com/" title="Title">
-an example</a> inline link.</p>
+<p> Paper from the Deep Learning course I took in Columbia <a href="https://github.com/tuhinjubcse/COMS4995/blob/master/Deep_Learning_Project_Report.pdf" title="Title">
+[pdf] </a> .</p>
 
 I took <br />
 - COMS 4705(Natural Language Processing) with Professor Michael Collins in Fall 2017 <br />
