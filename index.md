@@ -10,6 +10,9 @@ My current research involves building better models for end to end argumentation
 Paper from the Deep Learning course I took in Columbia
 [pdf] (https://github.com/tuhinjubcse/COMS4995/blob/master/Deep_Learning_Project_Report.pdf)
 
+<p>This is <a href="http://example.com/" title="Title">
+an example</a> inline link.</p>
+
 I took <br />
 - COMS 4705(Natural Language Processing) with Professor Michael Collins in Fall 2017 <br />
 - COMS E6998(NLP in Context : Computational Models of Social Meaning) with Smaranda Muresan in Spring 2018 <br />
