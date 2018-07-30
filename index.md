@@ -19,6 +19,7 @@ I took <br />
 - I will be spending my summers at Amazon Alexa, Natural Language Understanding Group in Boston  as an Applied  Scientist Intern
 
 ## Updates
-Finished 6th out of 24 teams at FEVER (The First Workshop on Fact Extraction and Verification) with a FEVER score of 49.06 (78% improvement over Baseline paper at NAACL )  http://fever.ai/task.html
+-Finished 6th out of 24 teams at FEVER (The First Workshop on Fact Extraction and Verification) , EMNLP Brussels with a score of 49.06 (78% improvement over Baseline paper at NAACL ) 
+http://fever.ai/task.html
 System Description Paper Coming Soon 
 
