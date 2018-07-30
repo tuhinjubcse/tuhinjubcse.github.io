@@ -8,6 +8,8 @@ I am a 2nd year Masters student in Computer Science at Columbia University ,work
 My current research involves building better models for end to end argumentation mining of dialogic corpus . One of the end goals is also to identify semantics of argumentative components to help generate persuasive language . In Spring 2018
 I also spent some time modelling discourse coherence and finding best sentence ordering in feedback messages.
 
+
+
 <p> Paper from the Deep Learning course I took in Columbia <a href="https://github.com/tuhinjubcse/COMS4995/blob/master/Deep_Learning_Project_Report.pdf" title="Title">
 [pdf] </a> .</p>
 
@@ -15,4 +17,8 @@ I took <br />
 - COMS 4705(Natural Language Processing) with Professor Michael Collins in Fall 2017 <br />
 - COMS E6998(NLP in Context : Computational Models of Social Meaning) with Smaranda Muresan in Spring 2018 <br />
 - I will be spending my summers at Amazon Alexa, Natural Language Understanding Group in Boston  as an Applied  Scientist Intern
+
+## Updates
+Finished 6th out of 24 teams at FEVER (The First Workshop on Fact Extraction and Verification) with a FEVER score of 49.06 (78% improvement over Baseline paper at NAACL )  http://fever.ai/task.html
+System Description Paper Coming Soon 
 
