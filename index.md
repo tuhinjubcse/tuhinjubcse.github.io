@@ -3,7 +3,7 @@
 ![Image](images/dp.jpg)
 
 ## About
-I am a 2nd year Masters student in Computer Science at Columbia University ,working under Professor Kathleen McKeown on Natural Language Processing . I closely collaborate with her PHD student Christopher Hidey . I am highly interested in Computational models of Social Science , Argumentation Mining and Information Extraction . Prior to joining Grad school I was a backend engineer at UBER and Amazon .
+I am a graduayr student in Computer Science at Columbia University ,working under Professor Kathleen McKeown on Natural Language Processing . I closely collaborate with her PHD student Christopher Hidey and Professor Smaranda Muresan. I am highly interested in Computational models of Social Science , Argumentation Mining and Information Extraction . Prior to joining Grad school I was a backend engineer at UBER and Amazon .
 
 My current research involves building better models for end to end argumentation mining of dialogic corpus . One of the end goals is also to identify semantics of argumentative components to help generate persuasive language . In Spring 2018
 I also spent some time modelling discourse coherence and finding best sentence ordering in feedback messages.
@@ -19,5 +19,6 @@ I took <br />
 - I will be spending my summers at Amazon Alexa, Natural Language Understanding Group in Boston  as an Applied  Scientist Intern
 
 ## Updates
-- Finished 6th out of 24 teams at FEVER (The First Workshop on Fact Extraction and Verification) , EMNLP Brussels with a score  of 49.06 (78% improvement over Baseline paper at NAACL )  http://fever.ai/task.html  .System Description Paper Coming Soon 
-
+- Finished 6th out of 24 teams at FEVER (The First Workshop on Fact Extraction and Verification) , EMNLP Brussels
+Paper :- href="https://github.com/tuhinjubcse/COMS4995/blob/master/9.pdf" title="Title">
+[pdf] </a> .</p>
