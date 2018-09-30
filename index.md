@@ -20,5 +20,5 @@ I took <br />
 
 ## Updates
 - Finished 6th out of 24 teams at FEVER (The First Workshop on Fact Extraction and Verification) , EMNLP Brussels
-Paper :- href="https://github.com/tuhinjubcse/COMS4995/blob/master/9.pdf" title="Title">
+<p> Paper :- <a href="https://github.com/tuhinjubcse/COMS4995/blob/master/9.pdf" title="Title">
 [pdf] </a> .</p>
