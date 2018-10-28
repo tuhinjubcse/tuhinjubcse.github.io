@@ -20,4 +20,4 @@ I took <br />
 
 ## Updates
 - Finished 6th out of 24 teams at FEVER (The First Workshop on Fact Extraction and Verification) , EMNLP Brussels
-<p> Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification. :- <a href="https://github.com/tuhinjubcse/COMS4995/blob/master/9.pdf" title="Title"> [pdf] </a> .</p>
+<p> Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification. :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> .</p>
