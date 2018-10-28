@@ -18,6 +18,5 @@ I took <br />
 - COMS E6998(NLP in Context : Computational Models of Social Meaning) with Smaranda Muresan in Spring 2018 <br />
 - I will be spending my summers at Amazon Alexa, Natural Language Understanding Group in Boston  as an Applied  Scientist Intern
 
-## Updates
-- Finished 6th out of 24 teams at FEVER (The First Workshop on Fact Extraction and Verification) , EMNLP Brussels
-<p> Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification. :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> .</p>
+## PUBLICATIONS
+<p> Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification. , EMNLP 2018, Brussels :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> .</p>
