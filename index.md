@@ -19,5 +19,5 @@ I took <br />
 - I will be spending my summers at Amazon Alexa, Natural Language Understanding Group in Boston  as an Applied  Scientist Intern
 
 ## PUBLICATIONS
-<p> Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification, <b>EMNLP</b> 2018 :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> .</p>
-<p> 2 first author Papers under Submission at  NAACL 2019 (Title and Authors hidden in respect to anonymity clause during review period) .</p>
+<p> Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification, <b>EMNLP 2018 </b> :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> .</p>
+<p> 2 first author Papers under Submission at  <b> NAACL 2019 </b> (Title and Authors hidden in respect to anonymity clause during review period) .</p>
