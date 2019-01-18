@@ -20,3 +20,4 @@ I took <br />
 
 ## PUBLICATIONS
 <p> Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification, EMNLP 2018 :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> .</p>
+2 first author Papers under Submission at NAACL 2019 (Title and Authors hidden in respect to anonymity clause during review period)
