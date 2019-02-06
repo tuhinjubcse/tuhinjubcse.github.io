@@ -21,3 +21,5 @@ I took <br />
 ## PUBLICATIONS
 <p> Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification, <b>EMNLP 2018 </b> :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> .</p>
 <p> 2 first author Papers under Submission at  <b> NAACL 2019 </b> (Title and Authors hidden in respect to anonymity clause during review period) .</p>
+<p> Paper on Fact Checking in Community Question Answering Forums coming soon at SEMEVAL , NAACL 2019
+  https://competitions.codalab.org/competitions/20022#results </p>
