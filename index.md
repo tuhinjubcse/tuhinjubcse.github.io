@@ -31,3 +31,5 @@ I took <br />
  <p> 4) Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks <b> ,Under Submission at IJCAI 2019   </b> 
  <br> Siddharth Varia  ,Christopher Hidey , <b>Tuhin Chakrabarty</b> </br> .</p>
 
+<p> 4) Abusive Language in Social Media: An Empirical Investigation <b> ,Under Submission at Abusive Language Workshop ,ACL 2019   </b> 
+ <br> <b>Tuhin Chakrabarty</b>  ,Smaranda Muresan  </br> .</p>
