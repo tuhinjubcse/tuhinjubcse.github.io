@@ -23,8 +23,7 @@ I took <br />
  <br><b> Tuhin Chakrabarty </b> ,Tariq Alhindi , Smaranda Muresan</br> :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> .</p>
  
  <p> [ColumbiaNLP] at SemEval-2018 Task [8]: <b> SEMEVAL , NAACL 2019  </b> 
- <br><b> Tuhin Chakrabarty </b> ,Smaranda Muresan</br> 
- <br> 4th and 2nd place in SUBTASK A & B respectively </p>
+ <br><b> Tuhin Chakrabarty </b> ,Smaranda Muresan</br> <br>4th and 2nd place in SUBTASK A & B respectively </p>
  
  
 <p> 2 first author Papers under Submission at  <b> NAACL 2019 </b> (Title and Authors hidden in respect to anonymity clause during review period) .</p>
