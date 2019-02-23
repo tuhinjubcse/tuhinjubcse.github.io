@@ -19,14 +19,15 @@ I took <br />
 - I will be spending my summers at Amazon Alexa, Natural Language Understanding Group in Boston  as an Applied  Scientist Intern
 
 ## PUBLICATIONS
- <p> 1) IMHO Fine Tuning Improves Claim Detection <b> NAACL 2019 (Short)  </b> 
+ <p> 1) IMHO Fine Tuning Improves Claim Detection <b> ,NAACL 2019 (Short)  </b> 
  <br><b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckweon</br> .</p>
  
- <p> 2) [ColumbiaNLP] at SemEval-2018 Task [8]: Fact Checking in Community Question Answering Forums <b> SEMEVAL , NAACL 2019  </b> 
+ <p> 2) [ColumbiaNLP] at SemEval-2018 Task [8]: Fact Checking in Community Question Answering Forums <b> ,SEMEVAL , NAACL 2019  </b> 
  <br><b> Tuhin Chakrabarty </b> ,Smaranda Muresan .   4th and 2nd place in SUBTASK A & B respectively</br> </p>
 
-<p> 3) Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification <b> Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP 2018  </b> 
+<p> 3) Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification <b> ,Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP 2018  </b> 
  <br><b> Tuhin Chakrabarty </b> ,Tariq Alhindi , Smaranda Muresan</br> :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> .</p>
  
- 
+  <p> 1) Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks <b> ,Under Submission at IJCAI 2019   </b> 
+ <br> Siddharth Varia  ,Christopher Hidey , <b>Tuhin Chakrabarty</b> </br> .</p>
 
