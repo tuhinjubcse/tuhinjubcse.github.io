@@ -8,7 +8,7 @@ I am a graduate student in Computer Science at Columbia University ,working unde
 My current research involves building better models for end to end argumentation mining of dialogue . One of the end goals is also to identify semantics of argumentative components to help generate persuasive language . In Spring 2018
 I also spent some time modeling discourse coherence and finding best sentence ordering in feedback messages.
 
-I have found new interest in developing computational models for Fact Checking. I am trying on correlating discourse relations to argument schemes currently. 
+I have found new interest in developing computational models for Fact Checking. I am also trying on correlating Rhetorical Structure theory discourse relations to argument schemes currently. 
 
 I dream of a juncture when I'll own powerful GPU's to train architechtures like BERT or OPENAI-GPT in minutes. 
 I will be at NAACL 2019 held at Minneapolis. Say Hi maybe ?
