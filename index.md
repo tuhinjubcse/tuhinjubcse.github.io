@@ -3,7 +3,7 @@
 ![Image](images/pic.jpg)
 
 ## About
-I am a graduate student in Computer Science at Columbia University ,working under Professor Kathleen McKeown on Natural Language Processing . I closely collaborate with her PHD student Christopher Hidey and Professor Smaranda Muresan. I am highly interested in Computational models of Social Science , Argumentation Mining , modeling implicit semantics, transfer learning for NLP  . Prior to joining Grad school I was a backend engineer at UBER and Amazon .
+I am a graduate student in Computer Science at Columbia University ,working under Professor Kathleen McKeown on Natural Language Processing . I closely collaborate with her PHD student Christopher Hidey and Professor Smaranda Muresan. I am highly interested in Computational models of Social Science , Argumentation Mining , modeling implicit semantics & transfer learning for NLP  . Prior to joining Grad school I was a backend engineer at UBER and Amazon .
 
 My current research involves building better models for end to end argumentation mining of dialogue . One of the end goals is also to identify semantics of argumentative components to help generate persuasive language . In Spring 2018
 I also spent some time modeling discourse coherence and finding best sentence ordering in feedback messages.
