@@ -20,16 +20,16 @@ I took <br />
 
 ## PUBLICATIONS
  <p> 1) IMHO Fine Tuning Improves Claim Detection <b> ,NAACL 2019 (Short)  </b> 
- <br><b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckweon</br> .</p>
+ <br><b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckweon .</p>
  
  <p> 2) [ColumbiaNLP] at SemEval-2018 Task [8]: The Answer is Language ModelFine-tuning <b> ,SEMEVAL , NAACL 2019  </b> 
- <br><b> Tuhin Chakrabarty </b> ,Smaranda Muresan .   4th and 2nd place in SUBTASK A & B respectively</br> </p>
+ <br><b> Tuhin Chakrabarty </b> ,Smaranda Muresan .   4th and 2nd place in SUBTASK A & B respectively </p>
 
 <p> 3) Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification <b> ,Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP 2018  </b> 
- <br><b> Tuhin Chakrabarty </b> ,Tariq Alhindi , Smaranda Muresan</br> :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> .</p>
+ <br><b> Tuhin Chakrabarty </b> ,Tariq Alhindi , Smaranda Muresan :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> .</p>
  
  <p> 4) Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks <b> ,Under Submission at IJCAI 2019   </b> 
- <br> Siddharth Varia  ,Christopher Hidey , <b>Tuhin Chakrabarty</b> </br> .</p>
+ <br> Siddharth Varia  ,Christopher Hidey , <b>Tuhin Chakrabarty</b>  .</p>
 
 <p> 5) Abusive Language in Social Media: An Empirical Investigation <b> ,Under Submission at Abusive Language Workshop ,ACL 2019   </b>
- <br> <b>Tuhin Chakrabarty</b>  ,Smaranda Muresan  </br> .</p>
+ <br> <b>Tuhin Chakrabarty</b>  ,Smaranda Muresan   .</p>
