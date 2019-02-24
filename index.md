@@ -22,7 +22,7 @@ I took <br />
 
 ## PUBLICATIONS
  <p> 1) IMHO Fine Tuning Improves Claim Detection <b> ,NAACL 2019 (Short)  </b> 
- <br><b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckweon .
+ <br><b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckeown .
 <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/imho_paper.pdf" title="Title">
 [pdf] </a> </p>
  
