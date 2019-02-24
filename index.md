@@ -20,7 +20,10 @@ I took <br />
 
 ## PUBLICATIONS
  <p> 1) IMHO Fine Tuning Improves Claim Detection <b> ,NAACL 2019 (Short)  </b> 
- <br><b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckweon .</p>
+ <br><b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckweon .
+<a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/imho_paper.pdf" title="Title">
+[pdf] </a> </p>
+ 
  
  <p> 2) [ColumbiaNLP] at SemEval-2018 Task [8]: The Answer is Language ModelFine-tuning <b> ,SEMEVAL , NAACL 2019  </b> 
  <br><b> Tuhin Chakrabarty </b> ,Smaranda Muresan .   4th and 2nd place in SUBTASK A & B respectively </p>
