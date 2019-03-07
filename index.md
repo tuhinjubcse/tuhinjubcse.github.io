@@ -36,7 +36,6 @@ I took <br />
  <br><b> Tuhin Chakrabarty </b> ,Tariq Alhindi , Smaranda Muresan :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> .</p>
  
  <p> 4) Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks <b> ,Under Submission at IJCAI 2019   </b> 
- <br> Siddharth Varia  ,Christopher Hidey , <b>Tuhin Chakrabarty</b>  .</p>
 
 <p> 5) Abusive Language in Social Media: An Empirical Investigation <b> ,Under Submission at Abusive Language Workshop ,ACL 2019   </b>
  <br> <b>Tuhin Chakrabarty</b>  ,Smaranda Muresan   .</p>
