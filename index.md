@@ -27,12 +27,12 @@ I took <br />
 [pdf] </a> </p>
  
  
- <p> 2) [ColumbiaNLP] at SemEval-2019 Task [8]: The Answer is Language ModelFine-tuning <b> ,In Proceedings of the 13th International Workshop on Semantic Evaluation , NAACL-HLT 2019  </b> 
+ <p> 2) [ColumbiaNLP] at SemEval-2019 Task [8]: The Answer is Language ModelFine-tuning <b> ,In Proceedings of the 13th International Workshop on Semantic Evaluation , NAACL-HLT , Minneapolis, USA, June 2019  </b> 
  <br><b> Tuhin Chakrabarty </b> ,Smaranda Muresan .   4th and 2nd place in SUBTASK A & B respectively 
 <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/columbiaNLP.pdf" title="Title">
 [pdf] </a></p>
 
-<p> 3) Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification <b> ,In Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP 2018  </b> 
+<p> 3) Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification <b> ,In Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP ,Brussels ,2018  </b> 
  <br><b> Tuhin Chakrabarty </b> ,Tariq Alhindi , Smaranda Muresan :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> .</p>
  
  <p> 4) Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks <b> ,Under Submission at IJCAI 2019   </b> 
