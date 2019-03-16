@@ -22,7 +22,7 @@ I took <br />
 
 ## PUBLICATIONS
  <p> 1) IMHO Fine Tuning Improves Claim Detection <b> In 17th Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT'19), Minneapolis, USA, June 2019.  </b> 
- <br><b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckeown .
+ <br><b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckeown .   ORAL PRESENTATION
 <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/imho_paper.pdf" title="Title">
 [pdf] </a> </p>
  
