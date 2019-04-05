@@ -25,7 +25,7 @@ I took <br />
 In 17th Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT'19), Minneapolis, USA, June 2019.  
  <b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckeown .   
 ORAL PRESENTATION
-<a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/imho_paper.pdf" title="Title">
+<a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/1589_Paper.pdf" title="Title">
 [pdf] </a> </p>
  
  
