@@ -20,6 +20,9 @@ I took <br />
 - COMS E6998(NLP in Context : Computational Models of Social Meaning) with Smaranda Muresan in Spring 2018 and topped the class with an A+ <br />
 - I spent my summers at Amazon Alexa, Natural Language Understanding Group in Boston  as an Applied  Scientist Intern
 
+## HIGHLIGHT
+EMNLP 2018 : <a href="https://www.cs.columbia.edu/2019/emnlp-2018/" title="Check Here">
+
 ## PUBLICATIONS
  <p> 1) IMHO Fine Tuning Improves Claim Detection 
 In 17th Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT'19), Minneapolis, USA, June 2019.  
@@ -37,7 +40,7 @@ ORAL PRESENTATION
 <p> 3) Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification <b> ,In Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP ,Brussels ,2018  </b> 
  <br><b> Tuhin Chakrabarty </b> ,Tariq Alhindi , Smaranda Muresan :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> .</p>
  
- <p> 4) Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks <b> ,Under Submission at IJCAI 2019   </b> 
+ <p> 4) Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks <b> ,Under Submission   </b> 
 
 <p> 5) Pay "Attention'' to your Context when Classifying Abusive Language  <b> ,Under Submission at Abusive Language Workshop ,ACL 2019   </b>
  <br> <b>Tuhin Chakrabarty</b>  ,Smaranda Muresan   .</p>
