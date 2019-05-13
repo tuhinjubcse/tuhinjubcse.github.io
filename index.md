@@ -20,7 +20,7 @@ I took <br />
 - COMS E6998(NLP in Context : Computational Models of Social Meaning) with Smaranda Muresan in Spring 2018 and topped the class with an A+ <br />
 - I spent my summers at Amazon Alexa, Natural Language Understanding Group in Boston  as an Applied  Scientist Intern
 
-## HIGHLIGHT
+## HIGHLIGHTS 
 <p>EMNLP 2018 : <a href="https://www.cs.columbia.edu/2019/emnlp-2018/" title="Title"> Check Here </a></p>
 
 ## PUBLICATIONS
