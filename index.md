@@ -24,7 +24,7 @@ I took <br />
 <p>EMNLP 2018 : <a href="https://www.cs.columbia.edu/2019/emnlp-2018/" title="Title"> Check Here </a></p>
 
 ## PUBLICATIONS
- <p> 1) IMHO Fine Tuning Improves Claim Detection <br>
+ <p> 1) ## IMHO Fine Tuning Improves Claim Detection <br>
 In 17th Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (NAACL-HLT'19), Minneapolis, USA, June 2019. <br>  
  <b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckeown .   
 ORAL PRESENTATION
