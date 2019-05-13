@@ -21,7 +21,7 @@ I took <br />
 - I spent my summers at Amazon Alexa, Natural Language Understanding Group in Boston  as an Applied  Scientist Intern
 
 ## HIGHLIGHT
-EMNLP 2018 : <a href="https://www.cs.columbia.edu/2019/emnlp-2018/" title="Check Here">
+EMNLP 2018 : <a href="https://www.cs.columbia.edu/2019/emnlp-2018/" title="Check Here"></a>
 
 ## PUBLICATIONS
  <p> 1) IMHO Fine Tuning Improves Claim Detection 
