@@ -5,7 +5,7 @@
 ## About
 I am a graduate student in Computer Science at Columbia University ,advised by <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>  and  <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a> on Natural Language Processing. I closely collaborate with <a href="http://www.cs.columbia.edu/~chidey/" title="Title"> Christopher Hidey </a>.I am highly interested in Computational models of Social Science , Argumentation Mining , modeling implicit semantics & transfer learning for NLP.Prior to joining Grad school I was a backend engineer at UBER and Amazon .
 
-My current research involves building better models for argumentation mining in discussion forums or social media. My research has is focused leveraging transfer learning for argument mining.Argument Mining is a moderately challenging task and annotating large amount of data for supervised learning is expensive. My research tries to alleviates this problem by using collecting weakly labeled data similar to the task of interest from Social Media. 
+My current research involves building better models for argumentation mining in discussion forums or social media. My research  is focused on leveraging transfer learning approaches for argument mining.Argument Mining is a moderately challenging task and annotating large amount of data for supervised learning is expensive. My research tries to alleviates this problem by using collecting weakly labeled data similar to the task of interest from Social Media. 
 
 I have found new interest in developing computational models for Fact Checking.
 
