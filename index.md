@@ -31,7 +31,7 @@ ORAL PRESENTATION (Acceptance Rate : 8%)
 [pdf] </a> </p>
  
  
- <p> 2) <b> [ColumbiaNLP] at SemEval-2019 Task [8]: The Answer is Language ModelFine-tuning </b> <br>
+ <p> 2) <b> [ColumbiaNLP] at SemEval-2019 Task [8]: The Answer is Language Model Fine-tuning </b> <br>
  In Proceedings of the 13th International Workshop on Semantic Evaluation , NAACL-HLT , Minneapolis, USA, June 2019  <br> 
  <b> Tuhin Chakrabarty </b> ,Smaranda Muresan .   4th and 2nd place in SUBTASK A & B respectively 
 <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/semeval.pdf" title="Title">
