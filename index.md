@@ -3,12 +3,11 @@
 ![Image](images/pic.jpg)
 
 ## About
-I am a graduate student in Computer Science at Columbia University ,working under Professor Kathleen McKeown on Natural Language Processing.I closely collaborate with her PHD student Christopher Hidey and Professor Smaranda Muresan.I am highly interested in Computational models of Social Science , Argumentation Mining , modeling implicit semantics & transfer learning for NLP.Prior to joining Grad school I was a backend engineer at UBER and Amazon .
+I am a graduate student in Computer Science at Columbia University ,advised by <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>  and  <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a> on Natural Language Processing. I closely collaborate with <a href="http://www.cs.columbia.edu/~chidey/" title="Title"> Christopher Hidey </a>.I am highly interested in Computational models of Social Science , Argumentation Mining , modeling implicit semantics & transfer learning for NLP.Prior to joining Grad school I was a backend engineer at UBER and Amazon .
 
-My current research involves building better models for end to end argumentation mining of dialogue.One of the end goals is also to identify semantics of argumentative components to help generate persuasive language.In Spring 2018
-I also spent some time modeling discourse coherence and finding best sentence ordering in feedback messages.
+My current research involves building better models for argumentation mining in discussion forums or social media. My research has is focused leveraging transfer learning for argument mining.Argument Mining is a moderately challenging task and annotating large amount of data for supervised learning is expensive. My research tries to alleviates this problem by using collecting weakly labeled data similar to the task of interest from Social Media. 
 
-I have found new interest in developing computational models for Fact Checking.I am also trying on correlating Rhetorical Structure theory discourse relations to argument schemes currently. 
+I have found new interest in developing computational models for Fact Checking.
 
 I dream of a juncture when I'll own powerful GPU's to train architechtures like BERT or OPENAI-GPT in minutes. 
 I will be at NAACL 2019 held at Minneapolis. Say Hi maybe ?
