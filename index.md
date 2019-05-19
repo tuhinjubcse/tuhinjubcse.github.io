@@ -43,5 +43,5 @@ ORAL PRESENTATION (Acceptance Rate : 8%)
  
  <p> 4) Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks <b> ,Under Submission   </b> 
 
-<p> 5) <b> Pay "Attention'' to your Context when Classifying Abusive Language  </b><br> ,Under Submission at Abusive Language Workshop ,ACL 2019   </b>
+<p> 5) <b> Pay "Attention'' to your Context when Classifying Abusive Language  </b><br> Under Submission at Abusive Language Workshop ,ACL 2019   </b>
  <br> <b>Tuhin Chakrabarty</b>  ,Smaranda Muresan   .</p>
