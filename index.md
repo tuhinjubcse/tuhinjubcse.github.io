@@ -27,7 +27,7 @@ I took <br />
 In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>  
  <b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckeown .   
 ORAL PRESENTATION (Acceptance Rate : 8%)
-<a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/1589_Paper.pdf" title="Title">
+<a href="https://arxiv.org/pdf/1905.07000.pdf" title="Title">
 [pdf] </a> </p>
  
  
