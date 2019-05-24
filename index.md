@@ -22,7 +22,7 @@ I took <br />
 ## HIGHLIGHTS 
 <p>EMNLP 2018 : <a href="https://www.cs.columbia.edu/2019/emnlp-2018/" title="Title"> Check Here </a></p>
 I'll be spending a year at <a href="https://www.cs.jhu.edu/~npeng/group.html" title="Title"> PLUS Lab </a> at 
-<a href="https://www.isi.edu/" title="USC, ISI ">  working on creative text generation.
+<a href="https://www.isi.edu/" title="USC, ISI "> ,starting July 2019 working on creative text generation.
 
 ## PUBLICATIONS
  <p> 1) <b> IMHO Fine Tuning Improves Claim Detection</b> <br>
