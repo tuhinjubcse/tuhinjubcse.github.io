@@ -21,7 +21,7 @@ I took <br />
 
 ## HIGHLIGHTS 
 <p>EMNLP 2018 : <a href="https://www.cs.columbia.edu/2019/emnlp-2018/" title="Title"> Check Here </a></p>
-I'll be spending a year at <a href="https://www.cs.jhu.edu/~npeng/group.html" title="Title"> PLUS Lab </a> at USC, ISI,starting July 2019 working on creative text generation.
+I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html" title="Title"> PLUS Lab </a> at USC, ISI,starting July 2019 working on creative text generation.
 
 ## PUBLICATIONS
  <p> 1) <b> IMHO Fine Tuning Improves Claim Detection</b> <br>
@@ -42,7 +42,11 @@ ORAL PRESENTATION (Acceptance Rate : 8%)
  In Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP ,Brussels ,2018  <br> 
  <b> Tuhin Chakrabarty </b> ,Tariq Alhindi , Smaranda Muresan :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> .</p>
  
- <p> 4) Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks <b> ,Under Submission   </b> 
+ <p> 1) <b> Pay "Attention'' to your Context when Classifying Abusive Language</b> <br>
+In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>  
+ <b> Tuhin Chakrabarty </b> ,Smaranda Muresan .   </p>
+ 
+ 
+ <p> 5) Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks <b> ,Under Submission   </b> 
 
-<p> 5) <b> Pay "Attention'' to your Context when Classifying Abusive Language  </b><br> Under Submission at Abusive Language Workshop ,ACL 2019   </b>
- <br> <b>Tuhin Chakrabarty</b>  ,Smaranda Muresan   .</p>
+
