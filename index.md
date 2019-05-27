@@ -24,7 +24,11 @@ I took <br />
 I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html" title="Title"> PLUS Lab </a> at USC, ISI,starting July 2019 working on creative text generation.
 
 ## PUBLICATIONS
- <p> 1) <b> IMHO Fine Tuning Improves Claim Detection</b> <br>
+ <p> 4) <b> Pay "Attention'' to your Context when Classifying Abusive Language</b> <br>
+In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>  
+ <b> Tuhin Chakrabarty </b> ,Smaranda Muresan .  </p>
+
+<p> 1) <b> IMHO Fine Tuning Improves Claim Detection</b> <br>
 In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>  
  <b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckeown .   
 ORAL PRESENTATION (Acceptance Rate : 8%)
@@ -41,11 +45,7 @@ ORAL PRESENTATION (Acceptance Rate : 8%)
 <p> 3) <b>Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification </b> <br>
  In Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP ,Brussels ,2018  <br> 
  <b> Tuhin Chakrabarty </b> ,Tariq Alhindi , Smaranda Muresan :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> .</p>
- 
- <p> 4) <b> Pay "Attention'' to your Context when Classifying Abusive Language</b> <br>
-In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>  
- <b> Tuhin Chakrabarty </b> ,Smaranda Muresan .   </p>
- 
+
  
  <p> 5) Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks <b> ,Under Submission   </b> 
 
