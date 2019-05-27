@@ -24,11 +24,11 @@ I took <br />
 I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html" title="Title"> PLUS Lab </a> at USC, ISI,starting July 2019 working on creative text generation.
 
 ## PUBLICATIONS
- <p> 4) <b> Pay "Attention'' to your Context when Classifying Abusive Language</b> <br>
+ <p> 1) <b> Pay "Attention'' to your Context when Classifying Abusive Language</b> <br>
 In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>  
  <b> Tuhin Chakrabarty </b> ,Smaranda Muresan .  </p>
 
-<p> 1) <b> IMHO Fine Tuning Improves Claim Detection</b> <br>
+<p> 2) <b> IMHO Fine Tuning Improves Claim Detection</b> <br>
 In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>  
  <b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckeown .   
 ORAL PRESENTATION (Acceptance Rate : 8%)
@@ -36,13 +36,13 @@ ORAL PRESENTATION (Acceptance Rate : 8%)
 [pdf] </a> </p>
  
  
- <p> 2) <b> [ColumbiaNLP] at SemEval-2019 Task [8]: The Answer is Language Model Fine-tuning </b> <br>
+ <p> 3) <b> [ColumbiaNLP] at SemEval-2019 Task [8]: The Answer is Language Model Fine-tuning </b> <br>
  In Proceedings of the 13th International Workshop on Semantic Evaluation , NAACL-HLT , Minneapolis, USA, June 2019  <br> 
  <b> Tuhin Chakrabarty </b> ,Smaranda Muresan .   4th and 2nd place in SUBTASK A & B respectively 
 <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/semeval.pdf" title="Title">
 [pdf] </a></p>
 
-<p> 3) <b>Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification </b> <br>
+<p> 4) <b>Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification </b> <br>
  In Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP ,Brussels ,2018  <br> 
  <b> Tuhin Chakrabarty </b> ,Tariq Alhindi , Smaranda Muresan :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> .</p>
 
