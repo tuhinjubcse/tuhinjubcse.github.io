@@ -32,14 +32,14 @@ In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>
 In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>  
  <b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckeown .   
 ORAL PRESENTATION (Acceptance Rate : 8%)
-<a href="https://arxiv.org/pdf/1905.07000.pdf" title="Title">
+<a href="https://www.aclweb.org/anthology/N19-1054" title="Title">
 [pdf] </a> </p>
  
  
  <p> 3) <b> [ColumbiaNLP] at SemEval-2019 Task [8]: The Answer is Language Model Fine-tuning </b> <br>
  In Proceedings of the 13th International Workshop on Semantic Evaluation , NAACL-HLT , Minneapolis, USA, June 2019  <br> 
  <b> Tuhin Chakrabarty </b> ,Smaranda Muresan .   4th and 2nd place in SUBTASK A & B respectively 
-<a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/semeval.pdf" title="Title">
+<a href="https://www.aclweb.org/anthology/S19-2200" title="Title">
 [pdf] </a></p>
 
 <p> 4) <b>Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification </b> <br>
