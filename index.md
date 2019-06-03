@@ -37,7 +37,7 @@ ORAL PRESENTATION (Acceptance Rate : 8%)
 <a href="https://www.aclweb.org/anthology/N19-1054" title="Title">
 [pdf] </a>
 <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/IMHO%20Fine-Tuning%20Improves%20Claim%20Detection%20.pdf" title="Title">
-[Slides] </p>
+ [Slides] </a> </p>
  
  
  <p> 3) <b> [ColumbiaNLP] at SemEval-2019 Task [8]: The Answer is Language Model Fine-tuning </b> <br>
