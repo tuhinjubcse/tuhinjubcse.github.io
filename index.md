@@ -27,7 +27,7 @@ I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html"
  <p> 1) <b> Pay "Attention'' to your Context when Classifying Abusive Language</b> <br>
 In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>  
  <b> Tuhin Chakrabarty </b> ,Kilol Gupta, Smaranda Muresan .
- <a href="https://www.aclweb.org/anthology/N19-1054" title="Title">
+ <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/19_Paper.pdf" title="Title">
 [pdf] </a> </p>
 
 <p> 2) <b> IMHO Fine Tuning Improves Claim Detection</b> <br>
