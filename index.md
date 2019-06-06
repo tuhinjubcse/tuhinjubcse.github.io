@@ -21,6 +21,8 @@ I took <br />
 
 ## HIGHLIGHTS 
 <p>EMNLP 2018 : <a href="https://www.cs.columbia.edu/2019/emnlp-2018/" title="Title"> Check Here </a></p>
+<p>NAACL 2019 : <a href="https://www.cs.columbia.edu/2019/research-by-spoken-language-and-nlp-groups-at-naacl-2019/
+" title="Title"> Check Here </a></p>
 I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html" title="Title"> PLUS Lab </a> at USC, ISI,starting August 2019 working on creative text generation.
 
 ## PUBLICATIONS
