@@ -26,7 +26,7 @@ I took <br />
 I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html" title="Title"> PLUS Lab </a> at USC, ISI,starting August 2019 working on creative text generation.
 
 ## PUBLICATIONS
-<p> 1) Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks <b> ,Under Submission   </b> <br>
+<p> 1) <b> Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks <b> ,   </b> <br>
   In 20th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2019),Stockholm, Sweden
  Siddharth Varia  ,Christopher Hidey, <b>Tuhin Chakrabarty </b>.
  <a href="Coming Soon" title="Title">
