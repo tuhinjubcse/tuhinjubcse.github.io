@@ -27,7 +27,7 @@ I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html"
 
 ## PUBLICATIONS
 <p> 1) <b> Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks ,   </b> <br>
-  In 20th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2019),Stockholm, Sweden
+  In 20th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2019),Stockholm, Sweden <br>
  Siddharth Varia  ,Christopher Hidey, <b>Tuhin Chakrabarty </b>.
  <a href="Coming Soon" title="Title">
 [pdf] </a> </p>
