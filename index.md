@@ -3,15 +3,11 @@
 ![Image](images/pic.jpg)
 
 ## About
-I am a graduate student in Computer Science at Columbia University ,advised by <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>  and  <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a> on Natural Language Processing. I closely collaborate with <a href="http://www.cs.columbia.edu/~chidey/" title="Title"> Christopher Hidey </a>.I am highly interested in Computational models of Social Science , Argumentation Mining , modeling implicit semantics & transfer learning for NLP.Prior to joining Grad school I was a backend engineer at UBER and Amazon .
+I am a graduate student in Computer Science at Columbia University ,advised by <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>  and  <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a> on Natural Language Processing. I closely collaborate with <a href="http://www.cs.columbia.edu/~chidey/" title="Title"> Christopher Hidey </a>.I am highly interested in Argument Mining , Dialogue Understanding , Discourse and Pragmatics, Textual Inference ,Modeling Implicit Semantic & Transfer learning for NLP . Prior to joining Grad school I was a backend engineer at UBER and Amazon .
 
 My current research involves building better models for dialogue and discourse understanding as well as argumentation mining. My research tries to leverage transfer learning approaches for argument mining.Argument Mining is a moderately challenging task and annotating large amount of data for supervised learning is expensive. My research tries to alleviate this problem by  collecting weakly labeled data similar to the task of interest from Social Media. 
 
 I have found new interest in developing computational models for Fact Checking.
-
-I dream of a juncture when I'll own powerful GPU's to train architechtures like BERT or OPENAI-GPT in minutes. 
-I will be at NAACL 2019 held at Minneapolis. Say Hi maybe ?
-
 
 
 I took <br />
