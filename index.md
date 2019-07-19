@@ -14,7 +14,7 @@ I took <br />
 - COMS 4705(Natural Language Processing) with Professor Michael Collins in Fall 2017 and finished with an A <br />
 - COMS E6998(NLP in Context : Computational Models of Social Meaning) with Smaranda Muresan in Spring 2018 and topped the class with an A+ <br />
 - I spent my summers at Amazon Alexa, Natural Language Understanding Group in Boston  as an Applied  Scientist Intern
-- Find my resume <a href="https://www.cs.jhu.edu/~npeng/group.html" title="Title"> Here </a> 
+- Find my resume <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/tuhin_resume.pdf" title="Title"> Here </a> 
 
 ## HIGHLIGHTS 
 <p>EMNLP 2018 : <a href="https://www.cs.columbia.edu/2019/emnlp-2018/" title="Title"> Check Here </a></p>
