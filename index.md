@@ -23,13 +23,13 @@ I took <br />
 I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html" title="Title"> PLUS Lab </a> at USC, ISI,starting August 2019 working on creative text generation.
 
 ## PUBLICATIONS
-<p> 1) <b> AMPERSAND: Argument Mining for PERSuAsive oNline Discussions   </b> <br>
+<p> 1) <b> Long Paper on Argument Mining (Name witheld due to double blind)   </b> <br>
   Under Submission at EMNLP 2019 ,HongKong <br>
  <b> Tuhin Chakrabarty </b>, Christopher Hidey, Smaranda Muresan, Kathy McKeown and Alyssa Hwang .
  <a href="Coming Soon" title="Title">
 [pdf] </a> </p>
 
-<p> 2) <b> BUILD IT , BREAK IT , FIX IT : Deeper Insights on Fact Extraction and Verification  </b> <br>
+<p> 2) <b> Journal Paper on Fact Checking (Name witheld due to double blind)  </b> <br>
   Under Submission at TACL <br>
  Christopher Hidey ,<b> Tuhin Chakrabarty </b>, Tariq Alhindi, Siddharth Vaia , Smaranda Muresan, Kriste Kristovi .
  <a href="Coming Soon" title="Title">
