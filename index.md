@@ -23,7 +23,7 @@ I took <br />
 I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html" title="Title"> PLUS Lab </a> at USC, ISI,starting August 2019 working on creative text generation.
 
 ## PUBLICATIONS
-<p> 1) <b> AMPERSAND: Argument Mining for PERSuAsive oNline Discussionss   </b> <br>
+<p> 1) <b> AMPERSAND: Argument Mining for PERSuAsive oNline Discussions   </b> <br>
   Under Submission at EMNLP 2019 ,HongKong <br>
  <b> Tuhin Chakrabarty </b>, Christopher Hidey, Smaranda Muresan, Kathy McKeown and Alyssa Hwang .
  <a href="Coming Soon" title="Title">
