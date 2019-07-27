@@ -31,7 +31,7 @@ I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html"
 
 <p> 2) <b> Journal Paper on Fact Checking (Name witheld due to double blind)  </b> <br>
   Under Submission at TACL <br>
- Christopher Hidey ,<b> Tuhin Chakrabarty </b>, Tariq Alhindi, Siddharth Vaia , Smaranda Muresan, Kriste Kristovi .
+ Christopher Hidey ,<b> Tuhin Chakrabarty </b>, Tariq Alhindi, Siddharth Varia , Smaranda Muresan, Kriste Kristovi .
  <a href="Coming Soon" title="Title">
 [pdf] </a> </p>
 
