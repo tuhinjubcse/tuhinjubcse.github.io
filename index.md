@@ -29,7 +29,7 @@ I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html"
  <a href="Coming Soon" title="Title">
 [pdf] </a> </p>
 
-<p> 2) <b> BUILD IT , BREAK IT , FIX IT : Deeper Insights on Fact Extracton and Verification  </b> <br>
+<p> 2) <b> BUILD IT , BREAK IT , FIX IT : Deeper Insights on Fact Extraction and Verification  </b> <br>
   Under Submission at TACL <br>
  Christopher Hidey ,<b> Tuhin Chakrabarty </b>, Tariq Alhindi, Siddharth Vaia , Smaranda Muresan, Kriste Kristovi .
  <a href="Coming Soon" title="Title">
