@@ -40,7 +40,7 @@ I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html"
 
 <p> 3) <b> IMHO Fine Tuning Improves Claim Detection</b> <br>
 In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>  
- <b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckeown .   
+ <b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckeown . <br>  
 ORAL PRESENTATION (Acceptance Rate Oral : 10.8% [72 out of 666 submitted papers])
 <a href="https://www.aclweb.org/anthology/N19-1054" title="Title">
 [pdf] </a>
