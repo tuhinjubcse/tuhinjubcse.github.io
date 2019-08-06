@@ -12,7 +12,7 @@ I have found new interest in developing computational models for Fact Checking.
 
 I took <br />
 - COMS 4705(Natural Language Processing) with Professor Michael Collins in Fall 2017 and finished with an A <br />
-- COMS E6998(NLP in Context : Computational Models of Social Meaning) with Smaranda Muresan in Spring 2018 and topped the class with an A+ <br />
+- COMS E6998(NLP in Context : Computational Models of Social Meaning) with Smaranda Muresan in Spring 2018 and topped the class with an A+ (The course resulted in a ACL Abusive Langugage workshop long paper) <br />
 - I spent my summers at Amazon Alexa, Natural Language Understanding Group in Boston  as an Applied  Scientist Intern
 - Find my resume <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/tuhin_resume.pdf" title="Title"> Here </a> 
 
@@ -21,7 +21,7 @@ I took <br />
 <p>NAACL 2019 : <a href="https://www.cs.columbia.edu/2019/research-by-spoken-language-and-nlp-groups-at-naacl-2019/
 " title="Title"> Check Here </a></p>
 <p>ACL 2019 : <a href="https://www.cs.columbia.edu/2019/cs-papers-accepted-to-acl-2019/" title="Title"> Check Here </a></p>
-I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html" title="Title"> PLUS Lab </a> at USC, ISI,starting August 2019 working on creative text generation.
+I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html" title="Title"> PLUS Lab </a> at USC, ISI,starting August 2019 working on NLP related problems.
 
 ## PUBLICATIONS
 <p> 1) <b> Long Paper on Argument Mining (Name witheld due to double blind)   </b> <br>
