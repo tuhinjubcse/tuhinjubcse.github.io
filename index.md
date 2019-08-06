@@ -24,23 +24,50 @@ I took <br />
 I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html" title="Title"> PLUS Lab </a> at USC, ISI,starting August 2019 working on NLP related problems.
 
 ## PUBLICATIONS
+
+## DISCOURSE AND DIALOGUE
 <p> 1) <b> Long Paper on Argument Mining (Name witheld due to double blind)   </b> <br>
   Under Submission at EMNLP 2019 ,HongKong <br>
  <b> Tuhin Chakrabarty </b>, Christopher Hidey, Smaranda Muresan, Kathy McKeown and Alyssa Hwang .
  <a href="Coming Soon" title="Title">
 [pdf] </a> </p>
 
-<p> 2) <b> Journal Paper on Fact Checking (Name witheld due to double blind)  </b> <br>
+<p> 2) <b> Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks ,   </b> <br>
+  In 20th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2019),Stockholm, Sweden <br>
+ Siddharth Varia  ,Christopher Hidey, <b>Tuhin Chakrabarty </b>.
+ <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/Implicit_Discourse_SIGDIAL_2019.pdf" title="Title">
+[pdf] </a> </p>
+
+<p> 3) <b> IMHO Fine Tuning Improves Claim Detection</b> <br>
+In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>  
+ <b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckeown .   
+ORAL PRESENTATION (Acceptance Rate Oral : 10.8% [72 out of 666 submitted papers])
+<a href="https://www.aclweb.org/anthology/N19-1054" title="Title">
+[pdf] </a>
+<a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/IMHO%20Fine-Tuning%20Improves%20Claim%20Detection%20.pdf" title="Title">
+ [Slides] </a> </p>
+
+
+## FACT CHECKING
+
+<p> 1) <b> Journal Paper on Fact Checking (Name witheld due to double blind)  </b> <br>
   Under Submission at TACL <br>
  Christopher Hidey ,<b> Tuhin Chakrabarty </b>, Tariq Alhindi, Siddharth Varia , Smaranda Muresan, Kriste Kristovi .
  <a href="Coming Soon" title="Title">
 [pdf] </a> </p>
 
-<p> 3) <b> Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks ,   </b> <br>
-  In 20th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2019),Stockholm, Sweden <br>
- Siddharth Varia  ,Christopher Hidey, <b>Tuhin Chakrabarty </b>.
- <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/Implicit_Discourse_SIGDIAL_2019.pdf" title="Title">
-[pdf] </a> </p>
+<p> 2) <b> [ColumbiaNLP] at SemEval-2019 Task [8]: The Answer is Language Model Fine-tuning </b> <br>
+ In Proceedings of the 13th International Workshop on Semantic Evaluation , NAACL-HLT , Minneapolis, USA, June 2019  <br> 
+ <b> Tuhin Chakrabarty </b> ,Smaranda Muresan .   4th and 2nd place in SUBTASK A & B respectively 
+<a href="https://www.aclweb.org/anthology/S19-2200" title="Title">
+[pdf] </a></p>
+
+<p> 3) <b>Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification </b> <br>
+ In Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP ,Brussels ,2018  <br> 
+ <b> Tuhin Chakrabarty </b> ,Tariq Alhindi , Smaranda Muresan :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> .</p>
+
+
+## OTHER WORK
 
 
  <p> 4) <b> Pay "Attention'' to your Context when Classifying Abusive Language</b> <br>
@@ -49,24 +76,6 @@ In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>
  <a href="https://www.aclweb.org/anthology/W19-3508" title="Title">
 [pdf] </a> </p>
 
-<p> 5) <b> IMHO Fine Tuning Improves Claim Detection</b> <br>
-In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>  
- <b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckeown .   
-ORAL PRESENTATION (Acceptance Rate Oral : 10.8% [72 out of 666 submitted papers])
-<a href="https://www.aclweb.org/anthology/N19-1054" title="Title">
-[pdf] </a>
-<a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/IMHO%20Fine-Tuning%20Improves%20Claim%20Detection%20.pdf" title="Title">
- [Slides] </a> </p>
- 
- 
- <p> 6) <b> [ColumbiaNLP] at SemEval-2019 Task [8]: The Answer is Language Model Fine-tuning </b> <br>
- In Proceedings of the 13th International Workshop on Semantic Evaluation , NAACL-HLT , Minneapolis, USA, June 2019  <br> 
- <b> Tuhin Chakrabarty </b> ,Smaranda Muresan .   4th and 2nd place in SUBTASK A & B respectively 
-<a href="https://www.aclweb.org/anthology/S19-2200" title="Title">
-[pdf] </a></p>
 
-<p> 7) <b>Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification </b> <br>
- In Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP ,Brussels ,2018  <br> 
- <b> Tuhin Chakrabarty </b> ,Tariq Alhindi , Smaranda Muresan :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> .</p>
-
+ 
 
