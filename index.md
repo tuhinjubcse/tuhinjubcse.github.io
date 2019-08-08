@@ -60,12 +60,12 @@ ORAL PRESENTATION (Acceptance Rate Oral : 10.8% [72 out of 666 submitted papers]
  In Proceedings of the 13th International Workshop on Semantic Evaluation , NAACL-HLT , Minneapolis, USA, June 2019  <br> 
  <b> Tuhin Chakrabarty </b> ,Smaranda Muresan .   4th and 2nd place in SUBTASK A & B respectively 
 <a href="https://www.aclweb.org/anthology/S19-2200" title="Title">
-[pdf] </a> <a href="https://github.com/tuhinjubcse/FEVER-EMNLP" title="Title">
-[Code] </a></p>
+[pdf] </a> </p>
 
 <p> 3) <b>Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification </b> <br>
  In Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP ,Brussels ,2018  <br> 
- <b> Tuhin Chakrabarty </b> ,Tariq Alhindi , Smaranda Muresan :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> .</p>
+ <b> Tuhin Chakrabarty </b> ,Tariq Alhindi , Smaranda Muresan :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> <a href="https://github.com/tuhinjubcse/FEVER-EMNLP" title="Title">
+[Code] </a>.</p>
 
 
 ## OTHER WORK
@@ -75,7 +75,8 @@ ORAL PRESENTATION (Acceptance Rate Oral : 10.8% [72 out of 666 submitted papers]
 In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>  
  <b> Tuhin Chakrabarty </b> ,Kilol Gupta, Smaranda Muresan .
  <a href="https://www.aclweb.org/anthology/W19-3508" title="Title">
-[pdf] </a> </p>
+[pdf] </a> <a href="https://github.com/tuhinjubcse/ALW3-ACL2019" title="Title">
+[Code] </a> </p>
 
 
  
