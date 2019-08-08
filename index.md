@@ -45,7 +45,10 @@ ORAL PRESENTATION (Acceptance Rate Oral : 10.8% [72 out of 666 submitted papers]
 <a href="https://www.aclweb.org/anthology/N19-1054" title="Title">
 [pdf] </a>
 <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/IMHO%20Fine-Tuning%20Improves%20Claim%20Detection%20.pdf" title="Title">
- [Slides] </a> </p>
+ [Slides] </a> 
+  <a href="https://github.com/tuhinjubcse/IMHO-NAACL2019" title="Title">
+[Code] </a>
+</p>
 
 
 ## FACT CHECKING
