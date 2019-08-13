@@ -26,8 +26,8 @@ I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html"
 ## PUBLICATIONS
 
 ## DISCOURSE AND DIALOGUE
-<p> 1) <b> Long Paper on Argument Mining (Name witheld due to double blind)   </b> <br>
-  Under Submission at EMNLP 2019 ,HongKong <br>
+<p> 1) <b> AMPERSAND: Argument Mining for PERSuAsive oNline Discussions </b> <br>
+  In Proceedings of EMNLP 2019 ,HongKong <br>
  <b> Tuhin Chakrabarty </b>, Christopher Hidey, Smaranda Muresan, Kathy McKeown and Alyssa Hwang .
  <a href="Coming Soon" title="Title">
 [pdf] </a> </p>
