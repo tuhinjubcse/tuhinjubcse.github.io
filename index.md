@@ -2,14 +2,18 @@
 
 ![Image](images/pic.jpg)
 
-## About
-I am a graduate student in Computer Science at Columbia University ,advised by <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>  and  <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a> on Natural Language Processing. I closely collaborate with <a href="http://www.cs.columbia.edu/~chidey/" title="Title"> Christopher Hidey </a>.I am highly interested in Argument Mining , Dialogue Understanding , Discourse and Pragmatics, Textual Inference ,Modeling Implicit Semantic & Transfer learning for NLP . Prior to joining Grad school I was a backend engineer at UBER and Amazon .
+## About me
+I am from Columbia NLP group ,fortunate to be advised by my amazing advisors <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>  and  <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a> on Natural Language Processing. I have a great working rapport with <a href="http://www.cs.columbia.edu/~chidey/" title="Title"> Christopher Hidey who is doing stellar work in NLP </a>.I am highly interested in Argument Mining , Dialogue Understanding , Discourse and Pragmatics, Textual Inference ,Modeling Implicit Semantic & Transfer learning for NLP . Prior to joining Grad school I was a engineer at UBER and Amazon. When not doing NLP , I love reading. I love Morissey and The Smiths and feel they are the best band in the world :)
 
-My current research involves building better models for dialogue and discourse understanding as well as argumentation mining. My research tries to leverage transfer learning approaches for argument mining.Argument Mining is a moderately challenging task and annotating large amount of data for supervised learning is expensive. My research tries to alleviate this problem by  collecting weakly labeled data similar to the task of interest from Social Media. 
+## Research Focus
 
-I have found new interest in developing computational models for Fact Checking.
+My current research involves building better models for dialogue and discourse understanding (Ex: argumentation) mining. Argument Mining is a moderately challenging task and annotating large amount of data for supervised learning is expensive. My research tries to alleviate this problem by  collecting weakly labeled data similar to the task of interest from Social Media. 
 
+Yes Pre-trained models have proved their efficacy in variety of tasks , but how can we improve over them ? For tasks where the language is disparately different from pretraining corpus , can we benefit by fine tuning on task of interest ? Read my <b>NAACL 2019</b> and <b>EMNLP 2019</b> paper which tries to answer these questions.
 
+I have found new interest in developing computational models for Fact Checking.With the plethora of information available on the internet we need models to verify these. Typically a fact checking pipeline involves Information Retrival and Natural Language Inference. Read our papers on fact checking to know more
+
+## Some Trivia
 I took <br />
 - COMS 4705(Natural Language Processing) with Professor Michael Collins in Fall 2017 and finished with an A <br />
 - COMS E6998(NLP in Context : Computational Models of Social Meaning) with Smaranda Muresan in Spring 2018 and topped the class with an A+ (The course resulted in a ACL Abusive Langugage workshop long paper) <br />
