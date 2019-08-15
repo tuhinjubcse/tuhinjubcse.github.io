@@ -13,7 +13,7 @@ Yes Pre-trained models have proved their efficacy in variety of tasks , but how 
 
 I have found new interest in developing computational models for Fact Checking.With the plethora of information available on the internet we need models to verify these. Typically a fact checking pipeline involves robust Information Retrieval and smart Natural Language Inference. Read our papers on fact checking to know more about the challenges and how we solve them.
 
-I am interested in Persuasive Dialogue generation and want to work in that space. If you wanna collaborate HMU !!
+I am interested in Persuasive Dialogue understanding and generation and want to work in that space. If you wanna collaborate HMU !!
 
 ## Some Trivia
 I took <br />
