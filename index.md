@@ -22,13 +22,15 @@ I took <br />
 - I spent my summers at Amazon Alexa, Natural Language Understanding Group in Boston  as an Applied  Scientist Intern
 - Find my resume <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/tuhin_resume.pdf" title="Title"> Here </a> 
 
-## HIGHLIGHTS 
+## CONFERENCE HIGHLIGHTS 
 
 <p>ACL 2019 : <a href="https://www.cs.columbia.edu/2019/cs-papers-accepted-to-acl-2019/" title="Title"> Check Here </a></p>
-I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html" title="Title"> PLUS Lab </a> at USC, ISI,starting August 2019 working on NLP related problems.I am fortunate to be advised by <a href="https://www.cs.jhu.edu/~npeng/" title="Title"> Professor Violet Peng </a>
 <p>EMNLP 2018 : <a href="https://www.cs.columbia.edu/2019/emnlp-2018/" title="Title"> Check Here </a></p>
 <p>NAACL 2019 : <a href="https://www.cs.columbia.edu/2019/research-by-spoken-language-and-nlp-groups-at-naacl-2019/
 " title="Title"> Check Here </a></p>
+
+## UPDATES
+I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html" title="Title"> PLUS Lab </a> at USC, ISI,starting August 2019 working on NLP related problems.I am fortunate to be advised by <a href="https://www.cs.jhu.edu/~npeng/" title="Title"> Professor Violet Peng </a>
 
 ## PUBLICATIONS
 
@@ -66,7 +68,7 @@ ORAL PRESENTATION (Acceptance Rate Oral : 10.8% [72 out of 666 submitted papers]
  <a href="Coming Soon" title="Title">
 [pdf] </a> </p>
 
-<p> 2) <b> [ColumbiaNLP] at SemEval-2019 Task [8]: The Answer is Language Model Fine-tuning </b> <br>
+<p> 2) <b> The Answer is Language Model Fine-tuning </b> <br>
  In Proceedings of the 13th International Workshop on Semantic Evaluation , NAACL-HLT , Minneapolis, USA, June 2019  <br> 
  <b> Tuhin Chakrabarty </b> ,Smaranda Muresan .   4th and 2nd place in SUBTASK A & B respectively 
 <a href="https://www.aclweb.org/anthology/S19-2200" title="Title">
