@@ -3,7 +3,7 @@
 ![Image](images/pic.jpg)
 
 ## About me
-I am from Columbia Natural Language Processing group ,fortunate to be advised by my amazing advisors <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>  and  <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a>. I have a great working rapport with <a href="http://www.cs.columbia.edu/~chidey/" title="Title"> Christopher Hidey who is doing stellar work in NLP </a>.I am highly interested in Argument Mining , Dialogue Understanding , Discourse and Pragmatics, Textual Inference ,Modeling Implicit Semantic & Transfer learning for NLP . Prior to joining Grad school I was a engineer at UBER and Amazon. When not doing NLP , I love reading. I love Morissey and The Smiths and feel they are the best band in the world :)
+I am from Columbia Natural Language Processing group ,fortunate to be advised by my amazing advisors <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>  and  <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a>. I have a great working rapport with <a href="http://www.cs.columbia.edu/~chidey/" title="Title"> Christopher Hidey  </a> who is doing stellar work in NLP.I am highly interested in Argument Mining , Dialogue Understanding , Discourse and Pragmatics, Textual Inference ,Modeling Implicit Semantic & Transfer learning for NLP . Prior to joining Grad school I was a engineer at UBER and Amazon. When not doing NLP , I love reading. I love Morissey and The Smiths and feel they are the best band in the world :)
 
 ## Research Focus
 
