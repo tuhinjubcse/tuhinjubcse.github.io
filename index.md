@@ -11,7 +11,7 @@ My current research involves building better models for dialogue and discourse u
 
 Yes Pre-trained models have proved their efficacy in variety of tasks , but how can we improve over them ? For tasks where the language is disparately different from pretraining corpus , can we benefit by fine tuning on task of interest ? Read my <b>NAACL 2019</b> and <b>EMNLP 2019</b> paper which tries to answer these questions.
 
-I have found new interest in developing computational models for Fact Checking.With the plethora of information available on the internet we need models to verify these. Typically a fact checking pipeline involves Information Retrival and Natural Language Inference. Read our papers on fact checking to know more
+I have found new interest in developing computational models for Fact Checking.With the plethora of information available on the internet we need models to verify these. Typically a fact checking pipeline involves robust Information Retrieval and smart Natural Language Inference. Read our papers on fact checking to know more about the challenges and how we solve them.
 
 ## Some Trivia
 I took <br />
