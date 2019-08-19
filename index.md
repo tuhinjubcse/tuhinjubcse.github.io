@@ -35,7 +35,7 @@ I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html"
 
 ## DISCOURSE AND DIALOGUE
 <p> 1) <b> AMPERSAND: Argument Mining for PERSuAsive oNline Discussions </b> <br>
-  In Proceedings of EMNLP 2019 ,HongKong <br>
+  In Proceedings of EMNLP 2019 ,HongKong (Acceptance Rate Oral : 23.8%)<br>
  <b> Tuhin Chakrabarty </b>, Christopher Hidey, Smaranda Muresan, Kathy McKeown and Alyssa Hwang .
  <a href="Coming Soon" title="Title">
 [pdf] </a> </p>
