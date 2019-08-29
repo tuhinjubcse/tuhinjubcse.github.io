@@ -8,6 +8,9 @@ I am from Columbia Natural Language Processing group ,fortunate to be advised by
 ## Research Focus
 
 My current research involves building better models for dialogue and discourse understanding (Ex: argumentation).Argument Mining is a moderately challenging task and annotating large amount of data for supervised learning is expensive.My research tries to alleviate this problem by  collecting weakly labeled data similar to the task of interest from Social Media. 
+See <p> <a href="http://arg.tech/~chris/acl2019tut/argmining-tut-v4.pdf" title="Title"> ArgMining-tutorial@ACL2019 </a></p>
+
+
 
 Yes Pre-trained models have proved their efficacy in variety of tasks, but how can we improve over them? For tasks where the language is disparately different from pretraining corpus , can we benefit by fine tuning on task of interest? Read my <b>NAACL 2019</b> and <b>EMNLP 2019</b> paper which tries to answer these questions.
 
