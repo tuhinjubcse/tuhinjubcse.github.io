@@ -8,7 +8,7 @@ I am from Columbia Natural Language Processing group ,fortunate to be advised by
 ## Research Focus
 
 My current research involves building better models for dialogue and discourse understanding (Ex: argumentation).Argument Mining is a moderately challenging task and annotating large amount of data for supervised learning is expensive.My research tries to alleviate this problem by  collecting weakly labeled data similar to the task of interest from Social Media. 
-See <p> <a href="http://arg.tech/~chris/acl2019tut/argmining-tut-v4.pdf" title="Title"> ArgMining-tutorial@ACL2019 </a></p>
+Read <a href="http://arg.tech/~chris/acl2019tut/argmining-tut-v4.pdf" title="Title"> ArgMining-tutorial@ACL2019 </a> where they mention why Argument mining ( and more so Arg Mining in dialogue) is a very hard task.
 
 
 
