@@ -66,7 +66,8 @@ ORAL PRESENTATION (Acceptance Rate Oral : 10.8% [72 out of 666 submitted papers]
 
 <p> 1) <b> Journal Paper on Fact Checking (Name witheld due to double blind)  </b> <br>
   Under Submission at TACL <br>
- Christopher Hidey ,<b> Tuhin Chakrabarty </b>, Tariq Alhindi, Siddharth Varia , Smaranda Muresan, Kriste Kristovi .
+ Christopher Hidey ,<b> Tuhin Chakrabarty </b>, Tariq Alhindi, Kriste Krstovski, Siddharth Varia and Smaranda Muresan
+ .
  <a href="Coming Soon" title="Title">
 [pdf] </a> </p>
 
