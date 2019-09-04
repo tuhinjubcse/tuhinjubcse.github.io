@@ -94,5 +94,11 @@ In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>
 [Code] </a> </p>
 
 
+Contact:
+Email : tuhinc@isi.edu (ISI)
+        tuhincha@usc.edu (USC)
+        tuhin.chakrabarty@columbia.edu(COLUMBIA)
+        tuhinjubcse@gmail.com(PERSONAL GMAIL)
+Mobile : +13476306405
  
 
