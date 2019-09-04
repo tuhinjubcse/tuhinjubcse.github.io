@@ -94,7 +94,7 @@ In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>
 [Code] </a> </p>
 
 
-Contact:<br/>
+## CONTACT ME
 Email : <br/>
 tuhinc@isi.edu (ISI) <br/>
         tuhincha@usc.edu (USC)<br/>
