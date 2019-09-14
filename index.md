@@ -14,7 +14,7 @@ Read <a href="http://arg.tech/~chris/acl2019tut/argmining-tut-v4.pdf" title="Tit
 
 Yes Pre-trained models have proved their efficacy in variety of tasks, but how can we improve over them? For tasks where the language is disparately different from pretraining corpus , can we benefit by fine tuning on task of interest? Read my <b>NAACL 2019</b> and <b>EMNLP 2019</b> paper which tries to answer these questions.
 
-I have found new interest in developing computational models for Fact Checking.With the plethora of information available on the internet we need models to verify these. Typically a fact checking pipeline involves robust Information Retrieval and smart Natural Language Inference. Read our papers on fact checking to know more about the challenges and how we solve them.
+I have found new interest in developing computational models for Fact Checking.With the plethora of information available on the internet we need models to verify these. Typically a fact checking pipeline involves robust Information Retrieval and smart Natural Language Inference.Also how can we build robust fact checking models without overfitting on a dataset. How can we create adversarial examples to break models.Read our papers on fact checking to know more about the challenges and how we solve them.
 
 I am interested in Persuasive Dialogue understanding and generation and want to work in that space. If you wanna collaborate HMU !!
 
@@ -33,6 +33,8 @@ I took <br />
 
 ## UPDATES
 I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html" title="Title"> PLUS Lab </a> at USC, ISI,starting August 2019 working on NLP related problems.I am fortunate to be advised by <a href="https://www.cs.jhu.edu/~npeng/" title="Title"> Professor Violet Peng </a>
+
+Finished first and second based on FEVER score on FEVER 1.0 and 2.0 dataets 
 
 ## PUBLICATIONS
 
