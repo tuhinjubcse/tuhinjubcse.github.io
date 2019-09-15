@@ -3,7 +3,7 @@
 ![Image](images/pic.jpg)
 
 ## About me
-I am from Columbia Natural Language Processing group ,fortunate to be advised by my amazing advisors <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>  and  <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a>.I collaborate closely with <a href="http://www.cs.columbia.edu/~chidey/" title="Title"> Christopher Hidey  </a> who mentored me and introduced me to NLP research.I am highly interested in Argument Mining, Dialogue Understanding, Discourse and Pragmatics, Textual Inference ,Modeling Implicit Semantics & Transfer learning for NLP. Prior to joining Grad school I was an engineer at UBER and Amazon. When not doing NLP, I love reading.I love Morissey and The Smiths and feel they are the best band in the world :)
+I am from Columbia Natural Language Processing group ,fortunate to be advised by my amazing advisors <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>  and  <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a>.I collaborate closely with <a href="http://www.cs.columbia.edu/~chidey/" title="Title"> Christopher Hidey  </a> who mentored me and introduced me to NLP research.I am highly interested in Argument Mining, Dialogue Understanding, Discourse and Pragmatics, Textual Inference ,Modeling Implicit Semantics & Transfer learning for NLP. Prior to joining Grad school I was an engineer at UBER and Amazon. 
 
 ## Research Focus
 
@@ -97,6 +97,7 @@ In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>
 [Code] </a> </p>
 
 
+
 ## CONTACT ME
 Email : <br/>
 tuhinc@isi.edu (ISI) <br/>
@@ -138,3 +139,7 @@ Mobile : +13476306405
 [6]: https://github.com/tuhinjubcse
 
 <!-- Please don't remove this: Grab your social icons from https://github.com/carlsednaoui/gitsocial -->
+
+
+## NON NLP LIFE
+When not doing NLP, I love reading.I love Morissey and The Smiths and feel they are the best band in the world :). I also love taking pictures. See my photography trail on my instagram handle (@bonginnyc). I also write sometime on love and longing (https://bonginnyc.blogspot.com)
