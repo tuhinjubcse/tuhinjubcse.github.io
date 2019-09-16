@@ -142,4 +142,4 @@ Mobile : +13476306405
 
 
 ## NON NLP LIFE
-When not doing NLP, I love reading.I love Morissey and The Smiths and feel they are the best band in the world :). I also love taking pictures. See my photography trail on my instagram handle (@bonginnyc). I also  sometimes write on love and longing (https://bonginnyc.blogspot.com)
+When not doing NLP, I love reading.I love Morissey and The Smiths and feel they are the best band in the world :). I also love taking pictures. See my photography trail on my instagram handle (@bonginnyc). I also  sometimes write on love and longing <p> <a href="https://bonginnyc.blogspot.com" title="Title"> Tuhins blog </a>
