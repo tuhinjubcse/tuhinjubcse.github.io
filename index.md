@@ -46,7 +46,7 @@ Finished first and second based on FEVER score on FEVER 1.0 and 2.0 dataets
 [pdf] </a> </p>
 
 <p> 2) <b> Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks ,   </b> <br>
-  In 20th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2019),Stockholm, Sweden [TO APPEAR]
+  In 20th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2019),Stockholm, Sweden
   Siddharth Varia  ,Christopher Hidey, <b>Tuhin Chakrabarty </b>.
   <br> ORAL PRESENTATION (Acceptance Rate : 35%)
  <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/Implicit_Discourse_SIGDIAL_2019.pdf" title="Title">
