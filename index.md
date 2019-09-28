@@ -68,20 +68,13 @@ In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>
 
 ## FACT CHECKING
 
-<p> 1) <b> Journal Paper on Fact Checking (Name witheld due to double blind)  </b> <br>
-  Under Submission at TACL <br>
- Christopher Hidey ,<b> Tuhin Chakrabarty </b>, Tariq Alhindi, Kriste Krstovski, Siddharth Varia and Smaranda Muresan
- .
- <a href="Coming Soon" title="Title">
-[pdf] </a> </p>
-
-<p> 2) <b> The Answer is Language Model Fine-tuning </b> <br>
+<p> 1) <b> The Answer is Language Model Fine-tuning </b> <br>
  In Proceedings of the 13th International Workshop on Semantic Evaluation , NAACL-HLT , Minneapolis, USA, June 2019  <br> 
  <b> Tuhin Chakrabarty </b> ,Smaranda Muresan .   4th and 2nd place in SUBTASK A & B respectively 
 <a href="https://www.aclweb.org/anthology/S19-2200" title="Title">
 [pdf] </a> </p>
 
-<p> 3) <b>Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification </b> <br>
+<p> 2) <b>Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification </b> <br>
  In Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP ,Brussels ,2018  <br> 
  <b> Tuhin Chakrabarty </b> ,Tariq Alhindi , Smaranda Muresan :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> <a href="https://github.com/tuhinjubcse/FEVER-EMNLP" title="Title">
 [Code] </a>.</p>
