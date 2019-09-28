@@ -35,7 +35,7 @@ I took <br />
 ## UPDATES
 I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html" title="Title"> PLUS Lab </a> at USC, ISI,starting August 2019 working on NLP related problems.I am fortunate to be advised by <a href="https://www.cs.jhu.edu/~npeng/" title="Title"> Professor Violet Peng </a>
 
-Finished first and second based on FEVER score on FEVER 1.0 and 2.0 dataets 
+Oral talks at EMNLP 2019 , Main Conference and FEVER worksop
 
 ## PUBLICATIONS
 
