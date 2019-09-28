@@ -41,7 +41,7 @@ Oral talks at EMNLP 2019 , Main Conference and FEVER worksop
 
 ## DISCOURSE AND DIALOGUE
 <p> 1) <b> AMPERSAND: Argument Mining for PERSuAsive oNline Discussions </b> <br>
-  In Proceedings of EMNLP 2019 ,HongKong [TO APPEAR] (Acceptance Rate  : 23.8%)<br>
+  In Proceedings of EMNLP 2019 ,HongKong [TO APPEAR] ORAL PRESENTATION (Acceptance Rate Oral : 7.9% [230 out of 2877 submitted papers])<br>
  <b> Tuhin Chakrabarty </b>, Christopher Hidey, Smaranda Muresan, Kathy McKeown and Alyssa Hwang .
  <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/AMPERSAND_EMNLP2019.pdf" title="Title">
 [pdf] </a> </p>
