@@ -17,7 +17,7 @@ Yes Pre-trained models have proved their efficacy in variety of tasks, but how c
 
 I have found new interest in developing computational models for Fact Checking.With the plethora of information available on the internet we need models to verify these. Typically a fact checking pipeline involves robust Information Retrieval and smart Natural Language Inference.Also how can we build robust fact checking models without overfitting on a dataset. How can we create adversarial examples to break models.Read our papers on fact checking to know more about the challenges and how we solve them.
 
-I am interested in Persuasive Dialogue understanding and generation and want to work in that space. If you wanna collaborate HMU !!
+I am working on computational models to incorporate machine commonsense with a focus on creative text generation
 
 ## Some Trivia
 I took <br />
