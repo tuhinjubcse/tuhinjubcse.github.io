@@ -8,7 +8,7 @@ I am also acting as a research consultant at <a href="https://factmata.com" titl
 
 ## Research Focus
 
-My current research involves building better models for dialogue and discourse understanding (Ex: argumentation).Argument Mining is a moderately challenging task and argument annotation for supervised learning is often expensive and unsuitable for crowdsourcing.My research tries to alleviate this problem by  collecting weakly labeled data similar to the task of interest from Social Media. 
+My current research involves building better models for literal and figurative language focusing particularly on stylistics/ rhetoric, and semantics.(Ex: argumentation).Argument Mining is a moderately challenging task and argument annotation for supervised learning is often expensive and unsuitable for crowdsourcing.My research tries to alleviate this problem by  collecting weakly labeled data similar to the task of interest from Social Media. 
 Read <a href="http://arg.tech/~chris/acl2019tut/argmining-tut-v4.pdf" title="Title"> ArgMining-tutorial@ACL2019 </a> where they mention why Argument mining ( and more so Arg Mining in dialogue) is a very hard task.
 
 
