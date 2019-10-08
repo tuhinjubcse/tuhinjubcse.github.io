@@ -50,7 +50,7 @@ Oral talks at EMNLP 2019 , Main Conference and FEVER worksop
   In 20th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2019),Stockholm, Sweden
   Siddharth Varia  ,Christopher Hidey, <b>Tuhin Chakrabarty </b>.
   <br> ORAL PRESENTATION (Acceptance Rate : 35%)
- <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/Implicit_Discourse_SIGDIAL_2019.pdf" title="Title">
+ <a href="https://www.aclweb.org/anthology/W19-5951.pdf" title="Title">
 [pdf] </a> </p>
 
 <p> 3) <b> IMHO Fine Tuning Improves Claim Detection</b> <br>
