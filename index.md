@@ -57,7 +57,7 @@ Oral talks at EMNLP 2019 , Main Conference and FEVER worksop
 In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>  
  <b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckeown . <br>  
  ORAL PRESENTATION (Acceptance Rate Oral : 10.8% [72 out of 666 submitted papers])
-<a href="https://www.aclweb.org/anthology/N19-1054" title="Title">
+<a href="https://www.aclweb.org/anthology/N19-1054.pdf" title="Title">
 [pdf] </a>
 <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/IMHO%20Fine-Tuning%20Improves%20Claim%20Detection%20.pdf" title="Title">
  [Slides] </a> 
@@ -71,12 +71,12 @@ In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>
 <p> 1) <b> The Answer is Language Model Fine-tuning </b> <br>
  In Proceedings of the 13th International Workshop on Semantic Evaluation , NAACL-HLT , Minneapolis, USA, June 2019  <br> 
  <b> Tuhin Chakrabarty </b> ,Smaranda Muresan .   4th and 2nd place in SUBTASK A & B respectively 
-<a href="https://www.aclweb.org/anthology/S19-2200" title="Title">
+<a href="https://www.aclweb.org/anthology/S19-2200.pdf" title="Title">
 [pdf] </a> </p>
 
 <p> 2) <b>Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification </b> <br>
  In Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP ,Brussels ,2018  <br> 
- <b> Tuhin Chakrabarty </b> ,Tariq Alhindi , Smaranda Muresan :- <a href="http://aclweb.org/anthology/W18-5521" title="Title"> [pdf] </a> <a href="https://github.com/tuhinjubcse/FEVER-EMNLP" title="Title">
+ <b> Tuhin Chakrabarty </b> ,Tariq Alhindi , Smaranda Muresan :- <a href="http://aclweb.org/anthology/W18-5521.pdf" title="Title"> [pdf] </a> <a href="https://github.com/tuhinjubcse/FEVER-EMNLP" title="Title">
 [Code] </a>.</p>
 
 
@@ -86,7 +86,7 @@ In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>
  <p> 1) <b> Pay "Attention'' to your Context when Classifying Abusive Language</b> <br>
 In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>  
  <b> Tuhin Chakrabarty </b> ,Kilol Gupta, Smaranda Muresan .
- <a href="https://www.aclweb.org/anthology/W19-3508" title="Title">
+ <a href="https://www.aclweb.org/anthology/W19-3508.pdf" title="Title">
 [pdf] </a> <a href="https://github.com/tuhinjubcse/ALW3-ACL2019" title="Title">
 [Code] </a> </p>
 
