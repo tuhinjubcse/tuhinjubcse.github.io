@@ -44,7 +44,9 @@ Oral talks at EMNLP 2019 , Main Conference and FEVER worksop
   In Proceedings of EMNLP 2019 ,HongKong [TO APPEAR] ORAL PRESENTATION (Acceptance Rate Oral : 7.9% [230 out of 2877 submitted papers])<br>
  <b> Tuhin Chakrabarty </b>, Christopher Hidey, Smaranda Muresan, Kathy McKeown and Alyssa Hwang .
  <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/AMPERSAND_EMNLP2019.pdf" title="Title">
-[pdf] </a> </p>
+[pdf] </a>
+<a href="https://github.com/tuhinjubcse/AMPERSAND-EMNLP2019" title="Title">
+[Code and Data] </a></p>
 
 <p> 2) <b> Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks ,   </b> <br>
   In 20th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2019),Stockholm, Sweden
@@ -62,7 +64,7 @@ In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>
 <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/IMHO%20Fine-Tuning%20Improves%20Claim%20Detection%20.pdf" title="Title">
  [Slides] </a> 
   <a href="https://github.com/tuhinjubcse/IMHO-NAACL2019" title="Title">
-[Code] </a>
+[Code and Data] </a>
 </p>
 
 
