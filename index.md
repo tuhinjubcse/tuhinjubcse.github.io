@@ -3,7 +3,7 @@
 ![Image](images/pic.jpg)
 
 ## About me
-I am from Columbia Natural Language Processing group ,fortunate to be advised by my amazing advisors <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>  and  <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a> and mentor <a href="http://www.cs.columbia.edu/~chidey/" title="Title"> Christopher Hidey  </a> .I am highly interested in Argument Mining, Dialogue Understanding, Discourse and Pragmatics, Textual Inference ,Modeling Implicit Semantics & Transfer learning for NLP. Prior to joining Grad school I was an engineer at UBER and Amazon.
+I am from Columbia Natural Language Processing group ,fortunate to be advised by my amazing advisors <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>  and  <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a> and mentor <a href="http://www.cs.columbia.edu/~chidey/" title="Title"> Christopher Hidey  </a> .I am highly interested in Controllable Creative Text Generation, CommonSense Reasoning , Argument Mining, Dialogue Understanding, Discourse and Pragmatics, Textual Inference ,Modeling Implicit Semantics & Transfer learning for NLP. Prior to joining Grad school I was an engineer at UBER and Amazon.
 I am also acting as a research consultant at <a href="https://factmata.com" title="Title"> Factmata </a> where I will be mostly involved in using NLP techniques to battle misinformation
 
 ## Research Focus
