@@ -44,7 +44,7 @@ Oral talks at EMNLP 2019 , Main Conference and FEVER worksop
   In Proceedings of EMNLP 2019 ,HongKong [TO APPEAR] ORAL PRESENTATION (Acceptance Rate Oral : 7.9% [230 out of 2877 submitted papers])<br>
   Poster at Natural Language, Dialog, and Speech (NDS) Symposium , New York Academy of Sciences <br>
  <b> Tuhin Chakrabarty </b>, Christopher Hidey, Smaranda Muresan, Kathy McKeown and Alyssa Hwang .
- <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/AMPERSAND_EMNLP2019.pdf" title="Title">
+ <a href="https://www.aclweb.org/anthology/D19-1291.pdf" title="Title">
 [pdf] </a>
 <a href="https://github.com/tuhinjubcse/AMPERSAND-EMNLP2019" title="Title">
 [Code and Data] </a></p>
