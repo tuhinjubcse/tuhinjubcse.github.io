@@ -47,7 +47,9 @@ Oral talks at EMNLP 2019 , Main Conference and FEVER worksop
  <a href="https://www.aclweb.org/anthology/D19-1291.pdf" title="Title">
 [pdf] </a>
 <a href="https://github.com/tuhinjubcse/AMPERSAND-EMNLP2019" title="Title">
-[Code and Data] </a></p>
+[Code and Data] </a>
+<a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/AMPERSAND_%20Argument%20Mining%20for%20PERSuAsive%20oNline%20%20Discussions-SM.pdf" title="Title">
+  [Slides]</a></p>
 
 <p> 2) <b> Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks ,   </b> <br>
   In 20th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2019),Stockholm, Sweden
