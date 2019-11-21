@@ -3,7 +3,7 @@
 ![Image](images/pic.jpg)
 
 ## About me
-I am from Columbia Natural Language Processing group ,fortunate to be advised by my amazing advisors <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>  and  <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a> and mentor <a href="http://www.cs.columbia.edu/~chidey/" title="Title"> Christopher Hidey  </a> .I am highly interested in Controllable Creative Text Generation, CommonSense Reasoning , Argument Mining, Dialogue Understanding, Discourse and Pragmatics, Textual Inference ,Modeling Implicit Semantics & Transfer learning for NLP. Prior to joining Grad school I was an engineer at UBER and Amazon.
+I am from Columbia Natural Language Processing group ,fortunate to be advised by my amazing advisors <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>  and  <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a> and mentor <a href="http://www.cs.columbia.edu/~chidey/" title="Title"> Christopher Hidey  </a> .I am highly interested in Controllable Creative Text Generation, CommonSense Reasoning , Argument Mining, Dialogue Understanding, Discourse and Pragmatics, Textual Inference ,Modeling Implicit Semantics ,Machine Reading at Scale & Transfer learning for NLP. Prior to joining Grad school I was an engineer at UBER and Amazon.
 I am also acting as a research consultant at <a href="https://factmata.com" title="Title"> Factmata </a> where I will be mostly involved in using NLP techniques to battle misinformation
 
 ## Research Focus
@@ -15,7 +15,7 @@ Read <a href="http://arg.tech/~chris/acl2019tut/argmining-tut-v4.pdf" title="Tit
 
 Yes Pre-trained models have proved their efficacy in variety of tasks, but how can we improve over them? For tasks where the language is disparately different from pretraining corpus , can we benefit by fine tuning on task of interest? Read my <b>NAACL 2019</b> and <b>EMNLP 2019</b> paper which tries to answer these questions.
 
-I have found new interest in developing computational models for Fact Checking.With the plethora of information available on the internet we need models to verify these. Typically a fact checking pipeline involves robust Information Retrieval and smart Natural Language Inference.Also how can we build robust fact checking models without overfitting on a dataset. How can we create adversarial examples to break models.Read our papers on fact checking to know more about the challenges and how we solve them.
+I have found new interest in developing computational models for Machine Reading at Scale especially Fact Extraction and Verification.With the plethora of information available on the internet we need models to verify these. Typically a fact checking pipeline involves robust Information Retrieval and smart Natural Language Inference.Also how can we build robust fact checking models without overfitting on a dataset. How can we create adversarial examples to break models.Read our papers on fact checking to know more about the challenges and how we solve them.
 
 Currently , I am working on computational methods to incorporate machine commonsense or pragmatics (Speaker intent) in creative text generation (for example sarcasm)
 
