@@ -70,7 +70,7 @@ In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>
 </p>
 
 
-## FACT CHECKING
+## MACHINE READING
 
 <p> 1) <b> The Answer is Language Model Fine-tuning </b> <br>
  In Proceedings of the 13th International Workshop on Semantic Evaluation , NAACL-HLT , Minneapolis, USA, June 2019  <br> 
