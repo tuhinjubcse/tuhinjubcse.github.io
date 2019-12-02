@@ -36,6 +36,8 @@ I'll be spending some time at <a href="https://www.cs.jhu.edu/~npeng/group.html"
 
 Oral talks at EMNLP 2019 , Main Conference and FEVER worksop
 
+4 papers (2 first author) under submission at ACL 2020, Seattle.
+
 ## PUBLICATIONS
 
 ## DISCOURSE AND DIALOGUE
