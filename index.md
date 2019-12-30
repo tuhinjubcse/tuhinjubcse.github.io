@@ -3,7 +3,7 @@
 ![Image](images/pic.jpg)
 
 ## About me
-I am from Columbia Natural Language Processing group ,fortunate to be advised by my amazing advisors <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>  and  <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a> and mentor <a href="http://www.cs.columbia.edu/~chidey/" title="Title"> Christopher Hidey  </a> .I am highly interested in Controllable Creative Text Generation, CommonSense Reasoning , Argument Mining, Dialogue Understanding, Discourse and Pragmatics, Textual Inference ,Modeling Implicit Semantics ,Machine Reading at Scale & Transfer learning for NLP. Prior to joining Grad school I was an engineer at UBER and Amazon.
+I am from Columbia Natural Language Processing group ,fortunate to be advised by my amazing advisors <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>  and  <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a>.I am highly interested in Controllable Creative Text Generation, CommonSense Reasoning , Argument Mining, Dialogue Understanding, Discourse and Pragmatics, Textual Inference ,Modeling Implicit Semantics ,Machine Reading at Scale & Transfer learning for NLP. Prior to joining Grad school I was an engineer at UBER and Amazon.
 
 ## Research Focus
 
