@@ -32,7 +32,7 @@ I took <br />
 " title="Title"> Check Here </a></p>
 
 ## UPDATES
-I'll be spending some time at <a href="https://pluslabnlp.github.io/" title="Title"> PLUS Lab </a> at USC, ISI,starting August 2019 working on NLP related problems.I am fortunate to be advised by <a href="https://www.cs.jhu.edu/~npeng/" title="Title"> Professor Violet Peng </a>
+I'll be spending some time at <a href="https://pluslabnlp.github.io/" title="Title"> PLUS Lab </a> at USC, ISI,starting August 2019 working on NLP related problems.I am fortunate to be advised by <a href="https://scholar.google.com/citations?user=XxRXvX0AAAAJ&hl=en" title="Title"> Professor Violet Peng </a>
 
 Oral talks at EMNLP 2019 , Main Conference and FEVER worksop
 
