@@ -16,7 +16,7 @@ Yes Pre-trained models have proved their efficacy in variety of tasks, but how c
 
 I have found new interest in developing computational models for Machine Reading at Scale especially Fact Extraction and Verification.With the plethora of information available on the internet we need models to verify these. Typically a fact checking pipeline involves robust Information Retrieval and smart Natural Language Inference.Also how can we build robust fact checking models without overfitting on a dataset. How can we create adversarial examples to break models.Read our papers on fact checking to know more about the challenges and how we solve them.
 
-Currently , I am working on computational methods to incorporate machine commonsense or pragmatics (Speaker intent) in creative text generation (for example sarcasm)
+For Fall 2019 , I worked on computational methods to incorporate machine commonsense or pragmatics (Speaker intent) in creative text generation (for example sarcasm). In Spring 2020 I am mostly working on using pretrained language models for downstream controllable NLG problems.
 
 ## Some Trivia
 I took <br />
