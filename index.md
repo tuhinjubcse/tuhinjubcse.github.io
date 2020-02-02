@@ -33,6 +33,8 @@ I took <br />
 
 ## UPDATES
 Joining <a href="https://www.research.ibm.com/artificial-intelligence/" title="Title"> IBM AI Research </a> as a summer 2020 intern where I will be supervised by <a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-avi" title="Title"> Avirup Sil</a> working on Question Answering (field in Natural Language Processing)
+
+
 I'll be spending some time at <a href="https://pluslabnlp.github.io/" title="Title"> PLUS Lab </a> at USC, ISI,starting August 2019 working on NLP related problems.I am fortunate to be advised by <a href="https://scholar.google.com/citations?user=XxRXvX0AAAAJ&hl=en" title="Title"> Professor Violet Peng </a>
 
 Oral talks at EMNLP 2019 , Main Conference and FEVER worksop
