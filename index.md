@@ -9,11 +9,11 @@ I am from Columbia Natural Language Processing group ,fortunate to be advised by
 
 While I enjoy working on most topics in Natural Language Processing , few of my research interests and directions are:
 
-Controllable/Creative Language Generation : ACL 2O20( Under Submission)
-Argument Mining : NAACL 2019, EMNLP 2019
-Stylistics in Pretrained Language Model : NAACL 2019, EMNLP 2019
-Fact Extraction and Verification: ACL 2O20( Under Submission) , FEVER@EMNLP 2018 ,SEMEVAL@2019
-Computational Social Science : ACL 2O20( Under Submission), ALW@ACL 2019
+- Controllable/Creative Language Generation : ACL 2O20( Under Submission)
+- Argument Mining : NAACL 2019, EMNLP 2019
+- Stylistics in Pretrained Language Model : NAACL 2019, EMNLP 2019
+- Fact Extraction and Verification: ACL 2O20( Under Submission) , FEVER@EMNLP 2018 ,SEMEVAL@2019
+- Computational Social Science : ACL 2O20( Under Submission), ALW@ACL 2019
 
 
 
