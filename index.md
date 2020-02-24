@@ -7,16 +7,15 @@ I am from Columbia Natural Language Processing group ,fortunate to be advised by
 
 ## Research Focus
 
-My current research involves incorporating commonsense for natural language understanding and NLG. In the past I have focussed on building better models for literal and figurative language focusing particularly on stylistics/ rhetoric, and semantics.(Ex: argumentation).Argument Mining is a moderately challenging task and argument annotation for supervised learning is often expensive and unsuitable for crowdsourcing.My research tries to alleviate this problem by  collecting weakly labeled data similar to the task of interest from Social Media. 
-Read <a href="http://arg.tech/~chris/acl2019tut/argmining-tut-v4.pdf" title="Title"> ArgMining-tutorial@ACL2019 </a> where they mention why Argument mining ( and more so Arg Mining in dialogue) is a very hard task.
+While I enjoy working on most topics in Natural Language Processing , few of my research interests and directions are:
+
+Controllable/Creative Language Generation : ACL 2O20( Under Submission)
+Argument Mining : NAACL 2019, EMNLP 2019
+Stylistics in Pretrained Language Model : NAACL 2019, EMNLP 2019
+Fact Extraction and Verification: ACL 2O20( Under Submission) , FEVER@EMNLP 2018 ,SEMEVAL@2019
+Computational Social Science : ACL 2O20( Under Submission), ALW@ACL 2019
 
 
-
-Yes Pre-trained models have proved their efficacy in variety of tasks, but how can we improve over them? For tasks where the language is disparately different from pretraining corpus , can we benefit by fine tuning on task of interest? Read my <b>NAACL 2019</b> and <b>EMNLP 2019</b> paper which tries to answer these questions.
-
-I have found new interest in developing computational models for Machine Reading at Scale especially Fact Extraction and Verification.With the plethora of information available on the internet we need models to verify these. Typically a fact checking pipeline involves robust Information Retrieval and smart Natural Language Inference.Also how can we build robust fact checking models without overfitting on a dataset. How can we create adversarial examples to break models.Read our papers on fact checking to know more about the challenges and how we solve them.
-
-For Fall 2019 , I worked on computational methods to incorporate machine commonsense or pragmatics (Speaker intent) in creative text generation (for example sarcasm). In Spring 2020 I am mostly working on using pretrained language models for downstream controllable NLG problems.
 
 ## Some Trivia
 I took <br />
