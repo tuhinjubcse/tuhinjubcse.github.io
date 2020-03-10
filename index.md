@@ -43,7 +43,7 @@ Oral talks at EMNLP 2019 , Main Conference and FEVER worksop
 ## PUBLICATIONS
 
 ## DISCOURSE AND DIALOGUE
-<p> 1) ## AMPERSAND: Argument Mining for PERSuAsive oNline Discussions  <br>
+<p> 1) <b> AMPERSAND: Argument Mining for PERSuAsive oNline Discussions </b> <br>
   In Proceedings of EMNLP 2019 ,HongKong ORAL PRESENTATION (Acceptance Rate Oral : 7.9% [230 out of 2877 submitted papers])<br>
   Poster at Natural Language, Dialog, and Speech (NDS) Symposium , New York Academy of Sciences <br>
  <font color="green"><b> Tuhin Chakrabarty </b>, Christopher Hidey, Smaranda Muresan, Kathy McKeown and Alyssa Hwang.</font>
