@@ -3,11 +3,11 @@
 ![Image](images/46482006_10204831949436328_1583830101626191872_o.jpg)
 
 ## About me
-I am a student at Columbia University , Department of Computer Science. Within the department I am a part of the Natural Language Processing group ,where I am advised by <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a> . I also work with <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>  .I am highly interested in Controllable Creative Text Generation, CommonSense Reasoning , Argument Mining, Dialogue Understanding, Discourse and Pragmatics, Textual Inference ,Modeling Implicit Semantics ,Machine Reading at Scale & Transfer learning for NLP. Prior to joining Grad school I was an engineer at UBER and Amazon.
+I am a student at Columbia University , Department of Computer Science. Within the department I am a part of the Natural Language Processing group ,where I am advised by <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a>. I also work with <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>. I am highly interested in Controllable Creative Text Generation, CommonSense Reasoning, Argument Mining, Dialogue Understanding, Discourse and Pragmatics, Textual Inference, Modeling Implicit Semantics, Machine Reading at Scale & Transfer learning for NLP. Prior to joining Grad school I was an engineer at UBER and Amazon.
 
 ## Research Focus
 
-While I enjoy working on most topics in Natural Language Processing , few of my research interests and directions are:
+While I enjoy working on most topics in Natural Language Processing, few of my research interests and directions are:
 
 - Controllable/Creative Language Generation : ACL 2020( Under Submission)
 - Argument Mining : NAACL 2019, EMNLP 2019
@@ -36,7 +36,7 @@ Joining <a href="https://www.research.ibm.com/artificial-intelligence/" title="T
 
 I'll be spending some time at <a href="https://pluslabnlp.github.io/" title="Title"> PLUS Lab </a> at USC, ISI,starting August 2019 working on NLP related problems.I am fortunate to be advised by <a href="https://scholar.google.com/citations?user=XxRXvX0AAAAJ&hl=en" title="Title"> Professor Violet Peng </a>
 
-Oral talks at EMNLP 2019 , Main Conference and FEVER worksop
+Oral talks at EMNLP 2019, Main Conference and FEVER worksop
 
 3 long papers (2 first author) under submission at ACL 2020, Seattle.
 
