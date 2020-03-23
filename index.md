@@ -3,7 +3,7 @@
 ![Image](images/pic.png)
 
 ## About me
-I am a student at Columbia University , Department of Computer Science. Within the department I am a part of the Natural Language Processing group ,where I am advised by <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a>. I also work with <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>. I am highly interested in Controllable Creative Text Generation, CommonSense Reasoning, Argument Mining, Dialogue Understanding, Discourse and Pragmatics, Textual Inference, Modeling Implicit Semantics, Machine Reading at Scale & Transfer learning for NLP. Prior to joining Grad school I was an engineer at UBER and Amazon.
+I am a doctoral student at Columbia University , Department of Computer Science. Within the department I am a part of the Natural Language Processing group ,where I am advised by <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a>. I also work with <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>. I am highly interested in Controllable Creative Text Generation, CommonSense Reasoning, Argument Mining, Dialogue Understanding, Discourse and Pragmatics, Textual Inference, Modeling Implicit Semantics, Machine Reading at Scale & Transfer learning for NLP. Prior to joining Grad school I was an engineer at UBER and Amazon.
 
 ## Research Focus
 
