@@ -77,18 +77,6 @@ In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>
 [pdf] </a> <a href="https://github.com/tuhinjubcse/ALW3-ACL2019" title="Title">
 [Code] </a> </p>
 
-## Some Trivia
-I took <br />
-- COMS 4705(Natural Language Processing) with Professor Michael Collins in Fall 2017 and finished with an A <br />
-- COMS E6998(NLP in Context : Computational Models of Social Meaning) with Smaranda Muresan in Spring 2018 and topped the class with an A+ (The course resulted in a ACL Abusive Langugage workshop long paper) <br />
-- I spent my summers at Amazon Alexa, Natural Language Understanding Group in Boston  as an Applied  Scientist Intern
-
-## CONFERENCE HIGHLIGHTS 
-
-<p>ACL 2019 : <a href="https://www.cs.columbia.edu/2019/cs-papers-accepted-to-acl-2019/" title="Title"> Check Here </a></p>
-<p>EMNLP 2018 : <a href="https://www.cs.columbia.edu/2019/emnlp-2018/" title="Title"> Check Here </a></p>
-<p>NAACL 2019 : <a href="https://www.cs.columbia.edu/2019/research-by-spoken-language-and-nlp-groups-at-naacl-2019/
-" title="Title"> Check Here </a></p>
 
 ## UPDATES
 Joining <a href="https://www.research.ibm.com/artificial-intelligence/" title="Title"> IBM AI Research </a> as a summer 2020 intern where I will be supervised by <a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-avi" title="Title"> Avirup Sil</a> working on Question Answering (field in Natural Language Processing)
