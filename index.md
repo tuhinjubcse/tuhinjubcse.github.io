@@ -9,11 +9,11 @@ I am a doctoral student at Columbia University , Department of Computer Science.
 
 While I enjoy working on most topics in Natural Language Processing, few of my research interests and directions are:
 
-- Controllable/Creative Language Generation : ACL 2020( Under Submission)
+- Controllable/Creative Language Generation : ACL 2020, EMNLP 2020( Under Submission)
 - Argument Mining : NAACL 2019, EMNLP 2019
 - Stylistics in Pretrained Language Model : NAACL 2019, EMNLP 2019
-- Fact Extraction and Verification: ACL 2020( Under Submission) , FEVER@EMNLP 2018 ,SEMEVAL@2019
-- Computational Social Science : ACL 2020( Under Submission), ALW@ACL 2019
+- Fact Extraction and Verification: ACL 2020 , FEVER@EMNLP 2018 ,SEMEVAL@2019
+- Computational Social Science : EMNLP 2020( Under Submission), ALW@ACL 2019
 
 
 
@@ -55,7 +55,13 @@ In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>
 
 ## MACHINE READING
 
-<p> 1) <b> The Answer is Language Model Fine-tuning </b> <br>
+<p> 1) <b> DeSePtion: Dual Sequence Prediction and Adversarial Examples for Improved Fact-Checking </b> <br>
+ In Proceedings of the ACL , July 2020  <br> 
+  <font color="green">Christopher Hidey, <b> Tuhin Chakrabarty </b> Tariq Alhindi, Siddharth Varia, Kriste Krstovski, Mona Diab and Smaranda Muresan.</font>  
+<a href="https://tuhinjubcse.github.io/" title="Title">
+[pdf] </a> </p>
+
+<p> 2) <b> The Answer is Language Model Fine-tuning </b> <br>
  In Proceedings of the 13th International Workshop on Semantic Evaluation , NAACL-HLT , Minneapolis, USA, June 2019  <br> 
   <font color="green"><b> Tuhin Chakrabarty </b> ,Smaranda Muresan.</font>   4th and 2nd place in SUBTASK A & B respectively 
 <a href="https://www.aclweb.org/anthology/S19-2200.pdf" title="Title">
