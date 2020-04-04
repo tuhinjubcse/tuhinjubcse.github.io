@@ -19,6 +19,15 @@ While I enjoy working on most topics in Natural Language Processing, few of my r
 
 ## PUBLICATIONS
 
+## CREATIVE NATURAL LANGUAGE GENERATION
+
+<p> 1) <b> R^3: Reverse, Retrieve, and Rank for Sarcasm Generation with Commonsense Knowledge </b> <br>
+ In Proceedings of the ACL , July 2020  <br> 
+  <font color="green"> <b> Tuhin Chakrabarty </b>, Debanjan Ghosh, Smaranda Muresan and Nanyun Peng </font>  
+<a href="https://tuhinjubcse.github.io/" title="Title">
+[pdf] </a> </p>
+
+
 ## DISCOURSE AND DIALOGUE
 <p> 1) <b> AMPERSAND: Argument Mining for PERSuAsive oNline Discussions </b> <br>
   In Proceedings of EMNLP 2019 ,HongKong ORAL PRESENTATION (Acceptance Rate Oral : 7.9% [230 out of 2877 submitted papers])<br>
@@ -57,7 +66,7 @@ In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>
 
 <p> 1) <b> DeSePtion: Dual Sequence Prediction and Adversarial Examples for Improved Fact-Checking </b> <br>
  In Proceedings of the ACL , July 2020  <br> 
-  <font color="green">Christopher Hidey, <b> Tuhin Chakrabarty </b> Tariq Alhindi, Siddharth Varia, Kriste Krstovski, Mona Diab and Smaranda Muresan.</font>  
+  <font color="green">Christopher Hidey, <b> Tuhin Chakrabarty </b>, Tariq Alhindi, Siddharth Varia, Kriste Krstovski, Mona Diab and Smaranda Muresan.</font>  
 <a href="https://tuhinjubcse.github.io/" title="Title">
 [pdf] </a> </p>
 
