@@ -19,7 +19,7 @@ While I enjoy working on most topics in Natural Language Processing, few of my r
 
 ## PUBLICATIONS
 
-## CREATIVE NATURAL LANGUAGE GENERATION
+## CREATIVE TEXT GENERATION
 
 <p> 1) <b> R^3: Reverse, Retrieve, and Rank for Sarcasm Generation with Commonsense Knowledge </b> <br>
  In Proceedings of the ACL , July 2020  <br> 
