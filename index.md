@@ -33,7 +33,7 @@ While I enjoy working on most topics in Natural Language Processing, few of my r
 <a href="https://tuhinjubcse.github.io/" title="Title">
 [pdf] </a> </p>
 
-<p> 3) <b> AMPERSAND: Argument Mining for PERSuAsive oNline Discussions </b> <br>
+<p> 3) <b> AMPERSAND: Argument Mining for PERSuAsive oNline Discussions </b> [Oral]<br>
   In Proceedings of EMNLP 2019 ,HongKong <br>
  <font color="green"><b> Tuhin Chakrabarty </b>, Christopher Hidey, Smaranda Muresan, Kathy McKeown and Alyssa Hwang.</font>
  <a href="https://www.aclweb.org/anthology/D19-1291.pdf" title="Title">
@@ -45,7 +45,7 @@ While I enjoy working on most topics in Natural Language Processing, few of my r
 <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/NYAS_AMPERSAND.pdf" title="Title">
   [Poster]</a></p>
 
-<p> 3) <b> IMHO Fine Tuning Improves Claim Detection</b> <br>
+<p> 3) <b> IMHO Fine Tuning Improves Claim Detection</b> [Oral] <br>
 In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>  
   <font color="green"><b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckeown . <br></font>  
 <a href="https://www.aclweb.org/anthology/N19-1054.pdf" title="Title">
@@ -60,7 +60,7 @@ In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>
 
 ## Workshops
 
-<p> 1) <b> Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks ,   </b> <br>
+<p> 1) <b> Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks  </b> [Oral] <br>
   In 20th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2019),Stockholm, Sweden
   <font color="green">Siddharth Varia  ,Christopher Hidey, <b>Tuhin Chakrabarty </b></font>.
  <a href="https://www.aclweb.org/anthology/W19-5951.pdf" title="Title">
