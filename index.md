@@ -47,7 +47,11 @@ While I enjoy working on most topics in Natural Language Processing, few of my r
   <font color="green">Siddharth Varia  ,Christopher Hidey, <b>Tuhin Chakrabarty </b></font>.
   <br> ORAL PRESENTATION (Acceptance Rate : 35%)
  <a href="https://www.aclweb.org/anthology/W19-5951.pdf" title="Title">
-[pdf] </a> </p>
+[pdf] </a>
+<a href="http://www.cs.columbia.edu/~chidey/files/sigdial2019discourse.pdf" title="Title">
+  [Code]</a>
+<a href="https://github.com/siddharthvaria/WordPair-CNN" title="Title">
+  [Slides]</a></p>
 
 <p> 3) <b> IMHO Fine Tuning Improves Claim Detection</b> <br>
 In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>  
