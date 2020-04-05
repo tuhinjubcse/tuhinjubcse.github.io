@@ -10,8 +10,9 @@ I am a doctoral student at Columbia University , Department of Computer Science.
 While I enjoy working on most topics in Natural Language Processing, few of my research interests and directions are:
 
 - Controllable/Creative Language Generation : ACL 2020, EMNLP 2020( Under Submission)
-- Argument Mining : NAACL 2019, EMNLP 2019
-- Stylistics in Pretrained Language Model : NAACL 2019, EMNLP 2019
+- Argument Mining & Stylistics in Pretrained Language Model : <a href="https://www.aclweb.org/anthology/N19-1054.pdf" title="Title">
+[pdf] </a>, <a href="https://www.aclweb.org/anthology/D19-1291.pdf" title="Title">
+NAACL 2019 </a>
 - Fact Extraction and Verification: ACL 2020 , FEVER@EMNLP 2018 ,SEMEVAL@2019
 - Computational Social Science : EMNLP 2020( Under Submission), ALW@ACL 2019
 
