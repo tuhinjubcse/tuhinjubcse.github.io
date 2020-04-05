@@ -19,7 +19,7 @@ While I enjoy working on most topics in Natural Language Processing, few of my r
 
 ## PUBLICATIONS
 
-## CREATIVE TEXT GENERATION
+## Archival Conference Papers
 
 <p> 1) <b> R^3: Reverse, Retrieve, and Rank for Sarcasm Generation with Commonsense Knowledge </b> <br>
  In Proceedings of the ACL , July 2020  <br> 
@@ -27,9 +27,13 @@ While I enjoy working on most topics in Natural Language Processing, few of my r
 <a href="https://tuhinjubcse.github.io/" title="Title">
 [pdf] </a> </p>
 
+<p> 2) <b> DeSePtion: Dual Sequence Prediction and Adversarial Examples for Improved Fact-Checking </b> <br>
+ In Proceedings of the ACL , July 2020  <br> 
+  <font color="green">Christopher Hidey, <b> Tuhin Chakrabarty </b>, Tariq Alhindi, Siddharth Varia, Kriste Krstovski, Mona Diab and Smaranda Muresan.</font>  
+<a href="https://tuhinjubcse.github.io/" title="Title">
+[pdf] </a> </p>
 
-## DISCOURSE AND DIALOGUE
-<p> 1) <b> AMPERSAND: Argument Mining for PERSuAsive oNline Discussions </b> <br>
+<p> 3) <b> AMPERSAND: Argument Mining for PERSuAsive oNline Discussions </b> <br>
   In Proceedings of EMNLP 2019 ,HongKong ORAL PRESENTATION (Acceptance Rate Oral : 7.9% [230 out of 2877 submitted papers])<br>
   Poster at Natural Language, Dialog, and Speech (NDS) Symposium , New York Academy of Sciences <br>
  <font color="green"><b> Tuhin Chakrabarty </b>, Christopher Hidey, Smaranda Muresan, Kathy McKeown and Alyssa Hwang.</font>
@@ -41,17 +45,6 @@ While I enjoy working on most topics in Natural Language Processing, few of my r
   [Slides]</a>
 <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/NYAS_AMPERSAND.pdf" title="Title">
   [Poster]</a></p>
-
-<p> 2) <b> Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks ,   </b> <br>
-  In 20th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2019),Stockholm, Sweden
-  <font color="green">Siddharth Varia  ,Christopher Hidey, <b>Tuhin Chakrabarty </b></font>.
-  <br> ORAL PRESENTATION (Acceptance Rate : 35%)
- <a href="https://www.aclweb.org/anthology/W19-5951.pdf" title="Title">
-[pdf] </a>
-<a href="https://github.com/siddharthvaria/WordPair-CNN" title="Title">
-  [Code]</a>
-<a href="http://www.cs.columbia.edu/~chidey/files/sigdial2019discourse.pdf" title="Title">
-  [Slides]</a></p>
 
 <p> 3) <b> IMHO Fine Tuning Improves Claim Detection</b> <br>
 In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>  
@@ -66,13 +59,27 @@ In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>
 </p>
 
 
-## MACHINE READING
 
-<p> 1) <b> DeSePtion: Dual Sequence Prediction and Adversarial Examples for Improved Fact-Checking </b> <br>
- In Proceedings of the ACL , July 2020  <br> 
-  <font color="green">Christopher Hidey, <b> Tuhin Chakrabarty </b>, Tariq Alhindi, Siddharth Varia, Kriste Krstovski, Mona Diab and Smaranda Muresan.</font>  
-<a href="https://tuhinjubcse.github.io/" title="Title">
-[pdf] </a> </p>
+## Workshops
+
+<p> 1) <b> Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks ,   </b> <br>
+  In 20th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2019),Stockholm, Sweden
+  <font color="green">Siddharth Varia  ,Christopher Hidey, <b>Tuhin Chakrabarty </b></font>.
+  <br> ORAL PRESENTATION (Acceptance Rate : 35%)
+ <a href="https://www.aclweb.org/anthology/W19-5951.pdf" title="Title">
+[pdf] </a>
+<a href="https://github.com/siddharthvaria/WordPair-CNN" title="Title">
+  [Code]</a>
+<a href="http://www.cs.columbia.edu/~chidey/files/sigdial2019discourse.pdf" title="Title">
+  [Slides]</a></p>
+
+
+ <p> 4) <b> Pay "Attention'' to your Context when Classifying Abusive Language</b> <br>
+In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>  
+ <font color="green"> <b> Tuhin Chakrabarty </b> ,Kilol Gupta, Smaranda Muresan.</font>
+ <a href="https://www.aclweb.org/anthology/W19-3508.pdf" title="Title">
+[pdf] </a> <a href="https://github.com/tuhinjubcse/ALW3-ACL2019" title="Title">
+[Code] </a> </p>
 
 <p> 2) <b> The Answer is Language Model Fine-tuning </b> <br>
  In Proceedings of the 13th International Workshop on Semantic Evaluation , NAACL-HLT , Minneapolis, USA, June 2019  <br> 
@@ -80,21 +87,10 @@ In Proceedings of NAACL-HLT 2019 ,Minneapolis, USA, June 2019. <br>
 <a href="https://www.aclweb.org/anthology/S19-2200.pdf" title="Title">
 [pdf] </a> </p>
 
-<p> 2) <b>Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification </b> <br>
+<p> 3) <b>Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification </b> <br>
  In Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP ,Brussels ,2018  <br> 
   <font color="green"><b> Tuhin Chakrabarty </b> ,Tariq Alhindi , Smaranda Muresan </font> :- <a href="http://aclweb.org/anthology/W18-5521.pdf" title="Title"> [pdf] </a> <a href="https://github.com/tuhinjubcse/FEVER-EMNLP" title="Title">
 [Code] </a>.</p>
-
-
-## OTHER WORK 
-
-
- <p> 1) <b> Pay "Attention'' to your Context when Classifying Abusive Language</b> <br>
-In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>  
- <font color="green"> <b> Tuhin Chakrabarty </b> ,Kilol Gupta, Smaranda Muresan.</font>
- <a href="https://www.aclweb.org/anthology/W19-3508.pdf" title="Title">
-[pdf] </a> <a href="https://github.com/tuhinjubcse/ALW3-ACL2019" title="Title">
-[Code] </a> </p>
 
 
 ## UPDATES
