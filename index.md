@@ -48,9 +48,9 @@ While I enjoy working on most topics in Natural Language Processing, few of my r
   <br> ORAL PRESENTATION (Acceptance Rate : 35%)
  <a href="https://www.aclweb.org/anthology/W19-5951.pdf" title="Title">
 [pdf] </a>
-<a href="http://www.cs.columbia.edu/~chidey/files/sigdial2019discourse.pdf" title="Title">
-  [Code]</a>
 <a href="https://github.com/siddharthvaria/WordPair-CNN" title="Title">
+  [Code]</a>
+<a href="http://www.cs.columbia.edu/~chidey/files/sigdial2019discourse.pdf" title="Title">
   [Slides]</a></p>
 
 <p> 3) <b> IMHO Fine Tuning Improves Claim Detection</b> <br>
