@@ -11,7 +11,7 @@ While I enjoy working on most topics in Natural Language Processing, few of my r
 
 - Controllable/Creative Language Generation : ACL 2020, EMNLP 2020( Under Submission)
 - Argument Mining & Stylistics in Pretrained Language Model : <a href="https://www.aclweb.org/anthology/N19-1054.pdf" title="Title">
-[pdf] </a>, <a href="https://www.aclweb.org/anthology/D19-1291.pdf" title="Title">
+EMNLP 2019 </a>, <a href="https://www.aclweb.org/anthology/D19-1291.pdf" title="Title">
 NAACL 2019 </a>
 - Fact Extraction and Verification: ACL 2020 , FEVER@EMNLP 2018 ,SEMEVAL@2019
 - Computational Social Science : EMNLP 2020( Under Submission), ALW@ACL 2019
