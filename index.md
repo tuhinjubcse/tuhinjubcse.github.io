@@ -36,7 +36,7 @@ NAACL 2019 </a>
 
 <p> 3) <b> AMPERSAND: Argument Mining for PERSuAsive oNline Discussions </b> [Oral]<br>
   In Proceedings of <a href="https://www.emnlp-ijcnlp2019.org/" title="Title"> EMNLP 2019</a> <br>
- <font color="green"><b> Tuhin Chakrabarty </b>, Christopher Hidey, Smaranda Muresan, Kathy McKeown and Alyssa Hwang.</font>
+ <font color="green"><b> Tuhin Chakrabarty </b>, Christopher Hidey, Smaranda Muresan, Kathy McKeown and Alyssa Hwang.</font><br> 
  <a href="https://www.aclweb.org/anthology/D19-1291.pdf" title="Title">
 [pdf] </a>
 <a href="https://github.com/tuhinjubcse/AMPERSAND-EMNLP2019" title="Title">
@@ -62,8 +62,8 @@ In Proceedings of <a href="https://naacl2019.org/" title="Title"> NAACL 2019</a>
 ## Workshops
 
 <p> 1) <b> Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks  </b> [Oral] <br>
-  In 20th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2019),Stockholm, Sweden
-  <font color="green">Siddharth Varia  ,Christopher Hidey, <b>Tuhin Chakrabarty </b></font>.
+  In 20th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2019),Stockholm, Sweden <br> 
+  <font color="green">Siddharth Varia  ,Christopher Hidey, <b>Tuhin Chakrabarty </b></font>.<br> 
  <a href="https://www.aclweb.org/anthology/W19-5951.pdf" title="Title">
 [pdf] </a>
 <a href="https://github.com/siddharthvaria/WordPair-CNN" title="Title">
@@ -74,20 +74,20 @@ In Proceedings of <a href="https://naacl2019.org/" title="Title"> NAACL 2019</a>
 
  <p> 4) <b> Pay "Attention'' to your Context when Classifying Abusive Language</b> <br>
 In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>  
- <font color="green"> <b> Tuhin Chakrabarty </b> ,Kilol Gupta, Smaranda Muresan.</font>
+ <font color="green"> <b> Tuhin Chakrabarty </b> ,Kilol Gupta, Smaranda Muresan.</font> <br> 
  <a href="https://www.aclweb.org/anthology/W19-3508.pdf" title="Title">
 [pdf] </a> <a href="https://github.com/tuhinjubcse/ALW3-ACL2019" title="Title">
 [Code] </a> </p>
 
 <p> 2) <b> The Answer is Language Model Fine-tuning </b> <br>
  In Proceedings of the 13th International Workshop on Semantic Evaluation , NAACL-HLT , Minneapolis, USA, June 2019  <br> 
-  <font color="green"><b> Tuhin Chakrabarty </b> ,Smaranda Muresan.</font>   4th and 2nd place in SUBTASK A & B respectively 
+  <font color="green"><b> Tuhin Chakrabarty </b> ,Smaranda Muresan.</font>   4th and 2nd place in SUBTASK A & B respectively <br> 
 <a href="https://www.aclweb.org/anthology/S19-2200.pdf" title="Title">
 [pdf] </a> </p>
 
 <p> 3) <b>Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification </b> <br>
  In Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP ,Brussels ,2018  <br> 
-  <font color="green"><b> Tuhin Chakrabarty </b> ,Tariq Alhindi , Smaranda Muresan </font> :- <a href="http://aclweb.org/anthology/W18-5521.pdf" title="Title"> [pdf] </a> <a href="https://github.com/tuhinjubcse/FEVER-EMNLP" title="Title">
+  <font color="green"><b> Tuhin Chakrabarty </b> ,Tariq Alhindi , Smaranda Muresan </font> :- <br> <a href="http://aclweb.org/anthology/W18-5521.pdf" title="Title"> [pdf] </a> <a href="https://github.com/tuhinjubcse/FEVER-EMNLP" title="Title"> 
 [Code] </a>.</p>
 
 
