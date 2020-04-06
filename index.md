@@ -51,10 +51,10 @@ In Proceedings of <a href="https://naacl2019.org/" title="Title"> NAACL 2019</a>
   <font color="green"><b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckeown . <br></font>  
 <a href="https://www.aclweb.org/anthology/N19-1054.pdf" title="Title">
 [pdf] </a>
-<a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/IMHO%20Fine-Tuning%20Improves%20Claim%20Detection%20.pdf" title="Title">
- [Slides] </a> 
   <a href="https://github.com/tuhinjubcse/IMHO-NAACL2019" title="Title">
 [Code and Data] </a>
+<a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/IMHO%20Fine-Tuning%20Improves%20Claim%20Detection%20.pdf" title="Title">
+ [Slides] </a> 
 </p>
 
 
