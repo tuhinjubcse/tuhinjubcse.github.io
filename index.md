@@ -23,13 +23,13 @@ NAACL 2019 </a>
 ## Archival Conference Papers
 
 <p> 1) <b> R^3: Reverse, Retrieve, and Rank for Sarcasm Generation with Commonsense Knowledge </b> <br>
- In Proceedings of the ACL , July 2020  <br> 
+ In Proceedings of <a href="https://acl2020.org/" title="Title"> ACL 2020</a>  <br> 
   <font color="green"> <b> Tuhin Chakrabarty </b>, Debanjan Ghosh, Smaranda Muresan and Nanyun Peng </font>  
 <a href="https://tuhinjubcse.github.io/" title="Title">
 [pdf] </a> </p>
 
 <p> 2) <b> DeSePtion: Dual Sequence Prediction and Adversarial Examples for Improved Fact-Checking </b> <br>
- In Proceedings of the ACL , July 2020  <br> 
+ In Proceedings of the <a href="https://acl2020.org/" title="Title"> ACL 2020</a>  <br> 
   <font color="green">Christopher Hidey, <b> Tuhin Chakrabarty </b>, Tariq Alhindi, Siddharth Varia, Kriste Krstovski, Mona Diab and Smaranda Muresan.</font>  
 <a href="https://tuhinjubcse.github.io/" title="Title">
 [pdf] </a> </p>
