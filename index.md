@@ -23,19 +23,19 @@ NAACL 2019 </a>
 ## Archival Conference Papers
 
 <p> 1) <b> R^3: Reverse, Retrieve, and Rank for Sarcasm Generation with Commonsense Knowledge </b> <br>
- In Proceedings of <a href="https://acl2020.org/" title="Title"> ACL 2020</a>  <br> 
+ In Proceedings of <a href="https://acl2020.org/" title="Title"> ACL 2020</a> Seattle, WA. <br> 
   <font color="green"> <b> Tuhin Chakrabarty </b>, Debanjan Ghosh, Smaranda Muresan and Nanyun Peng </font>  
 <a href="https://tuhinjubcse.github.io/" title="Title">
 [pdf] </a> </p>
 
 <p> 2) <b> DeSePtion: Dual Sequence Prediction and Adversarial Examples for Improved Fact-Checking </b> <br>
- In Proceedings of the <a href="https://acl2020.org/" title="Title"> ACL 2020</a>  <br> 
+ In Proceedings of the <a href="https://acl2020.org/" title="Title"> ACL 2020</a> Seattle, WA. <br> 
   <font color="green">Christopher Hidey, <b> Tuhin Chakrabarty </b>, Tariq Alhindi, Siddharth Varia, Kriste Krstovski, Mona Diab and Smaranda Muresan.</font>  
 <a href="https://tuhinjubcse.github.io/" title="Title">
 [pdf] </a> </p>
 
 <p> 3) <b> AMPERSAND: Argument Mining for PERSuAsive oNline Discussions </b> [Oral]<br>
-  In Proceedings of <a href="https://www.emnlp-ijcnlp2019.org/" title="Title"> EMNLP 2019</a> <br>
+  In Proceedings of <a href="https://www.emnlp-ijcnlp2019.org/" title="Title"> EMNLP 2019</a> Hong Kong <br>
  <font color="green"><b> Tuhin Chakrabarty </b>, Christopher Hidey, Smaranda Muresan, Kathy McKeown and Alyssa Hwang.</font><br> 
  <a href="https://www.aclweb.org/anthology/D19-1291.pdf" title="Title">
 [pdf] </a>
@@ -47,7 +47,7 @@ NAACL 2019 </a>
   [Poster]</a></p>
 
 <p> 3) <b> IMHO Fine Tuning Improves Claim Detection</b> [Oral] <br>
-In Proceedings of <a href="https://naacl2019.org/" title="Title"> NAACL 2019</a>. <br>  
+In Proceedings of <a href="https://naacl2019.org/" title="Title"> NAACL 2019</a> Minneapolis, MN <br>  
   <font color="green"><b> Tuhin Chakrabarty </b> ,Christopher Hidey , Kathy Mckeown . <br></font>  
 <a href="https://www.aclweb.org/anthology/N19-1054.pdf" title="Title">
 [pdf] </a>
