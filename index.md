@@ -32,7 +32,9 @@ NAACL 2019 </a>
  In Proceedings of the <a href="https://acl2020.org/" title="Title"> <u>ACL 2020</u></a> ,Seattle, WA. <br> 
   <font color="green">Christopher Hidey, <b> Tuhin Chakrabarty </b>, Tariq Alhindi, Siddharth Varia, Kriste Krstovski, Mona Diab and Smaranda Muresan.</font>  
 <a href="https://tuhinjubcse.github.io/" title="Title">
-[pdf] </a> </p>
+[pdf] </a>
+ <a href="https://github.com/tuhinjubcse/fever2-columbia" title="Title">
+[Code and Data] </a></p>
 
 <p> 3) <b> AMPERSAND: Argument Mining for PERSuAsive oNline Discussions </b> [Oral]<br>
   In Proceedings of <a href="https://www.emnlp-ijcnlp2019.org/" title="Title"> <u>EMNLP 2019</u></a> ,Hong Kong <br>
