@@ -26,7 +26,9 @@ EMNLP 2019 </a>
  In Proceedings of <a href="https://acl2020.org/" title="Title"> <u>ACL 2020</u></a> ,Seattle, WA. <br> 
   <font color="green"> <b> Tuhin Chakrabarty </b> </font>, <font color="black">Debanjan Ghosh, Smaranda Muresan and Nanyun Peng </font>  
 <a href="https://tuhinjubcse.github.io/" title="Title">
-[pdf] </a> </p>
+[pdf] </a> 
+<a href="https://github.com/tuhinjubcse/SarcasmGeneration-ACL2020" title="Title">
+[Code and Data] </a></p>
 
 <p> 2) <b> DeSePtion: Dual Sequence Prediction and Adversarial Examples for Improved Fact-Checking </b> <br>
  In Proceedings of the <a href="https://acl2020.org/" title="Title"> <u>ACL 2020</u></a> ,Seattle, WA. <br> 
