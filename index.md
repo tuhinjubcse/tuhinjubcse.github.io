@@ -24,7 +24,7 @@ EMNLP 2019 </a>
 
 <p> 1) <b> R^3: Reverse, Retrieve, and Rank for Sarcasm Generation with Commonsense Knowledge </b> <br>
  In Proceedings of <a href="https://acl2020.org/" title="Title"> <u>ACL 2020</u></a> ,Seattle, WA. <br> 
-  <font color="green"> <b> Tuhin Chakrabarty </b> </font>, <font color="black">Debanjan Ghosh, Smaranda Muresan and Nanyun Peng </font>  
+  <font color="green"> <b> Tuhin Chakrabarty </b> </font>, <font color="black">Debanjan Ghosh, Smaranda Muresan and Nanyun Peng </font><br> 
 <a href="https://tuhinjubcse.github.io/" title="Title">
 [pdf] </a> 
 <a href="https://github.com/tuhinjubcse/SarcasmGeneration-ACL2020" title="Title">
@@ -32,7 +32,7 @@ EMNLP 2019 </a>
 
 <p> 2) <b> DeSePtion: Dual Sequence Prediction and Adversarial Examples for Improved Fact-Checking </b> <br>
  In Proceedings of the <a href="https://acl2020.org/" title="Title"> <u>ACL 2020</u></a> ,Seattle, WA. <br> 
- <font color="black">Christopher Hidey,</font> <font color="green"> <b> Tuhin Chakrabarty </b>,</font> <font color="black">Tariq Alhindi, Siddharth Varia, Kriste Krstovski, Mona Diab and Smaranda Muresan.</font>  
+ <font color="black">Christopher Hidey,</font> <font color="green"> <b> Tuhin Chakrabarty </b>,</font> <font color="black">Tariq Alhindi, Siddharth Varia, Kriste Krstovski, Mona Diab and Smaranda Muresan.</font><br> 
 <a href="https://tuhinjubcse.github.io/" title="Title">
 [pdf] </a>
  <a href="https://github.com/tuhinjubcse/fever2-columbia" title="Title">
