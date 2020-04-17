@@ -105,6 +105,10 @@ Oral talks at EMNLP 2019, Main Conference and FEVER worksop
 
 3 long papers (2 first author) under submission at ACL 2020, Seattle.
 
+## PROFESSIONAL ACTIVITIES
+Reviewer : FEVER@EMNLP 2018, FEVER@EMNLP 2019, FEVER@ACL 2020, ALW4@EMNLP 2020, WNUT@EMNLP 2020, ACL 2020, EMNLP 2020 , AACL 2020
+
+
 ## CONTACT ME
 Email : <br/>
 tuhinc@isi.edu (ISI) <br/>
