@@ -62,7 +62,7 @@ In Proceedings of <a href="https://naacl2019.org/" title="Title"> <u>NAACL 2019<
 </p>
 
 <p> 5) <b> Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks  </b> [Oral] <br>
-  In 20th Annual Meeting of the Special Interest Group on Discourse and Dialogue (SIGDIAL 2019),Stockholm, Sweden <br> 
+  In Proceedings of <a href="https://sigdial.org/files/workshops/conference20/" title="Title"> <u>SIGDIAL 2019</u></a> ,Stockholm, Sweden <br> 
   <font color="black">Siddharth Varia  ,Christopher Hidey,</font> <font color="green"><b>Tuhin Chakrabarty </b></font>.<br> 
  <a href="https://www.aclweb.org/anthology/W19-5951.pdf" title="Title">
 [pdf] </a>
