@@ -9,7 +9,7 @@ I am a PhD student in Computer Science at Columbia University. Within the depart
 
 While I enjoy working on most topics in Natural Language Processing, few of my research interests and directions are:
 
-- Controllable/Creative Language Generation : <a href="https://tuhinjubcse.github.io/" title="Title"> ACL 2020 </a>, EMNLP 2020( Under Submission)
+- Controllable/Creative Language Generation : <a href="https://arxiv.org/pdf/2004.13248.pdf" title="Title"> ACL 2020 </a>, EMNLP 2020( Under Submission)
 - Argument Mining & Stylistics in Pretrained Language Model : <a href="https://www.aclweb.org/anthology/N19-1054.pdf" title="Title">
 NAACL 2019 </a>, <a href="https://www.aclweb.org/anthology/D19-1291.pdf" title="Title">
 EMNLP 2019 </a>
@@ -25,7 +25,7 @@ EMNLP 2019 </a>
 <p> 1) <b> R^3: Reverse, Retrieve, and Rank for Sarcasm Generation with Commonsense Knowledge </b> <br>
  In Proceedings of <a href="https://acl2020.org/" title="Title"> <u>ACL 2020</u></a> ,Seattle, WA. <br> 
   <font color="green"> <b> Tuhin Chakrabarty </b> </font>, <font color="black">Debanjan Ghosh, Smaranda Muresan and Nanyun Peng </font><br> 
-<a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/Sarcasm_Generation_ACL2020.pdf" title="Title">
+<a href="https://arxiv.org/pdf/2004.13248.pdf" title="Title">
 [pdf] </a> 
 <a href="https://github.com/tuhinjubcse/SarcasmGeneration-ACL2020" title="Title">
 [Code and Data] </a></p>
