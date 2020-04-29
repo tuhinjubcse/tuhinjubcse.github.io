@@ -3,7 +3,7 @@
 ![Image](images/pic.png)
 
 ## About me
-I am a PhD student in Computer Science at Columbia University. Within the department I am a part of the Natural Language Processing group, where I am advised by <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a>. I also work with <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>. My research interests span Natural Language Processing and Machine Learning, with special interests in Creative language generation, Role Of Structured Common sense in Downstream Tasks, Discourse and Argumentation . Prior to joining Grad school I was an engineer at UBER and Amazon.
+I am a PhD student in Computer Science at Columbia University. Within the department I am a part of the Natural Language Processing group, where I am advised by <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a>. I also work with <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>. I also collaborate with <a href="https://scholar.google.com/citations?user=XxRXvX0AAAAJ&hl=en" title="Title"> Professor Violet Peng. </a> My research interests span Natural Language Processing and Machine Learning, with special interests in Creative language generation, Role Of Structured Common sense in Downstream Tasks, Discourse and Argumentation . Prior to joining Grad school I was an engineer at UBER and Amazon.
 
 ## Research Focus
 
@@ -102,9 +102,7 @@ Joining <a href="https://www.research.ibm.com/artificial-intelligence/" title="T
 
 I'll be spending some time at <a href="https://pluslabnlp.github.io/" title="Title"> PLUS Lab </a> at USC, ISI,starting August 2019 working on NLP related problems.I am fortunate to be advised by <a href="https://scholar.google.com/citations?user=XxRXvX0AAAAJ&hl=en" title="Title"> Professor Violet Peng </a>
 
-Oral talks at EMNLP 2019, Main Conference and FEVER worksop
-
-3 long papers (2 first author) under submission at ACL 2020, Seattle.
+3 long papers (2 first author) under submission at EMNLP 2020.
 
 ## PROFESSIONAL ACTIVITIES
 Reviewer : FEVER@EMNLP 2018, FEVER@EMNLP 2019, FEVER@ACL 2020, ALW4@EMNLP 2020, WNUT@EMNLP 2020, ACL 2020, EMNLP 2020 , AACL 2020
