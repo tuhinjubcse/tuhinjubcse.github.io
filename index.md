@@ -3,7 +3,7 @@
 ![Image](images/pic.png)
 
 ## About me
-I am a PhD student in Computer Science at Columbia University. Within the department I am a part of the Natural Language Processing group, where I am advised by <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a>. I also work with <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a>. I also collaborate with <a href="https://scholar.google.com/citations?user=XxRXvX0AAAAJ&hl=en" title="Title"> Professor Violet Peng. </a> My research interests span Natural Language Processing and Machine Learning, with special interests in Creative language generation, Role Of Structured Common sense in Downstream Tasks, Discourse and Argumentation . Prior to joining Grad school I was an engineer at UBER and Amazon.
+I am a PhD student in Computer Science at Columbia University. Within the department I am a part of the Natural Language Processing group, where I am advised by <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a>. I also work with <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown and <a href="https://scholar.google.com/citations?user=XxRXvX0AAAAJ&hl=en" title="Title"> Professor Violet Peng. </a> My research interests span Natural Language Processing and Machine Learning, with special interests in Creative language generation, Role Of Structured Common sense in Downstream Tasks, Discourse and Argumentation . Prior to joining Grad school I was an engineer at UBER and Amazon.
 
 ## Research Focus
 
