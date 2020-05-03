@@ -61,7 +61,10 @@ In Proceedings of <a href="https://naacl2019.org/" title="Title"> <u>NAACL 2019<
 [Code and Data] </a>
 <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/IMHO%20Fine-Tuning%20Improves%20Claim%20Detection%20.pdf" title="Title">
  [Slides] </a> 
+<a href="https://vimeo.com/411304156" title="Title">
+ [Talk] </a> 
 </p>
+
 
 <p> 5) <b> Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks  </b> [Oral] <br>
   In Proceedings of <a href="https://sigdial.org/files/workshops/conference20/" title="Title"> <u>SIGDIAL 2019</u></a> ,Stockholm, Sweden <br> 
