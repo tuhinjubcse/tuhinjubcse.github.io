@@ -50,7 +50,9 @@ Because I hate Google Scholar which is inaccurate and terrible slow , here is my
 <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/AMPERSAND_%20Argument%20Mining%20for%20PERSuAsive%20oNline%20%20Discussions-SM.pdf" title="Title">
   [Slides]</a>
 <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/NYAS_AMPERSAND.pdf" title="Title">
-  [Poster]</a></p>
+  [Poster]</a>
+<a href="https://vimeo.com/411304156" title="Title">
+ [Talk] </a> </p>
 
 <p> 4) <b> IMHO Fine Tuning Improves Claim Detection</b> [Oral] <br>
 In Proceedings of <a href="https://naacl2019.org/" title="Title"> <u>NAACL 2019</u></a> ,Minneapolis, MN <br>  
@@ -61,9 +63,11 @@ In Proceedings of <a href="https://naacl2019.org/" title="Title"> <u>NAACL 2019<
 [Code and Data] </a>
 <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/IMHO%20Fine-Tuning%20Improves%20Claim%20Detection%20.pdf" title="Title">
  [Slides] </a> 
-<a href="https://vimeo.com/411304156" title="Title">
+<a href="https://vimeo.com/353455244" title="Title">
  [Talk] </a> 
 </p>
+
+
 
 
 <p> 5) <b> Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks  </b> [Oral] <br>
