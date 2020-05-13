@@ -43,7 +43,7 @@ Joining <a href="https://www.research.ibm.com/artificial-intelligence/" title="T
  <font color="black">Christopher Hidey,</font> <font color="green"> <b> Tuhin Chakrabarty </b>,</font> <font color="black">Tariq Alhindi, Siddharth Varia, Kriste Krstovski, Mona Diab and Smaranda Muresan.</font><br> 
 <a href="https://arxiv.org/pdf/2004.12864.pdf" title="Title">
 [pdf] </a>
- <a href="https://github.com/tuhinjubcse/fever2-columbia" title="Title">
+ <a href="https://github.com/tuhinjubcse/DeSePtion-ACL2020" title="Title">
 [Code and Data] </a></p>
 
 <p> 3) <b> AMPERSAND: Argument Mining for PERSuAsive oNline Discussions </b> [Oral]<br>
