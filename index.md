@@ -24,8 +24,6 @@ I helped building a demo for interactive story generation <a href="https://cwc-s
 
 Joining <a href="https://www.research.ibm.com/artificial-intelligence/" title="Title"> IBM AI Research </a> as a summer 2020 intern where I will be supervised by <a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-avi" title="Title"> Avirup Sil</a> working on Question Answering (field in Natural Language Processing)
 
-3 long papers (2 first author) under submission at EMNLP 2020.
-
 ## PUBLICATIONS
 
 ## Archival Conference Papers
