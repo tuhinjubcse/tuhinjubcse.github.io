@@ -1,6 +1,6 @@
 ## Tuhin Chakrabarty
 
-![Image](images/berlin.png)
+![Image](images/berlin.jpeg)
 
 ## About me
 I am a PhD student in Computer Science at Columbia University. Within the department I am a part of the Natural Language Processing group, where I am advised by <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a>. I also work with <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a> and <a href="http://vnpeng.net/" title="Title"> Professor Violet Peng. </a> My research interests span Natural Language Processing and Machine Learning, with special interests in Creative language generation, Role Of Structured Common sense in Downstream Tasks, Discourse and Argumentation . Prior to joining Grad school I was an engineer at UBER and Amazon.
