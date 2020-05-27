@@ -22,7 +22,7 @@ Here is my <a href="https://www.semanticscholar.org/author/Tuhin-Chakrabarty/514
 ## UPDATES
 I helped building a demo for interactive story generation <a href="https://cwc-story.isi.edu/" title="Title"> [Link Here]</a>  where given a title a model generates a five sentence short story :) Play with it.
 
-Joining <a href="https://www.research.ibm.com/artificial-intelligence/" title="Title"> IBM AI Research </a> as a summer 2020 intern where I will be supervised by <a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-avi" title="Title"> Avirup Sil</a> working on Question Answering (field in Natural Language Processing)
+Joining <a href="https://www.research.ibm.com/artificial-intelligence/" title="Title"> IBM AI Research </a> as a summer 2020 intern where I will be supervised by <a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-avi" title="Title"> Avirup Sil</a> working on Question Answering
 
 ## PUBLICATIONS
 
