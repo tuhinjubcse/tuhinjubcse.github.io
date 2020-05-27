@@ -13,11 +13,11 @@ While I enjoy working on most topics in Natural Language Processing, few of my r
 - Controllable/Creative Language Generation : <a href="https://arxiv.org/pdf/2004.13248.pdf" title="Title"> ACL 2020 </a>, EMNLP 2020( Under Submission)
 - Argument Mining & Stylistics in Pretrained Language Model : <a href="https://www.aclweb.org/anthology/N19-1054.pdf" title="Title">
 NAACL 2019 </a>, <a href="https://www.aclweb.org/anthology/D19-1291.pdf" title="Title">
-EMNLP 2019 </a>
+EMNLP 2019 </a>, EMNLP 2020( Under Submission)
 - Fact Extraction and Verification: <a href="https://arxiv.org/pdf/2004.12864.pdf" title="Title"> ACL 2020 </a> , <a href="http://aclweb.org/anthology/W18-5521.pdf" title="Title"> FEVER@EMNLP 2018 </a> , <a href="https://www.aclweb.org/anthology/S19-2200.pdf" title="Title"> SEMEVAL@2019 </a>  ,
-- Computational Social Science : EMNLP 2020( Under Submission), <a href="https://www.aclweb.org/anthology/W19-3508.pdf" title="Title"> ALW@ACL2019 </a>
+- Computational Social Science : <a href="https://www.aclweb.org/anthology/W19-3508.pdf" title="Title"> ALW@ACL2019 </a>
 
-Because I hate Google Scholar which is inaccurate and terrible slow , here is my <a href="https://www.semanticscholar.org/author/Tuhin-Chakrabarty/51448832" title="Title"> Semantic Scholar Page </a>
+Here is my <a href="https://www.semanticscholar.org/author/Tuhin-Chakrabarty/51448832" title="Title"> Semantic Scholar Page </a>
 
 ## UPDATES
 I helped building a demo for interactive story generation <a href="https://cwc-story.isi.edu/" title="Title"> [Link Here]</a>  where given a title a model generates a five sentence short story :) Play with it.
