@@ -3,7 +3,7 @@
 ![Image](images/berlin.jpeg)
 
 ## About me
-I am a PhD student in Computer Science at Columbia University. Within the department I am a part of the Natural Language Processing group, where I am advised by <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a>. I also work with <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a> and <a href="http://vnpeng.net/" title="Title"> Professor Violet Peng. </a> My research interests span Natural Language Processing and Machine Learning, with special interests in Creative language generation, Role Of Structured Common sense in Downstream Tasks, Discourse and Argumentation . Prior to joining Grad school I was an engineer at UBER and Amazon.
+I am a PhD student in Computer Science at Columbia University. Within the department I am a part of the Natural Language Processing group, where I am advised by <a href="http://www.cs.columbia.edu/~smara/" title="Title"> Professor Smaranda Muresan </a>. I also work with <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Professor Kathleen McKeown </a> and <a href="http://vnpeng.net/" title="Title"> Professor Violet Peng. </a> My research interests span Natural Language Processing and Machine Learning, with special interests in Creative language generation both at sentence level and Long Form, Role Of Structured Common sense in Downstream Tasks, Discourse and Argumentation. Prior to joining Grad school I was an engineer at UBER and Amazon.
 
 
 ## Research Focus
@@ -20,9 +20,12 @@ EMNLP 2019 </a>, EMNLP 2020( Under Submission)
 Here is my <a href="https://www.semanticscholar.org/author/Tuhin-Chakrabarty/51448832" title="Title"> Semantic Scholar Page </a>
 
 ## UPDATES
+3 Long Papers under submission at EMNLP
+
 I helped building a demo for interactive story generation <a href="https://cwc-story.isi.edu/" title="Title"> [Link Here]</a>  where given a title a model generates a five sentence short story :) Play with it.
 
 Joining <a href="https://www.research.ibm.com/artificial-intelligence/" title="Title"> IBM AI Research </a> as a summer 2020 intern where I will be supervised by <a href="https://researcher.watson.ibm.com/researcher/view.php?person=us-avi" title="Title"> Avirup Sil</a> working on Question Answering
+
 
 ## PUBLICATIONS
 
