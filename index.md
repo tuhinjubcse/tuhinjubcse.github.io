@@ -28,7 +28,6 @@ Joining <a href="https://www.research.ibm.com/artificial-intelligence/" title="T
 
 
 ## PUBLICATIONS
-
 ## Archival Conference Papers
 
 <p> 1) <b> R^3: Reverse, Retrieve, and Rank for Sarcasm Generation with Commonsense Knowledge </b> <br>
@@ -37,7 +36,11 @@ Joining <a href="https://www.research.ibm.com/artificial-intelligence/" title="T
 <a href="https://arxiv.org/pdf/2004.13248.pdf" title="Title">
 [pdf] </a> 
 <a href="https://github.com/tuhinjubcse/SarcasmGeneration-ACL2020" title="Title">
-[Code and Data] </a></p>
+[Code and Data] </a>
+<a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/R%5E3.pptx
+" title="Title">
+ [Slides] </a> </p>
+
 
 <p> 2) <b> DeSePtion: Dual Sequence Prediction and Adversarial Examples for Improved Fact-Checking </b> <br>
  In Proceedings of the <a href="https://acl2020.org/" title="Title"> <u>ACL 2020</u></a> ,Seattle, WA. <br> 
