@@ -17,7 +17,7 @@ EMNLP 2019 </a>, EMNLP 2020( Under Submission)
 - Fact Extraction and Verification: <a href="https://arxiv.org/pdf/2004.12864.pdf" title="Title"> ACL 2020 </a> , <a href="http://aclweb.org/anthology/W18-5521.pdf" title="Title"> FEVER@EMNLP 2018 </a> , <a href="https://www.aclweb.org/anthology/S19-2200.pdf" title="Title"> SEMEVAL@2019 </a>  ,
 - Computational Social Science : <a href="https://www.aclweb.org/anthology/W19-3508.pdf" title="Title"> ALW@ACL2019 </a>
 
-Here is my <a href="https://www.semanticscholar.org/author/Tuhin-Chakrabarty/51448832" title="Title"> Semantic Scholar Page </a>
+Here is my <a href="https://scholar.google.com/citations?user=HCmFuo8AAAAJ&hl=en" title="Title"> Google Scholar Page </a>
 
 ## UPDATES
 3 Long Papers under submission at EMNLP
