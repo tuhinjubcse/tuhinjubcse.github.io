@@ -10,11 +10,11 @@ I am a PhD student in Computer Science at Columbia University. Within the depart
 
 While I enjoy working on most topics in Natural Language Processing, few of my research interests and directions are:
 
-- Controllable/Creative Language Generation : <a href="https://arxiv.org/pdf/2004.13248.pdf" title="Title"> ACL 2020 </a>, EMNLP 2020( Under Submission)
+- Controllable/Creative Language Generation : <a href="https://www.aclweb.org/anthology/2020.acl-main.711.pdf" title="Title"> ACL 2020 </a>, EMNLP 2020( Under Submission)
 - Argument Mining & Stylistics in Pretrained Language Model : <a href="https://www.aclweb.org/anthology/N19-1054.pdf" title="Title">
 NAACL 2019 </a>, <a href="https://www.aclweb.org/anthology/D19-1291.pdf" title="Title">
 EMNLP 2019 </a>, EMNLP 2020( Under Submission)
-- Fact Extraction and Verification: <a href="https://arxiv.org/pdf/2004.12864.pdf" title="Title"> ACL 2020 </a> , <a href="http://aclweb.org/anthology/W18-5521.pdf" title="Title"> FEVER@EMNLP 2018 </a> , <a href="https://www.aclweb.org/anthology/S19-2200.pdf" title="Title"> SEMEVAL@2019 </a>  ,
+- Fact Extraction and Verification: <a href="https://www.aclweb.org/anthology/2020.acl-main.761.pdf" title="Title"> ACL 2020 </a> , <a href="http://aclweb.org/anthology/W18-5521.pdf" title="Title"> FEVER@EMNLP 2018 </a> , <a href="https://www.aclweb.org/anthology/S19-2200.pdf" title="Title"> SEMEVAL@2019 </a>  ,
 - Computational Social Science : <a href="https://www.aclweb.org/anthology/W19-3508.pdf" title="Title"> ALW@ACL2019 </a>
 
 Here is my <a href="https://scholar.google.com/citations?user=HCmFuo8AAAAJ&hl=en" title="Title"> Google Scholar Page </a>
@@ -33,7 +33,7 @@ Joining <a href="https://www.research.ibm.com/artificial-intelligence/" title="T
 <p> 1) <b> R^3: Reverse, Retrieve, and Rank for Sarcasm Generation with Commonsense Knowledge </b> <br>
  In Proceedings of <a href="https://acl2020.org/" title="Title"> <u>ACL 2020</u></a> ,Seattle, WA. <br> 
   <font color="green"> <b> Tuhin Chakrabarty </b> </font>, <font color="black">Debanjan Ghosh, Smaranda Muresan and Nanyun Peng </font><br> 
-<a href="https://arxiv.org/pdf/2004.13248.pdf" title="Title">
+<a href="https://www.aclweb.org/anthology/2020.acl-main.711.pdf" title="Title">
 [pdf] </a> 
 <a href="https://github.com/tuhinjubcse/SarcasmGeneration-ACL2020" title="Title">
 [Code and Data] </a>
@@ -45,7 +45,7 @@ Joining <a href="https://www.research.ibm.com/artificial-intelligence/" title="T
 <p> 2) <b> DeSePtion: Dual Sequence Prediction and Adversarial Examples for Improved Fact-Checking </b> <br>
  In Proceedings of the <a href="https://acl2020.org/" title="Title"> <u>ACL 2020</u></a> ,Seattle, WA. <br> 
  <font color="black">Christopher Hidey,</font> <font color="green"> <b> Tuhin Chakrabarty </b>,</font> <font color="black">Tariq Alhindi, Siddharth Varia, Kriste Krstovski, Mona Diab and Smaranda Muresan.</font><br> 
-<a href="https://arxiv.org/pdf/2004.12864.pdf" title="Title">
+<a href="https://www.aclweb.org/anthology/2020.acl-main.761.pdf" title="Title">
 [pdf] </a>
  <a href="https://github.com/tuhinjubcse/DeSePtion-ACL2020" title="Title">
 [Code and Data] </a></p>
