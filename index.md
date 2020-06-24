@@ -30,7 +30,7 @@ Joining <a href="https://www.research.ibm.com/artificial-intelligence/" title="T
 ## PUBLICATIONS
 
 ## 2020
-<p> 1) <b> R^3: Reverse, Retrieve, and Rank for Sarcasm Generation with Commonsense Knowledge </b> <br>
+<p> 1) <b><font color="blue"> R^3: Reverse, Retrieve, and Rank for Sarcasm Generation with Commonsense Knowledge </font> </b> <br>
  In Proceedings of <a href="https://acl2020.org/" title="Title"> <u>ACL 2020</u></a> ,Seattle, WA. <br> 
   <font color="green"> <b> Tuhin Chakrabarty </b> </font>, <font color="black">Debanjan Ghosh, Smaranda Muresan and Nanyun Peng </font><br> 
 <a href="https://www.aclweb.org/anthology/2020.acl-main.711.pdf" title="Title">
@@ -42,7 +42,7 @@ Joining <a href="https://www.research.ibm.com/artificial-intelligence/" title="T
  [Slides] </a> </p>
 
 
-<p> 2) <b> DeSePtion: Dual Sequence Prediction and Adversarial Examples for Improved Fact-Checking </b> <br>
+<p> 2) <b><font color="blue"> DeSePtion: Dual Sequence Prediction and Adversarial Examples for Improved Fact-Checking </font></b> <br>
  In Proceedings of the <a href="https://acl2020.org/" title="Title"> <u>ACL 2020</u></a> ,Seattle, WA. <br> 
  <font color="black">Christopher Hidey,</font> <font color="green"> <b> Tuhin Chakrabarty </b>,</font> <font color="black">Tariq Alhindi, Siddharth Varia, Kriste Krstovski, Mona Diab and Smaranda Muresan.</font><br> 
 <a href="https://www.aclweb.org/anthology/2020.acl-main.761.pdf" title="Title">
