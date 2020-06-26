@@ -98,7 +98,7 @@ In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>
 
 <p> 5) <b> <font color="brown"> The Answer is Language Model Fine-tuning </font> </b> <br>
  In Proceedings of the 13th International Workshop on Semantic Evaluation , NAACL-HLT , Minneapolis, USA, June 2019  <br> 
-  <font color="green"><b> Tuhin Chakrabarty </b></font> ,<font color="black">Smaranda Muresan.</font>   4th and 2nd place in SUBTASK A & B respectively <br> 
+  <font color="green"><b> Tuhin Chakrabarty </b></font> ,<font color="black">Smaranda Muresan.</font> <br> 
 <a href="https://www.aclweb.org/anthology/S19-2200.pdf" title="Title">
 [pdf] </a> </p>
 
