@@ -115,8 +115,6 @@ Reviewer : FEVER@EMNLP 2018, FEVER@EMNLP 2019, FEVER@ACL 2020, ALW4@EMNLP 2020, 
 
 ## CONTACT ME
 Email : <br/>
-tuhinc@isi.edu (ISI) <br/>
-        tuhincha@usc.edu (USC)<br/>
         tuhin.chakrabarty@columbia.edu(COLUMBIA)<br/>
         tuhinjubcse@gmail.com(PERSONAL GMAIL) <br/>
 Mobile : +13476306405
