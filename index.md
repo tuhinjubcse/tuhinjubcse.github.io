@@ -103,7 +103,7 @@ In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>
 [pdf] </a> </p>
 
 ## 2018
-<p> 3) <b> <font color="brown">Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification </font> </b> <br>
+<p> 1) <b> <font color="brown">Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification </font> </b> <br>
  In Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP ,Brussels ,2018  <br> 
   <font color="green"><b> Tuhin Chakrabarty </b> </font> ,<font color="black">Tariq Alhindi , Smaranda Muresan </font> :- <br> <a href="http://aclweb.org/anthology/W18-5521.pdf" title="Title"> [pdf] </a> <a href="https://github.com/tuhinjubcse/FEVER-EMNLP" title="Title"> 
 [Code] </a>.</p>
