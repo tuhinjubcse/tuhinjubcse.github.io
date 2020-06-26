@@ -30,7 +30,7 @@ Joining <a href="https://www.research.ibm.com/artificial-intelligence/" title="T
 ## PUBLICATIONS
 
 ## 2020
-<p> 1) <b><font color="blue"> R^3: Reverse, Retrieve, and Rank for Sarcasm Generation with Commonsense Knowledge </font> </b> <br>
+<p> 1) <b><font color="brown"> R^3: Reverse, Retrieve, and Rank for Sarcasm Generation with Commonsense Knowledge </font> </b> <br>
  In Proceedings of <a href="https://acl2020.org/" title="Title"> <u>ACL 2020</u></a> ,Seattle, WA. <br> 
   <font color="green"> <b> Tuhin Chakrabarty </b> </font>, <font color="black">Debanjan Ghosh, Smaranda Muresan and Nanyun Peng </font><br> 
 <a href="https://www.aclweb.org/anthology/2020.acl-main.711.pdf" title="Title">
@@ -42,7 +42,7 @@ Joining <a href="https://www.research.ibm.com/artificial-intelligence/" title="T
  [Slides] </a> </p>
 
 
-<p> 2) <b><font color="blue"> DeSePtion: Dual Sequence Prediction and Adversarial Examples for Improved Fact-Checking </font></b> <br>
+<p> 2) <b><font color="brown"> DeSePtion: Dual Sequence Prediction and Adversarial Examples for Improved Fact-Checking </font></b> <br>
  In Proceedings of the <a href="https://acl2020.org/" title="Title"> <u>ACL 2020</u></a> ,Seattle, WA. <br> 
  <font color="black">Christopher Hidey,</font> <font color="green"> <b> Tuhin Chakrabarty </b>,</font> <font color="black">Tariq Alhindi, Siddharth Varia, Kriste Krstovski, Mona Diab and Smaranda Muresan.</font><br> 
 <a href="https://www.aclweb.org/anthology/2020.acl-main.761.pdf" title="Title">
@@ -51,7 +51,7 @@ Joining <a href="https://www.research.ibm.com/artificial-intelligence/" title="T
 [Code and Data] </a></p>
 
 ## 2019
-<p> 1) <b> AMPERSAND: Argument Mining for PERSuAsive oNline Discussions </b> [Oral]<br>
+<p> 1) <b> <font color="brown"> AMPERSAND: Argument Mining for PERSuAsive oNline Discussions</font> </b> [Oral]<br>
   In Proceedings of <a href="https://www.emnlp-ijcnlp2019.org/" title="Title"> <u>EMNLP 2019</u></a> ,Hong Kong <br>
  <font color="green"><b> Tuhin Chakrabarty </b></font>, <font color="black">Christopher Hidey, Smaranda Muresan, Kathy McKeown and Alyssa Hwang.</font><br> 
  <a href="https://www.aclweb.org/anthology/D19-1291.pdf" title="Title">
@@ -65,7 +65,7 @@ Joining <a href="https://www.research.ibm.com/artificial-intelligence/" title="T
 <a href="https://vimeo.com/411304156" title="Title">
  [Talk] </a> </p>
 
-<p> 2) <b> IMHO Fine Tuning Improves Claim Detection</b> [Oral] <br>
+<p> 2) <b> <font color="brown"> IMHO Fine Tuning Improves Claim Detection</font> </b> [Oral] <br>
 In Proceedings of <a href="https://naacl2019.org/" title="Title"> <u>NAACL 2019</u></a> ,Minneapolis, MN <br>  
   <font color="green"><b> Tuhin Chakrabarty </b></font>, <font color="black">Christopher Hidey, Kathy McKeown</font><br>   
 <a href="https://www.aclweb.org/anthology/N19-1054.pdf" title="Title">
@@ -79,7 +79,7 @@ In Proceedings of <a href="https://naacl2019.org/" title="Title"> <u>NAACL 2019<
 </p>
 
 
-<p> 3) <b> Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks  </b> [Oral] <br>
+<p> 3) <b> <font color="brown"> Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks </font> </b> [Oral] <br>
   In Proceedings of <a href="https://sigdial.org/files/workshops/conference20/" title="Title"> <u>SIGDIAL 2019</u></a> ,Stockholm, Sweden <br> 
   <font color="black">Siddharth Varia  ,Christopher Hidey,</font> <font color="green"><b>Tuhin Chakrabarty </b></font>.<br> 
  <a href="https://www.aclweb.org/anthology/W19-5951.pdf" title="Title">
@@ -89,21 +89,21 @@ In Proceedings of <a href="https://naacl2019.org/" title="Title"> <u>NAACL 2019<
 <a href="http://www.cs.columbia.edu/~chidey/files/sigdial2019discourse.pdf" title="Title">
   [Slides]</a></p>
 
- <p> 4) <b> Pay "Attention'' to your Context when Classifying Abusive Language</b> <br>
+ <p> 4) <b> <font color="brown"> Pay "Attention'' to your Context when Classifying Abusive Language </font> </b> <br>
 In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>  
  <font color="green"> <b> Tuhin Chakrabarty </b> </font>,<font color="black">Kilol Gupta, Smaranda Muresan.</font> <br> 
  <a href="https://www.aclweb.org/anthology/W19-3508.pdf" title="Title">
 [pdf] </a> <a href="https://github.com/tuhinjubcse/ALW3-ACL2019" title="Title">
 [Code] </a> </p>
 
-<p> 5) <b> The Answer is Language Model Fine-tuning </b> <br>
+<p> 5) <b> <font color="brown"> The Answer is Language Model Fine-tuning </font> </b> <br>
  In Proceedings of the 13th International Workshop on Semantic Evaluation , NAACL-HLT , Minneapolis, USA, June 2019  <br> 
   <font color="green"><b> Tuhin Chakrabarty </b></font> ,<font color="black">Smaranda Muresan.</font>   4th and 2nd place in SUBTASK A & B respectively <br> 
 <a href="https://www.aclweb.org/anthology/S19-2200.pdf" title="Title">
 [pdf] </a> </p>
 
 ## 2018
-<p> 3) <b>Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification </b> <br>
+<p> 3) <b> <font color="brown">Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification </font> </b> <br>
  In Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP ,Brussels ,2018  <br> 
   <font color="green"><b> Tuhin Chakrabarty </b> </font> ,<font color="black">Tariq Alhindi , Smaranda Muresan </font> :- <br> <a href="http://aclweb.org/anthology/W18-5521.pdf" title="Title"> [pdf] </a> <a href="https://github.com/tuhinjubcse/FEVER-EMNLP" title="Title"> 
 [Code] </a>.</p>
