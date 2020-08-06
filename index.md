@@ -1,6 +1,8 @@
 ## Tuhin Chakrabarty
 
-![Image](images/berlin.jpeg)
+| ![berlin.jpeg](images/berlin.jpeg) | 
+|:--:| 
+| *Me in East Side Gallery, Berlin. March 2020* |
 
 
 ## About me
