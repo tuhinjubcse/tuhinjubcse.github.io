@@ -3,7 +3,7 @@
 ![Image](images/berlin.jpeg)
 
 ## About me
-I am a PhD student in Computer Science at Columbia University. Within the department I am a part of the Natural Language Processing group, where I am advised by <a href="http://www.cs.columbia.edu/~smara/" title="Title">Smaranda Muresan </a>. In the past I worked with <a href="http://vnpeng.net/" title="Title"> Violet Peng </a> and <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Kathleen McKeown. </a>  My research interests are broadly in Natural Language Processing and Machine Learning, with special focus in Creative language generation (both at sentence level and Long Form), Role Of Structured Common sense in Downstream Tasks & Discourse and Argumentation. Prior to joining Grad school I was an engineer at UBER and Amazon.
+I am a PhD student in Computer Science at Columbia University. Within the department I am a part of the Natural Language Processing group, where I am advised by <a href="http://www.cs.columbia.edu/~smara/" title="Title">Smaranda Muresan </a>. In the past I worked with <a href="http://vnpeng.net/" title="Title"> Violet Peng </a> and <a href="http://www.cs.columbia.edu/~kathy/" title="Title"> Kathleen McKeown. </a>  My research interests are broadly in Natural Language Processing and Machine Learning, with special focus in Creative language generation (both at sentence level and Long Form), Role Of Structured Common sense in Language Generation  & Discourse and Argumentation (Understanding and Generation). Prior to joining Grad school I was an engineer at UBER and Amazon.
 
 
 ## Research Focus
@@ -11,7 +11,7 @@ I am a PhD student in Computer Science at Columbia University. Within the depart
 While I enjoy working on most topics in Natural Language Processing, few of my research interests and directions are:
 
 - Controllable/Creative Language Generation : <a href="https://www.aclweb.org/anthology/2020.acl-main.711.pdf" title="Title"> ACL 2020 </a>, EMNLP 2020( Under Submission)
-- Argument Mining & Stylistics in Pretrained Language Model : <a href="https://www.aclweb.org/anthology/N19-1054.pdf" title="Title">
+- Discourse and Argumentation : <a href="https://www.aclweb.org/anthology/N19-1054.pdf" title="Title">
 NAACL 2019 </a>, <a href="https://www.aclweb.org/anthology/D19-1291.pdf" title="Title">
 EMNLP 2019 </a>, EMNLP 2020( Under Submission)
 - Fact Extraction and Verification: <a href="https://www.aclweb.org/anthology/2020.acl-main.761.pdf" title="Title"> ACL 2020 </a> , <a href="http://aclweb.org/anthology/W18-5521.pdf" title="Title"> FEVER@EMNLP 2018 </a> , <a href="https://www.aclweb.org/anthology/S19-2200.pdf" title="Title"> SEMEVAL@2019 </a>  ,
