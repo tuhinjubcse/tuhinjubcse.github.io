@@ -147,7 +147,7 @@ Mobile : +13476306405
 <!-- links to your social media accounts -->
 <!-- update these accordingly -->
 
-[1]: https://twitter.com/Tuhin66978276
+[1]: https://twitter.com/TuhinChakr
 [2]: https://www.facebook.com/tuhin.chakrabarty
 [6]: https://github.com/tuhinjubcse
 
