@@ -40,7 +40,7 @@ I helped building a demo for interactive story generation <a href="https://cwc-s
 <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/R%5E3.pptx
 " title="Title">
  [Slides] </a> 
-<br><font color="blue"> <b> Tags: </b> </font>, <font color="black">Creative Language Generation, Figurative Langugage, Computational Creativity </font><br></p>
+<br><font color="blue"> <b> Tags: </b> </font> <font color="black">Creative Language Generation, Figurative Langugage, Computational Creativity </font><br></p>
 
 
 <p> 2) <b><font color="brown"> DeSePtion: Dual Sequence Prediction and Adversarial Examples for Improved Fact-Checking </font></b> <br>
@@ -80,8 +80,7 @@ In Proceedings of <a href="https://naacl2019.org/" title="Title"> <u>NAACL 2019<
  [Slides] </a> 
 <a href="https://vimeo.com/353455244" title="Title">
  [Talk] </a> 
- <font color="blue"> <b> Tags: </b> </font>, <font color="black"> Discourse, Argumentation </font><br></p>
-<br></p>
+ <br><font color="blue"> <b> Tags: </b> </font>, <font color="black"> Discourse, Argumentation </font><br></p>
 
 
 <p> 3) <b> <font color="brown"> Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks </font> </b> [Oral] <br>
