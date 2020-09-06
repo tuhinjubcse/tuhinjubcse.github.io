@@ -50,7 +50,7 @@ I helped building a demo for interactive story generation <a href="https://cwc-s
 [pdf] </a>
  <a href="https://github.com/tuhinjubcse/DeSePtion-ACL2020" title="Title">
 [Code and Data] </a>
- <br><font color="blue"> <b> Tags: </b> </font>, <font color="black"> Fact Checking, Discourse, Argumentation </font><br></p>
+ <br><font color="blue"> <b> Tags: </b> </font> <font color="black"> Fact Checking, Discourse, Argumentation </font><br></p>
 
 
 ## 2019
@@ -67,7 +67,7 @@ I helped building a demo for interactive story generation <a href="https://cwc-s
   [Poster]</a>
 <a href="https://vimeo.com/411304156" title="Title">
  [Talk] </a> 
- <br><font color="blue"> <b> Tags: </b> </font>, <font color="black"> Discourse, Argumentation </font><br></p>
+ <br><font color="blue"> <b> Tags: </b> </font> <font color="black"> Discourse, Argumentation </font><br></p>
 
 <p> 2) <b> <font color="brown"> IMHO Fine Tuning Improves Claim Detection</font> </b> [Oral] <br>
 In Proceedings of <a href="https://naacl2019.org/" title="Title"> <u>NAACL 2019</u></a> ,Minneapolis, MN <br>  
@@ -80,7 +80,7 @@ In Proceedings of <a href="https://naacl2019.org/" title="Title"> <u>NAACL 2019<
  [Slides] </a> 
 <a href="https://vimeo.com/353455244" title="Title">
  [Talk] </a> 
- <br><font color="blue"> <b> Tags: </b> </font>, <font color="black"> Discourse, Argumentation </font><br></p>
+ <br><font color="blue"> <b> Tags: </b> </font> <font color="black"> Discourse, Argumentation </font><br></p>
 
 
 <p> 3) <b> <font color="brown"> Discourse Relation Prediction: Revisiting Word Pairs with Convolutional Networks </font> </b> [Oral] <br>
@@ -100,21 +100,21 @@ In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>
  <a href="https://www.aclweb.org/anthology/W19-3508.pdf" title="Title">
 [pdf] </a> <a href="https://github.com/tuhinjubcse/ALW3-ACL2019" title="Title">
 [Code] </a> 
- <br><font color="blue"> <b> Tags: </b> </font>, <font color="black"> NLP For Social Good </font><br></p>
+ <br><font color="blue"> <b> Tags: </b> </font> <font color="black"> NLP For Social Good </font><br></p>
 
 <p> 5) <b> <font color="brown"> The Answer is Language Model Fine-tuning </font> </b> <br>
  In Proceedings of the 13th International Workshop on Semantic Evaluation , NAACL-HLT , Minneapolis, USA, June 2019  <br> 
   <font color="green"><b> Tuhin Chakrabarty </b></font> ,<font color="black">Smaranda Muresan.</font> <br> 
 <a href="https://www.aclweb.org/anthology/S19-2200.pdf" title="Title">
 [pdf] </a> 
- <br><font color="blue"> <b> Tags: </b> </font>, <font color="black"> Discourse, Argumentation </font><br></p>
+ <br><font color="blue"> <b> Tags: </b> </font> <font color="black"> Discourse, Argumentation </font><br></p>
 
 ## 2018
 <p> 1) <b> <font color="brown">Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification </font> </b> <br>
  In Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP ,Brussels ,2018  <br> 
   <font color="green"><b> Tuhin Chakrabarty </b> </font> ,<font color="black">Tariq Alhindi , Smaranda Muresan </font> :- <br> <a href="http://aclweb.org/anthology/W18-5521.pdf" title="Title"> [pdf] </a> <a href="https://github.com/tuhinjubcse/FEVER-EMNLP" title="Title"> 
 [Code] </a>.
- <br><font color="blue"> <b> Tags: </b> </font>, <font color="black"> Discourse, Argumentation </font><br></p>
+ <br><font color="blue"> <b> Tags: </b> </font> <font color="black"> Discourse, Argumentation </font><br></p>
 
 
 ## PROFESSIONAL ACTIVITIES
