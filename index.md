@@ -13,7 +13,7 @@ I am a PhD student in Computer Science at Columbia University. Within the depart
 
 While I enjoy working on most topics in Natural Language Processing, few of my research interests and directions are:
 
-- Controllable/Creative Language Generation : <a href="https://www.aclweb.org/anthology/2020.acl-main.711.pdf" title="Title"> ACL 2020 </a>, EMNLP 2020( Under Submission)
+- Creative Language Generation  : <a href="https://www.aclweb.org/anthology/2020.acl-main.711.pdf" title="Title"> ACL 2020 </a>, EMNLP 2020( Under Submission)
 - Discourse and Argumentation : <a href="https://www.aclweb.org/anthology/N19-1054.pdf" title="Title">
 NAACL 2019 </a>, <a href="https://www.aclweb.org/anthology/D19-1291.pdf" title="Title">
 EMNLP 2019 </a>, EMNLP 2020( Under Submission)
@@ -39,7 +39,8 @@ I helped building a demo for interactive story generation <a href="https://cwc-s
 [Code and Data] </a>
 <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/R%5E3.pptx
 " title="Title">
- [Slides] </a> </p>
+ [Slides] </a> 
+<font color="blue"> <b> Tags: </b> </font>, <font color="black">Creative Language Generation, Figurative Langugage, Computational Creativity </font><br></p>
 
 
 <p> 2) <b><font color="brown"> DeSePtion: Dual Sequence Prediction and Adversarial Examples for Improved Fact-Checking </font></b> <br>
@@ -48,7 +49,9 @@ I helped building a demo for interactive story generation <a href="https://cwc-s
 <a href="https://www.aclweb.org/anthology/2020.acl-main.761.pdf" title="Title">
 [pdf] </a>
  <a href="https://github.com/tuhinjubcse/DeSePtion-ACL2020" title="Title">
-[Code and Data] </a></p>
+[Code and Data] </a>
+ <font color="blue"> <b> Tags: </b> </font>, <font color="black"> Fact Checking, Discourse, Argumentation </font><br></p>
+
 
 ## 2019
 <p> 1) <b> <font color="brown"> AMPERSAND: Argument Mining for PERSuAsive oNline Discussions</font> </b> [Oral]<br>
@@ -63,7 +66,8 @@ I helped building a demo for interactive story generation <a href="https://cwc-s
 <a href="https://github.com/tuhinjubcse/tuhinjubcse.github.io/blob/master/NYAS_AMPERSAND.pdf" title="Title">
   [Poster]</a>
 <a href="https://vimeo.com/411304156" title="Title">
- [Talk] </a> </p>
+ [Talk] </a> 
+ <font color="blue"> <b> Tags: </b> </font>, <font color="black"> Discourse, Argumentation </font><br></p>
 
 <p> 2) <b> <font color="brown"> IMHO Fine Tuning Improves Claim Detection</font> </b> [Oral] <br>
 In Proceedings of <a href="https://naacl2019.org/" title="Title"> <u>NAACL 2019</u></a> ,Minneapolis, MN <br>  
@@ -76,6 +80,7 @@ In Proceedings of <a href="https://naacl2019.org/" title="Title"> <u>NAACL 2019<
  [Slides] </a> 
 <a href="https://vimeo.com/353455244" title="Title">
  [Talk] </a> 
+ <font color="blue"> <b> Tags: </b> </font>, <font color="black"> Discourse, Argumentation </font><br></p>
 </p>
 
 
@@ -87,26 +92,34 @@ In Proceedings of <a href="https://naacl2019.org/" title="Title"> <u>NAACL 2019<
 <a href="https://github.com/siddharthvaria/WordPair-CNN" title="Title">
   [Code]</a>
 <a href="http://www.cs.columbia.edu/~chidey/files/sigdial2019discourse.pdf" title="Title">
-  [Slides]</a></p>
+  [Slides]</a>
+ <font color="blue"> <b> Tags: </b> </font>, <font color="black"> Discourse</font><br></p>
+</p>
 
  <p> 4) <b> <font color="brown"> Pay "Attention'' to your Context when Classifying Abusive Language </font> </b> <br>
 In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>  
  <font color="green"> <b> Tuhin Chakrabarty </b> </font>,<font color="black">Kilol Gupta, Smaranda Muresan.</font> <br> 
  <a href="https://www.aclweb.org/anthology/W19-3508.pdf" title="Title">
 [pdf] </a> <a href="https://github.com/tuhinjubcse/ALW3-ACL2019" title="Title">
-[Code] </a> </p>
+[Code] </a> 
+ <font color="blue"> <b> Tags: </b> </font>, <font color="black"> NLP For Social Good </font><br></p>
+</p>
 
 <p> 5) <b> <font color="brown"> The Answer is Language Model Fine-tuning </font> </b> <br>
  In Proceedings of the 13th International Workshop on Semantic Evaluation , NAACL-HLT , Minneapolis, USA, June 2019  <br> 
   <font color="green"><b> Tuhin Chakrabarty </b></font> ,<font color="black">Smaranda Muresan.</font> <br> 
 <a href="https://www.aclweb.org/anthology/S19-2200.pdf" title="Title">
-[pdf] </a> </p>
+[pdf] </a> 
+ <font color="blue"> <b> Tags: </b> </font>, <font color="black"> Discourse, Argumentation </font><br></p>
+</p>
 
 ## 2018
 <p> 1) <b> <font color="brown">Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification </font> </b> <br>
  In Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP ,Brussels ,2018  <br> 
   <font color="green"><b> Tuhin Chakrabarty </b> </font> ,<font color="black">Tariq Alhindi , Smaranda Muresan </font> :- <br> <a href="http://aclweb.org/anthology/W18-5521.pdf" title="Title"> [pdf] </a> <a href="https://github.com/tuhinjubcse/FEVER-EMNLP" title="Title"> 
-[Code] </a>.</p>
+[Code] </a>.
+ <font color="blue"> <b> Tags: </b> </font>, <font color="black"> Discourse, Argumentation </font><br></p>
+</p>
 
 
 ## PROFESSIONAL ACTIVITIES
