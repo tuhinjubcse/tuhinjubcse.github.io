@@ -93,8 +93,7 @@ In Proceedings of <a href="https://naacl2019.org/" title="Title"> <u>NAACL 2019<
   [Code]</a>
 <a href="http://www.cs.columbia.edu/~chidey/files/sigdial2019discourse.pdf" title="Title">
   [Slides]</a>
- <font color="blue"> <b> Tags: </b> </font>, <font color="black"> Discourse</font><br></p>
-<br></p>
+ <br><font color="blue"> <b> Tags: </b> </font>, <font color="black"> Discourse</font><br></p>
 
  <p> 4) <b> <font color="brown"> Pay "Attention'' to your Context when Classifying Abusive Language </font> </b> <br>
 In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>  
@@ -102,24 +101,21 @@ In Proceedings of 3rd Abusive Language Workshop ,ACL 2019  Florence, Italy. <br>
  <a href="https://www.aclweb.org/anthology/W19-3508.pdf" title="Title">
 [pdf] </a> <a href="https://github.com/tuhinjubcse/ALW3-ACL2019" title="Title">
 [Code] </a> 
- <font color="blue"> <b> Tags: </b> </font>, <font color="black"> NLP For Social Good </font><br></p>
-<br></p>
+ <br><font color="blue"> <b> Tags: </b> </font>, <font color="black"> NLP For Social Good </font><br></p>
 
 <p> 5) <b> <font color="brown"> The Answer is Language Model Fine-tuning </font> </b> <br>
  In Proceedings of the 13th International Workshop on Semantic Evaluation , NAACL-HLT , Minneapolis, USA, June 2019  <br> 
   <font color="green"><b> Tuhin Chakrabarty </b></font> ,<font color="black">Smaranda Muresan.</font> <br> 
 <a href="https://www.aclweb.org/anthology/S19-2200.pdf" title="Title">
 [pdf] </a> 
- <font color="blue"> <b> Tags: </b> </font>, <font color="black"> Discourse, Argumentation </font><br></p>
-<br></p>
+ <br><font color="blue"> <b> Tags: </b> </font>, <font color="black"> Discourse, Argumentation </font><br></p>
 
 ## 2018
 <p> 1) <b> <font color="brown">Robust Document Retrieval and Individual Evidence Modeling for Fact Extraction and Verification </font> </b> <br>
  In Proceedings of the First Workshop on Fact Extraction and VERification (FEVER) ,EMNLP ,Brussels ,2018  <br> 
   <font color="green"><b> Tuhin Chakrabarty </b> </font> ,<font color="black">Tariq Alhindi , Smaranda Muresan </font> :- <br> <a href="http://aclweb.org/anthology/W18-5521.pdf" title="Title"> [pdf] </a> <a href="https://github.com/tuhinjubcse/FEVER-EMNLP" title="Title"> 
 [Code] </a>.
- <font color="blue"> <b> Tags: </b> </font>, <font color="black"> Discourse, Argumentation </font><br></p>
-<br></p>
+ <br><font color="blue"> <b> Tags: </b> </font>, <font color="black"> Discourse, Argumentation </font><br></p>
 
 
 ## PROFESSIONAL ACTIVITIES
