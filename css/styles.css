@@ -665,6 +665,36 @@ ul.np {
     border-radius: 4px;
 }
 
+.sparkle {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    font-size: 2em;
+    }
+
+.sparkle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, #fff, transparent);
+    transform: scale(0);
+    animation: sparkle 1.5s infinite;
+    }
+
+@keyframes sparkle {
+    0%, 100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 1;
+        }
+    }
+
 .publication {
     width: 900px;
     min-height: 20px;
