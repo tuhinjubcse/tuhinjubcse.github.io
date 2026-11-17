@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>90 Books Through Pangram and GPTZero</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Layout: a bookshelf of spines as the hero, then a ledger grouped by year */
+  --paper:#f3f4f1;
+  --card:#fbfbf9;
+  --ink:#121a16;
+  --ink-2:#5a655f;
+  --rule:#dcdfda;
+  --accent:#1d6048;
+  --accent-soft:#e1ede6;
+  --flag:#b4541a;
+  --flag-soft:#f7e6da;
+  --shelf:#121a16;
+  --display:"Instrument Serif","Iowan Old Style",Georgia,serif;
+  --body:"Geist",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --s1:#244636;--s2:#1f3557;--s3:#6e2a2c;--s4:#a8792c;--s5:#46505a;--s6:#553a5c;--s7:#2a6466;--s8:#8a4b32;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0f1311;--card:#151a17;--ink:#ecefeb;--ink-2:#9ba79f;--rule:#27302b;
+    --accent:#86cdaf;--accent-soft:#1b2c25;--flag:#f0a46e;--flag-soft:#33241a;--shelf:#ecefeb;
+    --s1:#3f6e57;--s2:#3c5a8a;--s3:#9a4a4c;--s4:#c49a4d;--s5:#6c7782;--s6:#7d5a86;--s7:#3f8a8c;--s8:#b06c50;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0f1311;--card:#151a17;--ink:#ecefeb;--ink-2:#9ba79f;--rule:#27302b;
+  --accent:#86cdaf;--accent-soft:#1b2c25;--flag:#f0a46e;--flag-soft:#33241a;--shelf:#ecefeb;
+  --s1:#3f6e57;--s2:#3c5a8a;--s3:#9a4a4c;--s4:#c49a4d;--s5:#6c7782;--s6:#7d5a86;--s7:#3f8a8c;--s8:#b06c50;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:780px;margin:0 auto;padding:44px 22px 48px;display:flex;flex-direction:column;gap:34px}
+
+.kicker{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);display:flex;gap:10px;align-items:center}
+.kicker i{width:22px;height:1px;background:var(--ink-2);display:inline-block}
+header{display:flex;flex-direction:column;gap:14px}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(40px,8vw,68px);line-height:.98;margin:0;letter-spacing:-.015em;text-wrap:balance}
+h1 em{color:var(--accent)}
+.dek{margin:0;color:var(--ink-2);max-width:58ch;font-size:16.5px;line-height:1.6}
+
+.shelfbox{display:flex;flex-direction:column;gap:10px}
+.shelf{display:flex;align-items:flex-end;gap:2px;height:210px;overflow:visible;border-bottom:3px solid var(--shelf);padding:0 2px}
+.spine{flex:1 1 0;min-width:2px;max-width:12px;border-radius:2px 2px 0 0;position:relative;cursor:pointer;transform-origin:bottom;
+  box-shadow:inset 0 9px 0 -7px rgba(255,255,255,.35),inset 0 15px 0 -13px rgba(255,255,255,.25),inset 1px 0 0 rgba(255,255,255,.12)}
+.spine.flag::after{content:"";position:absolute;left:50%;top:-10px;width:6px;height:6px;margin-left:-3px;border-radius:50%;background:var(--flag)}
+.spine:hover,.spine:focus-visible,.spine.on{filter:brightness(1.25);transform:translateY(-6px);outline:none}
+@media (prefers-reduced-motion:no-preference){
+  .spine{transition:transform .18s ease,filter .18s ease}
+  .shelf.rise .spine{animation:rise .7s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i) * 9ms)}
+  @keyframes rise{from{transform:scaleY(.04)}to{transform:scaleY(1)}}
+}
+.years{position:relative;height:16px;font-family:var(--mono);font-size:11px;color:var(--ink-2);padding:0 2px}
+.caption{min-height:46px;display:flex;flex-direction:column;gap:2px;border-left:2px solid var(--accent);padding:2px 0 2px 12px}
+.caption .ct{font-family:var(--display);font-size:22px;line-height:1.15}
+.caption .cm{font-family:var(--mono);font-size:12px;color:var(--ink-2)}
+
+.figures{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--ink)}
+.fig{padding:16px 14px 12px 0;display:flex;flex-direction:column;gap:4px}
+.fig + .fig{padding-left:18px;border-left:1px solid var(--rule)}
+.fig b{font-family:var(--display);font-weight:400;font-size:clamp(32px,5.4vw,46px);line-height:1;font-variant-numeric:lining-nums tabular-nums}
+.fig b.hl{color:var(--accent);font-style:italic}
+.fig b.fl{color:var(--flag);font-style:italic}
+.fig span{font-size:13px;color:var(--ink-2)}
+
+.tools{display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.search{flex:1 1 260px;position:relative;display:block}
+.search input{width:100%;font:inherit;font-size:15px;color:var(--ink);background:transparent;border:none;border-bottom:1px solid var(--ink-2);border-radius:0;padding:8px 4px 8px 28px;outline:none}
+.search input::placeholder{color:var(--ink-2)}
+.search input:focus-visible{border-bottom-color:var(--accent);box-shadow:0 1px 0 var(--accent)}
+.search svg{position:absolute;left:2px;top:50%;transform:translateY(-50%);color:var(--ink-2)}
+.count{font-family:var(--mono);font-size:12px;color:var(--ink-2)}
+
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:600px}
+thead th{text-align:left;font-weight:500;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;font-family:var(--mono);color:var(--ink-2);padding:0;border-bottom:1px solid var(--ink);white-space:nowrap}
+th button{all:unset;cursor:pointer;display:flex;align-items:center;gap:6px;padding:10px 12px 10px 0;width:100%;box-sizing:border-box}
+th.num button{justify-content:flex-end;padding:10px 0 10px 12px}
+th button:hover,th[aria-sort] button{color:var(--ink)}
+th button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.arrow{opacity:.35}
+th[aria-sort] .arrow{opacity:1;color:var(--accent)}
+td{padding:12px 12px 12px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+td.num{padding:12px 0 12px 12px}
+tr.grp td{border-bottom:none;padding:22px 0 4px;font-family:var(--display);font-style:italic;font-size:24px;line-height:1;color:var(--accent)}
+tr.book{transition:background .15s}
+tr.book:hover td,tr.book.flash td{background:var(--accent-soft)}
+.t{font-family:var(--display);font-size:20px;line-height:1.2}
+.a{font-size:13px;color:var(--ink-2);margin-top:3px;display:flex;align-items:center;gap:7px}
+.dot{width:7px;height:10px;border-radius:1px;flex:none}
+.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:13px;white-space:nowrap}
+.yr{color:var(--ink-2)}
+.words{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.track{width:80px;height:3px;background:var(--rule);overflow:hidden}
+.track i{display:block;height:100%;background:var(--ink-2)}
+.pill{display:inline-flex;align-items:center;gap:6px;color:var(--accent);font-weight:500}
+.pill::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.pill.fl{color:var(--flag)}.pill.fl::before{background:var(--flag)}
+.segs{display:block;font-size:11.5px;color:var(--ink-2);margin-top:3px}
+tfoot td{border-top:1px solid var(--ink);border-bottom:none;font-weight:500;padding-top:14px}
+tfoot td:first-child{font-family:var(--display);font-size:20px;font-weight:400}
+.empty{padding:28px 0;text-align:center;color:var(--ink-2)}
+.note{font-size:13px;color:var(--ink-2);max-width:66ch;margin:0;line-height:1.65}
+.note code{font-family:var(--mono);font-size:12px}
+@media (max-width:540px){
+  .wrap{padding:30px 16px 36px;gap:28px}
+  .shelf{height:150px;gap:1px}
+  .figures{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fig{padding-right:8px}.fig + .fig{padding-left:10px}
+  .fig:nth-child(3){padding-left:0;border-left:none;border-top:1px solid var(--rule)}.fig:nth-child(4){border-top:1px solid var(--rule)}
+  .fig span{font-size:12px}
+  .t{font-size:18px}
+  .track{width:56px}
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <div class="kicker"><i></i>Pangram and GPTZero · 2020–2026</div>
+    <h1>Ninety books, <em>one</em> above 1% AI</h1>
+    <p class="dek">Two AI detectors read 90 books listed between 2020 and 2026: Pangram scored 2,484 passages and GPTZero 594,648 sentences. Only one book, <em>The Friendship Bench</em>, scored 1% or more on Pangram, and GPTZero scored every book at 0.00%. Each spine below is a book, shelved by year and drawn to the number of words scanned; a mark above a spine means the book scored 1% or more on Pangram.</p>
+  </header>
+
+  <section class="shelfbox" aria-label="Bookshelf of all 90 books, ordered by year">
+    <div class="shelf rise" id="shelf"></div>
+    <div class="years" id="years"></div>
+    <div class="caption" id="caption" aria-live="polite">
+      <span class="ct">Hover or tap a spine</span>
+      <span class="cm">Taller spines are longer scans</span>
+    </div>
+  </section>
+
+  <section class="figures" aria-label="Headline figures">
+    <div class="fig"><b>90</b><span>books scanned</span></div>
+    <div class="fig"><b>7.49M</b><span>words analyzed</span></div>
+    <div class="fig"><b class="hl">0.01%</b><span>AI, Pangram</span></div>
+    <div class="fig"><b class="hl">0.00%</b><span>AI, GPTZero</span></div>
+  </section>
+
+  <section style="display:flex;flex-direction:column;gap:12px">
+    <div class="tools">
+      <label class="search" for="q">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Search a title or author" autocomplete="off" aria-label="Search a title or author">
+      </label>
+      <span class="count" id="count" aria-live="polite">90 of 90 books</span>
+    </div>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th data-k="t" scope="col"><button type="button">Book <span class="arrow">↕</span></button></th>
+            <th data-k="y" class="num" scope="col" aria-sort="ascending"><button type="button">Year <span class="arrow">↑</span></button></th>
+            <th data-k="w" class="num" scope="col"><button type="button">Words <span class="arrow">↕</span></button></th>
+            <th data-k="p" class="num" scope="col"><button type="button">Pangram <span class="arrow">↕</span></button></th>
+            <th data-k="g" class="num" scope="col"><button type="button">GPTZero <span class="arrow">↕</span></button></th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+        <tfoot>
+          <tr>
+            <td id="footLabel">All 90 books</td>
+            <td class="num yr">2020–26</td>
+            <td class="num" id="footWords">7,493,147</td>
+            <td class="num"><span class="pill" id="footAI">0.01%</span></td>
+            <td class="num"><span class="pill" id="footG">0.00%</span></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </section>
+
+  <p class="note">Pangram is the mean of its <code>fraction_ai</code> across each book's scanned passages (model 4.1); segments counts the stretches of text it labelled AI-written. GPTZero is its book-level AI score (model 2026-11-04-base), with 0 of 594,648 sentences and 0 of 2,501 passages classed as AI or mixed. Both are shown as percentages to two decimals. Words counts the text submitted to Pangram; books scanned in several parts are combined. Caleb Azumah Nelson's <em>Small Worlds</em> (2023) is excluded from this sample.</p>
+</main>
+
+<script>
+const BOOKS = [{"t": "A Bigger Picture", "a": "Vanessa Nakate", "y": 2021, "w": 62110, "p": 0, "s": 0, "n": 13, "g": 0.0}, {"t": "Dear Senthuran", "a": "Akwaeke Emezi", "y": 2021, "w": 66376, "p": 0, "s": 0, "n": 33, "g": 0.0}, {"t": "A Down Home Meal for These Difficult Times", "a": "Meron Hadero", "y": 2022, "w": 62546, "p": 0, "s": 0, "n": 18, "g": 0.0}, {"t": "A Girl Is a Body of Water", "a": "Jennifer Nansubuga Makumbi", "y": 2020, "w": 131968, "p": 0, "s": 0, "n": 52, "g": 0.0}, {"t": "A Siege of Owls", "a": "Uchenna Awoke", "y": 2026, "w": 74408, "p": 0, "s": 0, "n": 55, "g": 0.0}, {"t": "A Spell of Good Things", "a": "Ayọ̀bámi Adébáyọ̀", "y": 2023, "w": 117255, "p": 0, "s": 0, "n": 27, "g": 0.0}, {"t": "A Season of Light", "a": "Julie Iromuanya", "y": 2025, "w": 63879, "p": 0, "s": 0, "n": 25, "g": 0.0}, {"t": "Africa Is Not a Country", "a": "Dipo Faloyin", "y": 2022, "w": 93240, "p": 0, "s": 0, "n": 22, "g": 0.0}, {"t": "Aftershocks", "a": "Nadia Owusu", "y": 2021, "w": 84719, "p": 0, "s": 0, "n": 36, "g": 0.0}, {"t": "Against Decolonisation", "a": "Olúfẹ́mi Táíwò", "y": 2022, "w": 84844, "p": 0, "s": 0, "n": 23, "g": 0.0}, {"t": "An African History of Africa", "a": "Zeinab Badawi", "y": 2024, "w": 136597, "p": 0, "s": 0, "n": 19, "g": 0.0}, {"t": "An Ordinary Wonder", "a": "Buki Papillon", "y": 2021, "w": 100311, "p": 0, "s": 0, "n": 51, "g": 0.0}, {"t": "Anansi's Gold", "a": "Yepoka Yeebo", "y": 2023, "w": 119963, "p": 0, "s": 0, "n": 49, "g": 0.0}, {"t": "And So I Roar", "a": "Abi Daré", "y": 2024, "w": 111374, "p": 0, "s": 0, "n": 24, "g": 0.0}, {"t": "And Then He Sang a Lullaby", "a": "Ani Kayode Somtochukwu", "y": 2023, "w": 75145, "p": 0, "s": 0, "n": 24, "g": 0.0}, {"t": "Before We Hit the Ground", "a": "Selali Fiamanya", "y": 2025, "w": 94342, "p": 0, "s": 0, "n": 29, "g": 0.0}, {"t": "Blessings", "a": "Chukwuebuka Ibeh", "y": 2024, "w": 76009, "p": 0, "s": 0, "n": 28, "g": 0.0}, {"t": "Butter Honey Pig Bread", "a": "Francesca Ekwuyasi", "y": 2020, "w": 90713, "p": 0, "s": 0, "n": 4, "g": 0.0}, {"t": "Call and Response", "a": "Gothataone Moeng", "y": 2023, "w": 86071, "p": 0, "s": 0, "n": 23, "g": 0.0}, {"t": "Chronicles from the Land of the Happiest People on Earth", "a": "Wole Soyinka", "y": 2021, "w": 163089, "p": 0, "s": 0, "n": 23, "g": 0.0}, {"t": "Co-wives, Co-widows", "a": "Adrienne Yabouza", "y": 2021, "w": 27960, "p": 0, "s": 0, "n": 13, "g": 0.0}, {"t": "Cursed Daughters", "a": "Oyinkan Braithwaite", "y": 2025, "w": 82363, "p": 0, "s": 0, "n": 106, "g": 0.0}, {"t": "Dazzling", "a": "Chikodili Emelumadu", "y": 2023, "w": 103589, "p": 0, "s": 0, "n": 54, "g": 0.0}, {"t": "Dealing with the Dead", "a": "Alain Mabanckou", "y": 2025, "w": 56500, "p": 0, "s": 0, "n": 31, "g": 0.0}, {"t": "Death of the Author", "a": "Nnedi Okorafor", "y": 2025, "w": 137789, "p": 0, "s": 0, "n": 52, "g": 0.0}, {"t": "Dream Count", "a": "Chimamanda Ngozi Adichie", "y": 2025, "w": 145600, "p": 0, "s": 0, "n": 16, "g": 0.0}, {"t": "Everything Is Fine Here", "a": "Iryn Tushabe", "y": 2025, "w": 74524, "p": 0, "s": 0, "n": 18, "g": 0.0}, {"t": "For You, I'd Steal a Goat", "a": "Niq Mhlongo", "y": 2022, "w": 50906, "p": 0, "s": 0, "n": 10, "g": 0.0}, {"t": "Gaslight", "a": "Femi Kayode", "y": 2023, "w": 92045, "p": 0, "s": 0, "n": 51, "g": 0.0}, {"t": "Ghost Season", "a": "Fatin Abbas", "y": 2023, "w": 85842, "p": 0, "s": 0, "n": 9, "g": 0.0}, {"t": "Ghostroots", "a": "'Pemi Aguda", "y": 2024, "w": 53701, "p": 0, "s": 0, "n": 12, "g": 0.0}, {"t": "God's Children Are Little Broken Things", "a": "Arinze Ifeakandu", "y": 2022, "w": 71361, "p": 0, "s": 0, "n": 26, "g": 0.0}, {"t": "Grace", "a": "Chika Unigwe", "y": 2026, "w": 66506, "p": 0, "s": 0, "n": 47, "g": 0.0}, {"t": "Harry Sylvester Bird", "a": "Chinelo Okparanta", "y": 2022, "w": 87848, "p": 0, "s": 0, "n": 5, "g": 0.0}, {"t": "His Only Wife", "a": "Peace Adzo Medie", "y": 2020, "w": 81003, "p": 0, "s": 0, "n": 13, "g": 0.0}, {"t": "Honey & Spice", "a": "Bolu Babalola", "y": 2022, "w": 112722, "p": 0, "s": 0, "n": 30, "g": 0.0}, {"t": "How Beautiful We Were", "a": "Imbolo Mbue", "y": 2021, "w": 129994, "p": 0, "s": 0, "n": 11, "g": 0.0}, {"t": "Igifu", "a": "Scholastique Mukasonga", "y": 2020, "w": 27965, "p": 0, "s": 0, "n": 5, "g": 0.0}, {"t": "In the Company of Men", "a": "Véronique Tadjo", "y": 2021, "w": 27484, "p": 0, "s": 0, "n": 15, "g": 0.0}, {"t": "Kibogo", "a": "Scholastique Mukasonga", "y": 2022, "w": 35422, "p": 0, "s": 0, "n": 4, "g": 0.0}, {"t": "Little Family", "a": "Ishmael Beah", "y": 2020, "w": 79830, "p": 0, "s": 0, "n": 11, "g": 0.0}, {"t": "Little Rot", "a": "Akwaeke Emezi", "y": 2024, "w": 79584, "p": 0, "s": 0, "n": 20, "g": 0.0}, {"t": "Lost Ark Dreaming", "a": "Suyi Davies Okungbowa", "y": 2024, "w": 39082, "p": 0, "s": 0, "n": 9, "g": 0.0}, {"t": "Love in Colour", "a": "Bolu Babalola", "y": 2020, "w": 75292, "p": 0, "s": 0, "n": 11, "g": 0.0}, {"t": "Lucky Girl", "a": "Irene Muchemi-Ndiritu", "y": 2023, "w": 101447, "p": 0, "s": 0, "n": 20, "g": 0.0}, {"t": "Necessary Fiction", "a": "Eloghosa Osunde", "y": 2025, "w": 95602, "p": 0, "s": 0, "n": 26, "g": 0.0}, {"t": "New York, My Village", "a": "Uwem Akpan", "y": 2021, "w": 124362, "p": 0, "s": 0, "n": 35, "g": 0.0}, {"t": "Nightbloom", "a": "Peace Adzo Medie", "y": 2023, "w": 116511, "p": 0, "s": 0, "n": 16, "g": 0.0}, {"t": "No One Dies Yet", "a": "Kobby Ben Ben", "y": 2023, "w": 116419, "p": 0, "s": 0, "n": 41, "g": 0.0}, {"t": "Notes on Grief", "a": "Chimamanda Ngozi Adichie", "y": 2021, "w": 10267, "p": 0, "s": 0, "n": 29, "g": 0.0}, {"t": "Obligations to the Wounded", "a": "Mubanga Kalimamukwento", "y": 2024, "w": 41253, "p": 0, "s": 0, "n": 16, "g": 0.0}, {"t": "Ogadinma, or Everything Will Be All Right", "a": "Ukamaka Olisakwe", "y": 2020, "w": 81170, "p": 0, "s": 0, "n": 22, "g": 0.0}, {"t": "On Morrison", "a": "Namwali Serpell", "y": 2026, "w": 136602, "p": 0, "s": 0, "n": 12, "g": 0.0}, {"t": "On Rotation", "a": "Shirlene Obuobi", "y": 2022, "w": 103125, "p": 0, "s": 0, "n": 29, "g": 0.0}, {"t": "One Leg on Earth", "a": "'Pemi Aguda", "y": 2026, "w": 49777, "p": 0, "s": 0, "n": 23, "g": 0.0}, {"t": "Only Stars Know the Meaning of Space", "a": "Rémy Ngamije", "y": 2024, "w": 75974, "p": 0, "s": 0, "n": 78, "g": 0.0}, {"t": "Only Because It's You", "a": "Rebecca Fisseha", "y": 2025, "w": 83105, "p": 0, "s": 0, "n": 42, "g": 0.0}, {"t": "Open Water", "a": "Caleb Azumah Nelson", "y": 2021, "w": 42206, "p": 0, "s": 0, "n": 31, "g": 0.0}, {"t": "Parasol Against the Axe", "a": "Helen Oyeyemi", "y": 2024, "w": 78666, "p": 0, "s": 0, "n": 12, "g": 0.0}, {"t": "Rinsing Mukami's Soul", "a": "Njambi McGrath", "y": 2024, "w": 88997, "p": 0, "s": 0, "n": 46, "g": 0.0}, {"t": "Salutation Road", "a": "Salma Ibrahim", "y": 2025, "w": 71628, "p": 0, "s": 0, "n": 22, "g": 0.0}, {"t": "Sankofa", "a": "Chibundu Onuzo", "y": 2021, "w": 75686, "p": 0, "s": 0, "n": 29, "g": 0.0}, {"t": "Scale Boy: An African Childhood", "a": "Patrice Nganang", "y": 2026, "w": 126871, "p": 0, "s": 0, "n": 68, "g": 0.0}, {"t": "Season of the Serpent", "a": "Suyi Davies Okungbowa", "y": 2026, "w": 103953, "p": 0, "s": 0, "n": 44, "g": 0.0}, {"t": "Only Big Bumbum Matters Tomorrow", "a": "Damilare Kuku", "y": 2024, "w": 61503, "p": 0, "s": 0, "n": 20, "g": 0.0}, {"t": "Someday, Maybe", "a": "Onyi Nwabineli", "y": 2022, "w": 98563, "p": 0, "s": 0, "n": 34, "g": 0.0}, {"t": "Stranger Faces", "a": "Namwali Serpell", "y": 2020, "w": 35479, "p": 0, "s": 0, "n": 8, "g": 0.0}, {"t": "The Comfort of Distant Stars", "a": "I. O. Echeruo", "y": 2026, "w": 88956, "p": 0, "s": 0, "n": 19, "g": 0.0}, {"t": "The Daughter Who Remains", "a": "Nnedi Okorafor", "y": 2026, "w": 37210, "p": 0, "s": 0, "n": 12, "g": 0.0}, {"t": "The Death of Vivek Oji", "a": "Akwaeke Emezi", "y": 2020, "w": 62911, "p": 0, "s": 0, "n": 23, "g": 0.0}, {"t": "The Dragons, the Giant, the Women", "a": "Wayétu Moore", "y": 2020, "w": 72491, "p": 0, "s": 0, "n": 29, "g": 0.0}, {"t": "The Edge of Water", "a": "Olufunke Grace Bankole", "y": 2025, "w": 64272, "p": 0, "s": 0, "n": 5, "g": 0.0}, {"t": "The Fist of Memory", "a": "Wole Talabi", "y": 2026, "w": 119438, "p": 0, "s": 0, "n": 51, "g": 0.0}, {"t": "The Five Sorrowful Mysteries of Andy Africa", "a": "Stephen Buoro", "y": 2023, "w": 88705, "p": 0, "s": 0, "n": 5, "g": 0.0}, {"t": "The Fortune Men", "a": "Nadifa Mohamed", "y": 2021, "w": 94862, "p": 0, "s": 0, "n": 17, "g": 0.0}, {"t": "The Friendship Bench", "a": "Dixon Chibanda", "y": 2025, "w": 50721, "p": 0.013484, "s": 8, "n": 9, "g": 0.0}, {"t": "The Girl with the Louding Voice", "a": "Abi Daré", "y": 2020, "w": 106069, "p": 0, "s": 0, "n": 58, "g": 0.0}, {"t": "The History of a Difficult Child", "a": "Mihret Sibhat", "y": 2023, "w": 109976, "p": 0, "s": 0, "n": 37, "g": 0.0}, {"t": "The House of Rust", "a": "Khadija Abdalla Bajaber", "y": 2021, "w": 80504, "p": 0, "s": 0, "n": 26, "g": 0.0}, {"t": "The Lion's Den", "a": "Iris Mwanza", "y": 2024, "w": 61959, "p": 0, "s": 0, "n": 24, "g": 0.0}, {"t": "The Missing American", "a": "Kwei Quartey", "y": 2020, "w": 106646, "p": 0, "s": 0, "n": 108, "g": 0.0}, {"t": "The Perfect Nine", "a": "Ngũgĩ wa Thiong'o", "y": 2020, "w": 21967, "p": 0, "s": 0, "n": 23, "g": 0.0}, {"t": "The Road to the Country", "a": "Chigozie Obioma", "y": 2024, "w": 118674, "p": 0, "s": 0, "n": 38, "g": 0.0}, {"t": "The Shipikisha Club", "a": "Mubanga Kalimamukwento", "y": 2026, "w": 81643, "p": 0, "s": 0, "n": 32, "g": 0.0}, {"t": "The Tiny Things Are Heavier", "a": "Esther Ifesinachi Okonkwo", "y": 2025, "w": 92090, "p": 0, "s": 0, "n": 2, "g": 0.0}, {"t": "The Waiting", "a": "Martin Egblewogbe", "y": 2020, "w": 46361, "p": 0, "s": 0, "n": 18, "g": 0.0}, {"t": "Theft", "a": "Abdulrazak Gurnah", "y": 2025, "w": 83833, "p": 0, "s": 0, "n": 22, "g": 0.0}, {"t": "Things They Lost", "a": "Okwiri Oduor", "y": 2022, "w": 97433, "p": 0, "s": 0, "n": 2, "g": 0.0}, {"t": "Transcendent Kingdom", "a": "Yaa Gyasi", "y": 2020, "w": 75058, "p": 0, "s": 0, "n": 53, "g": 0.0}, {"t": "Vagabonds!", "a": "Eloghosa Osunde", "y": 2022, "w": 92331, "p": 0, "s": 0, "n": 11, "g": 0.0}];
+const N = BOOKS.length;
+const max = Math.max(...BOOKS.map(b => b.w));
+const fmt = new Intl.NumberFormat("en-US");
+const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const hash = s => { let h = 7; for (const c of s) h = (h * 31 + c.charCodeAt(0)) >>> 0; return h; };
+BOOKS.forEach((b, i) => { b.id = i; b.c = `var(--s${hash(b.t) % 8 + 1})`; });
+
+const shelf = document.getElementById("shelf");
+const cap = document.getElementById("caption");
+const byYear = [...BOOKS].sort((x, y) => x.y - y.y || x.t.localeCompare(y.t));
+shelf.innerHTML = byYear.map((b, i) =>
+  `<div class="spine${b.s ? " flag" : ""}" tabindex="0" role="button" data-id="${b.id}" style="--i:${i};background:${b.c};height:${(22 + 78 * b.w / max).toFixed(1)}%" aria-label="${esc(b.t)} by ${esc(b.a)}, ${b.y}, ${fmt.format(b.w)} words, ${(b.p*100).toFixed(2)}% AI on Pangram${b.s ? `, ${b.s} flagged segment${b.s>1?"s":""}` : ""}, ${(b.g*100).toFixed(2)}% on GPTZero"></div>`).join("");
+function showCap(b){
+  cap.innerHTML = `<span class="ct">${esc(b.t)}</span><span class="cm">${esc(b.a)} · ${b.y} · ${fmt.format(b.w)} words · Pangram ${(b.p*100).toFixed(2)}%${b.s ? ` (${b.s} segment${b.s>1?"s":""})` : ""} · GPTZero ${(b.g*100).toFixed(2)}%</span>`;
+}
+shelf.addEventListener("pointerover", e => { const s = e.target.closest(".spine"); if (s) showCap(BOOKS[s.dataset.id]); });
+shelf.addEventListener("focusin", e => { const s = e.target.closest(".spine"); if (s) showCap(BOOKS[s.dataset.id]); });
+function jump(s){
+  const b = BOOKS[s.dataset.id];
+  showCap(b);
+  shelf.querySelectorAll(".on").forEach(o => o.classList.remove("on"));
+  s.classList.add("on");
+  q.value = ""; render();
+  const row = document.getElementById("b" + b.id);
+  if (row){ row.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center"}); row.classList.add("flash"); setTimeout(() => row.classList.remove("flash"), 1600); }
+}
+shelf.addEventListener("click", e => { const s = e.target.closest(".spine"); if (s) jump(s); });
+shelf.addEventListener("keydown", e => { const s = e.target.closest(".spine"); if (s && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); jump(s); } });
+setTimeout(() => shelf.classList.remove("rise"), 2000);
+document.getElementById("years").innerHTML = [2020, 2021, 2022, 2023, 2024, 2025, 2026].map(y => {
+  const i = byYear.findIndex(b => b.y === y);
+  const pos = (i + 0.5) / N * 100;
+  const align = y === 2020 ? "left:0" : `left:${pos.toFixed(2)}%;transform:translateX(-50%)`;
+  return `<span style="position:absolute;${align}">${y}</span>`;
+}).join("");
+
+const tbody = document.getElementById("rows");
+const q = document.getElementById("q");
+const count = document.getElementById("count");
+let sortKey = "y", dir = 1;
+
+function row(b){
+  return `<tr class="book" id="b${b.id}">
+    <td><div class="t">${esc(b.t)}</div><div class="a"><span class="dot" style="background:${b.c}"></span>${esc(b.a)}</div></td>
+    <td class="num yr">${b.y}</td>
+    <td class="num"><div class="words"><span>${fmt.format(b.w)}</span><span class="track"><i style="width:${(b.w / max * 100).toFixed(1)}%"></i></span></div></td>
+    <td class="num"><span class="pill${b.s ? " fl" : ""}">${(b.p * 100).toFixed(2)}%</span>${b.s ? `<span class="segs">${b.s} segment${b.s>1?"s":""}</span>` : ""}</td>
+    <td class="num"><span class="pill">${(b.g * 100).toFixed(2)}%</span></td>
+  </tr>`;
+}
+function render(){
+  const term = q.value.trim().toLowerCase();
+  let list = BOOKS.filter(b => !term || b.t.toLowerCase().includes(term) || b.a.toLowerCase().includes(term));
+  list.sort((x, y) => {
+    let r = sortKey === "t" ? x.t.localeCompare(y.t) : (x[sortKey] - y[sortKey]);
+    if (r === 0) r = x.y - y.y || x.t.localeCompare(y.t);
+    return r * dir;
+  });
+  let html = "", last = null;
+  for (const b of list){
+    if (sortKey === "y" && b.y !== last){ html += `<tr class="grp"><td colspan="5">${b.y}</td></tr>`; last = b.y; }
+    html += row(b);
+  }
+  tbody.innerHTML = list.length ? html : `<tr><td colspan="5" class="empty">No book or author matches “${esc(q.value)}”.</td></tr>`;
+  count.textContent = `${list.length} of ${N} books`;
+  document.getElementById("footLabel").textContent = term ? `${list.length} matching book${list.length === 1 ? "" : "s"}` : `All ${N} books`;
+  document.getElementById("footWords").textContent = fmt.format(list.reduce((s, b) => s + b.w, 0));
+  document.getElementById("footAI").textContent = list.length ? (list.reduce((s, b) => s + b.p, 0) / list.length * 100).toFixed(2) + "%" : "–";
+  document.getElementById("footG").textContent = list.length ? (list.reduce((s, b) => s + b.g, 0) / list.length * 100).toFixed(2) + "%" : "–";
+}
+document.querySelectorAll("th[data-k]").forEach(th => {
+  th.querySelector("button").addEventListener("click", () => {
+    const k = th.dataset.k;
+    if (k === sortKey) dir = -dir; else { sortKey = k; dir = (k === "w") ? -1 : 1; }
+    document.querySelectorAll("th[data-k]").forEach(o => { o.removeAttribute("aria-sort"); o.querySelector(".arrow").textContent = "↕"; });
+    th.setAttribute("aria-sort", dir === 1 ? "ascending" : "descending");
+    th.querySelector(".arrow").textContent = dir === 1 ? "↑" : "↓";
+    render();
+  });
+});
+q.addEventListener("input", render);
+render();
+</script>
+</body>
+</html>
