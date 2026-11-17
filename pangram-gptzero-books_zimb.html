@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>97 Books Through Pangram and GPTZero</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Geist:wght@400;500&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  /* Layout: a bookshelf of 97 spines as the hero, then a ledger grouped by year */
+  --paper:#f3f4f1;
+  --card:#fbfbf9;
+  --ink:#121a16;
+  --ink-2:#5a655f;
+  --rule:#dcdfda;
+  --accent:#1d6048;
+  --accent-soft:#e1ede6;
+  --shelf:#121a16;
+  --display:"Instrument Serif","Iowan Old Style",Georgia,serif;
+  --body:"Geist",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --s1:#244636;--s2:#1f3557;--s3:#6e2a2c;--s4:#a8792c;--s5:#46505a;--s6:#553a5c;--s7:#2a6466;--s8:#8a4b32;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --paper:#0f1311;--card:#151a17;--ink:#ecefeb;--ink-2:#9ba79f;--rule:#27302b;
+    --accent:#86cdaf;--accent-soft:#1b2c25;--shelf:#ecefeb;
+    --s1:#3f6e57;--s2:#3c5a8a;--s3:#9a4a4c;--s4:#c49a4d;--s5:#6c7782;--s6:#7d5a86;--s7:#3f8a8c;--s8:#b06c50;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0f1311;--card:#151a17;--ink:#ecefeb;--ink-2:#9ba79f;--rule:#27302b;
+  --accent:#86cdaf;--accent-soft:#1b2c25;--shelf:#ecefeb;
+  --s1:#3f6e57;--s2:#3c5a8a;--s3:#9a4a4c;--s4:#c49a4d;--s5:#6c7782;--s6:#7d5a86;--s7:#3f8a8c;--s8:#b06c50;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:780px;margin:0 auto;padding:44px 22px 48px;display:flex;flex-direction:column;gap:34px}
+
+.kicker{font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-2);display:flex;gap:10px;align-items:center}
+.kicker i{width:22px;height:1px;background:var(--ink-2);display:inline-block}
+header{display:flex;flex-direction:column;gap:14px}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(40px,8vw,68px);line-height:.98;margin:0;letter-spacing:-.015em;text-wrap:balance}
+h1 em{color:var(--accent)}
+.dek{margin:0;color:var(--ink-2);max-width:58ch;font-size:16.5px;line-height:1.6}
+
+.shelfbox{display:flex;flex-direction:column;gap:10px}
+.shelf{display:flex;align-items:flex-end;gap:2px;height:210px;border-bottom:3px solid var(--shelf);padding:0 2px}
+.spine{flex:1 1 0;min-width:2px;max-width:12px;border-radius:2px 2px 0 0;position:relative;cursor:pointer;transform-origin:bottom;
+  box-shadow:inset 0 9px 0 -7px rgba(255,255,255,.35),inset 0 15px 0 -13px rgba(255,255,255,.25),inset 1px 0 0 rgba(255,255,255,.12)}
+.spine:hover,.spine:focus-visible,.spine.on{filter:brightness(1.25);transform:translateY(-6px);outline:none}
+@media (prefers-reduced-motion:no-preference){
+  .spine{transition:transform .18s ease,filter .18s ease}
+  .shelf.rise .spine{animation:rise .7s cubic-bezier(.2,.8,.2,1) both;animation-delay:calc(var(--i) * 9ms)}
+  @keyframes rise{from{transform:scaleY(.04)}to{transform:scaleY(1)}}
+}
+.years{position:relative;height:16px;font-family:var(--mono);font-size:11px;color:var(--ink-2);padding:0 2px}
+.caption{min-height:46px;display:flex;flex-direction:column;gap:2px;border-left:2px solid var(--accent);padding:2px 0 2px 12px}
+.caption .ct{font-family:var(--display);font-size:22px;line-height:1.15}
+.caption .cm{font-family:var(--mono);font-size:12px;color:var(--ink-2)}
+
+.figures{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--ink)}
+.fig{padding:16px 14px 12px 0;display:flex;flex-direction:column;gap:4px}
+.fig + .fig{padding-left:18px;border-left:1px solid var(--rule)}
+.fig b{font-family:var(--display);font-weight:400;font-size:clamp(32px,5.4vw,46px);line-height:1;font-variant-numeric:lining-nums tabular-nums}
+.fig b.hl{color:var(--accent);font-style:italic}
+.fig span{font-size:13px;color:var(--ink-2)}
+
+.tools{display:flex;gap:14px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.search{flex:1 1 260px;position:relative;display:block}
+.search input{width:100%;font:inherit;font-size:15px;color:var(--ink);background:transparent;border:none;border-bottom:1px solid var(--ink-2);border-radius:0;padding:8px 4px 8px 28px;outline:none}
+.search input::placeholder{color:var(--ink-2)}
+.search input:focus-visible{border-bottom-color:var(--accent);box-shadow:0 1px 0 var(--accent)}
+.search svg{position:absolute;left:2px;top:50%;transform:translateY(-50%);color:var(--ink-2)}
+.count{font-family:var(--mono);font-size:12px;color:var(--ink-2)}
+
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;min-width:600px}
+thead th{text-align:left;font-weight:500;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;font-family:var(--mono);color:var(--ink-2);padding:0;border-bottom:1px solid var(--ink);white-space:nowrap}
+th button{all:unset;cursor:pointer;display:flex;align-items:center;gap:6px;padding:10px 12px 10px 0;width:100%;box-sizing:border-box}
+th.num button{justify-content:flex-end;padding:10px 0 10px 12px}
+th button:hover,th[aria-sort] button{color:var(--ink)}
+th button:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.arrow{opacity:.35}
+th[aria-sort] .arrow{opacity:1;color:var(--accent)}
+td{padding:12px 12px 12px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+td.num{padding:12px 0 12px 12px}
+tr.grp td{border-bottom:none;padding:22px 0 4px;font-family:var(--display);font-style:italic;font-size:24px;line-height:1;color:var(--accent)}
+tr.book{transition:background .15s}
+tr.book:hover td,tr.book.flash td{background:var(--accent-soft)}
+.t{font-family:var(--display);font-size:20px;line-height:1.2}
+.a{font-size:13px;color:var(--ink-2);margin-top:3px;display:flex;align-items:center;gap:7px}
+.dot{width:7px;height:10px;border-radius:1px;flex:none}
+.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:13px;white-space:nowrap}
+.yr{color:var(--ink-2)}
+.words{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.track{width:80px;height:3px;background:var(--rule);overflow:hidden}
+.track i{display:block;height:100%;background:var(--ink-2)}
+.pill{display:inline-flex;align-items:center;gap:6px;color:var(--accent);font-weight:500}
+.pill::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent)}
+tfoot td{border-top:1px solid var(--ink);border-bottom:none;font-weight:500;padding-top:14px}
+tfoot td:first-child{font-family:var(--display);font-size:20px;font-weight:400}
+.empty{padding:28px 0;text-align:center;color:var(--ink-2)}
+.note{font-size:13px;color:var(--ink-2);max-width:66ch;margin:0;line-height:1.65}
+.note code{font-family:var(--mono);font-size:12px}
+@media (max-width:540px){
+  .wrap{padding:30px 16px 36px;gap:28px}
+  .shelf{height:150px;gap:1px}
+  .figures{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fig{padding-right:8px}.fig + .fig{padding-left:10px}
+  .fig:nth-child(3){padding-left:0;border-left:none;border-top:1px solid var(--rule)}.fig:nth-child(4){border-top:1px solid var(--rule)}
+  .fig span{font-size:12px}
+  .t{font-size:18px}
+  .track{width:56px}
+}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header>
+    <div class="kicker"><i></i>Pangram and GPTZero · 2001–2025</div>
+    <h1>Ninety-seven books, <em>not one page</em> flagged as AI</h1>
+    <p class="dek">Two AI detectors read every book. Pangram scored 3,607 passages; GPTZero scored the same passages, 515,046 sentences in all. Neither flagged any text as AI-written or AI-assisted. Each spine below is a book, shelved by year and drawn to the number of words scanned.</p>
+  </header>
+
+  <section class="shelfbox" aria-label="Bookshelf of all 97 books, ordered by year">
+    <div class="shelf rise" id="shelf"></div>
+    <div class="years" id="years"></div>
+    <div class="caption" id="caption" aria-live="polite">
+      <span class="ct">Hover or tap a spine</span>
+      <span class="cm">Taller spines are longer scans</span>
+    </div>
+  </section>
+
+  <section class="figures" aria-label="Headline figures">
+    <div class="fig"><b>97</b><span>books scanned</span></div>
+    <div class="fig"><b>7.41M</b><span>words analyzed</span></div>
+    <div class="fig"><b class="hl">0.00%</b><span>AI, Pangram</span></div>
+    <div class="fig"><b class="hl">0.00%</b><span>AI, GPTZero</span></div>
+  </section>
+
+  <section style="display:flex;flex-direction:column;gap:12px">
+    <div class="tools">
+      <label class="search" for="q">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input id="q" type="search" placeholder="Search a title or author" autocomplete="off" aria-label="Search a title or author">
+      </label>
+      <span class="count" id="count" aria-live="polite">97 of 97 books</span>
+    </div>
+    <div class="scroll">
+      <table>
+        <thead>
+          <tr>
+            <th data-k="t" scope="col"><button type="button">Book <span class="arrow">↕</span></button></th>
+            <th data-k="y" class="num" scope="col" aria-sort="ascending"><button type="button">Year <span class="arrow">↑</span></button></th>
+            <th data-k="w" class="num" scope="col"><button type="button">Words <span class="arrow">↕</span></button></th>
+            <th data-k="p" class="num" scope="col"><button type="button">Pangram <span class="arrow">↕</span></button></th>
+            <th data-k="g" class="num" scope="col"><button type="button">GPTZero <span class="arrow">↕</span></button></th>
+          </tr>
+        </thead>
+        <tbody id="rows"></tbody>
+        <tfoot>
+          <tr>
+            <td id="footLabel">All 97 books</td>
+            <td class="num yr">2001–25</td>
+            <td class="num" id="footWords">7,412,981</td>
+            <td class="num"><span class="pill">0.00%</span></td>
+            <td class="num"><span class="pill">0.00%</span></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </section>
+
+  <p class="note">Pangram is the mean of its <code>fraction_ai</code> across each book's scanned passages (model 4.1). GPTZero is its book-level AI score (model 2026-11-04-base; the multilingual model for <em>Masimba</em>), with 0 of 515,046 sentences and 0 of 3,607 passages classed as AI or mixed. Both are shown as percentages to two decimals. Words counts the text submitted for scanning; books scanned in several parts are combined.</p>
+</main>
+
+<script>
+const BOOKS = [{"t": "Don't Let's Go to the Dogs Tonight: An African Childhood", "a": "Alexandra Fuller", "y": 2001, "w": 83475, "p": 0.0, "g": 0.0, "gs": 6608, "ga": 0}, {"t": "The Stone Virgins", "a": "Yvonne Vera", "y": 2002, "w": 53679, "p": 0.0, "g": 0.0, "gs": 4076, "ga": 0}, {"t": "Masimba", "a": "Chiedza Musengezi (editor), Zimbabwe Women Writers", "y": 2003, "w": 29251, "p": 0.0, "g": 0.0, "gs": 3906, "ga": 0}, {"t": "Short Writings from Bulawayo", "a": "Various Zimbabwean contributors", "y": 2003, "w": 42165, "p": 0.0, "g": 0.0, "gs": 3496, "ga": 0}, {"t": "Writing Still: New Stories from Zimbabwe", "a": "Irene Staunton (editor)", "y": 2003, "w": 80054, "p": 0.0, "g": 0.0, "gs": 6237, "ga": 0}, {"t": "Scribbling the Cat: Travels with an African Soldier", "a": "Alexandra Fuller", "y": 2004, "w": 73885, "p": 0.0, "g": 0.0, "gs": 5862, "ga": 0}, {"t": "Tale of Tamari", "a": "Shimmer Chinodya", "y": 2004, "w": 14735, "p": 0.0, "g": 0.0, "gs": 1306, "ga": 0}, {"t": "Last Orders at Harrods: An African Tale", "a": "Michael Holman", "y": 2005, "w": 85635, "p": 0.0, "g": 0.0, "gs": 5647, "ga": 0}, {"t": "Short Writings from Bulawayo II", "a": "Various Zimbabwean contributors", "y": 2005, "w": 34463, "p": 0.0, "g": 0.0, "gs": 3042, "ga": 0}, {"t": "Unfeeling", "a": "Ian Holding", "y": 2005, "w": 70175, "p": 0.0, "g": 0.0, "gs": 5423, "ga": 0}, {"t": "Hatchings", "a": "John Eppel", "y": 2006, "w": 51082, "p": 0.0, "g": 0.0, "gs": 3611, "ga": 0}, {"t": "Short Writings from Bulawayo III", "a": "Various Zimbabwean contributors", "y": 2006, "w": 54640, "p": 0.0, "g": 0.0, "gs": 4467, "ga": 0}, {"t": "Strife", "a": "Shimmer Chinodya", "y": 2006, "w": 78261, "p": 0.0, "g": 0.0, "gs": 5710, "ga": 0}, {"t": "The Book of Not", "a": "Tsitsi Dangarembga", "y": 2006, "w": 86811, "p": 0.0, "g": 0.0, "gs": 5866, "ga": 0}, {"t": "The Uncertainty of Hope", "a": "Valerie Tagwira", "y": 2006, "w": 129600, "p": 0.0, "g": 0.0, "gs": 11612, "ga": 0}, {"t": "When a Crocodile Eats the Sun", "a": "Peter Godwin", "y": 2006, "w": 114899, "p": 0.0, "g": 0.0, "gs": 7127, "ga": 0}, {"t": "Laughing Now", "a": "Various Zimbabwean contributors", "y": 2007, "w": 40946, "p": 0.0, "g": 0.0, "gs": 3146, "ga": 0}, {"t": "White Man Crawling", "a": "John Eppel", "y": 2007, "w": 21182, "p": 0.0, "g": 0.0, "gs": 1593, "ga": 0}, {"t": "Dancing with Life: Tales from the Township", "a": "Christopher Mlalazi", "y": 2008, "w": 27697, "p": 0.0, "g": 0.0, "gs": 2132, "ga": 0}, {"t": "Long Time Coming: Short Writings from Zimbabwe", "a": "Jane Morris (editor)", "y": 2008, "w": 52914, "p": 0.0, "g": 0.0, "gs": 4119, "ga": 0}, {"t": "The Legend of Colton H. Bryant", "a": "Alexandra Fuller", "y": 2008, "w": 50277, "p": 0.0, "g": 0.0, "gs": 4030, "ga": 0}, {"t": "Women Writing Zimbabwe", "a": "Irene Staunton (editor)", "y": 2008, "w": 49171, "p": 0.0, "g": 0.0, "gs": 3838, "ga": 0}, {"t": "Absent: The English Teacher", "a": "John Eppel", "y": 2009, "w": 47120, "p": 0.0, "g": 0.0, "gs": 3914, "ga": 0}, {"t": "An Elegy for Easterly", "a": "Petina Gappah", "y": 2009, "w": 52862, "p": 0.0, "g": 0.0, "gs": 3324, "ga": 0}, {"t": "Harare North", "a": "Brian Chikwava", "y": 2009, "w": 68043, "p": 0.0, "g": 0.0, "gs": 4360, "ga": 0}, {"t": "The Boy Next Door", "a": "Irene Sabatini", "y": 2009, "w": 99951, "p": 0.0, "g": 0.0, "gs": 9908, "ga": 0}, {"t": "The Last Resort: A Memoir of Zimbabwe", "a": "Douglas Rogers", "y": 2009, "w": 113911, "p": 0.0, "g": 0.0, "gs": 9140, "ga": 0}, {"t": "This September Sun", "a": "Bryony Rheam", "y": 2009, "w": 127124, "p": 0.0, "g": 0.0, "gs": 10518, "ga": 0}, {"t": "White Gods Black Demons", "a": "Daniel Mandishona", "y": 2009, "w": 42476, "p": 0.0, "g": 0.0, "gs": 2829, "ga": 0}, {"t": "The Hairdresser of Harare", "a": "Tendai Huchu", "y": 2010, "w": 59071, "p": 0.0, "g": 0.0, "gs": 4912, "ga": 0}, {"t": "Beyond the Enclave: Towards a Pro-Poor and Inclusive Development Strategy for Zimbabwe", "a": "Godfrey Kanyenze, Timothy Kondo, Prosper Chitambara and Jos Martens (editors)", "y": 2011, "w": 192264, "p": 0.0, "g": 0.0, "gs": 8661, "ga": 0}, {"t": "Cocktail Hour Under the Tree of Forgetfulness", "a": "Alexandra Fuller", "y": 2011, "w": 62725, "p": 0.0, "g": 0.0, "gs": 4098, "ga": 0}, {"t": "The Fear: Robert Mugabe and the Martyrdom of Zimbabwe", "a": "Peter Godwin", "y": 2011, "w": 112907, "p": 0.0, "g": 0.0, "gs": 7067, "ga": 0}, {"t": "When a State Turns on Its Citizens: 60 Years of Institutionalised Violence in Zimbabwe", "a": "Lloyd Sachikonye", "y": 2011, "w": 42961, "p": 0.0, "g": 0.0, "gs": 2143, "ga": 0}, {"t": "Zimbabwe’s Lost Decade: Politics, Development and Society", "a": "Lloyd Sachikonye", "y": 2011, "w": 76000, "p": 0.0, "g": 0.0, "gs": 3806, "ga": 0}, {"t": "Chioniso and Other Stories", "a": "Shimmer Chinodya", "y": 2012, "w": 61552, "p": 0.0, "g": 0.0, "gs": 5153, "ga": 0}, {"t": "Running with Mother", "a": "Christopher Mlalazi", "y": 2012, "w": 43029, "p": 0.0, "g": 0.0, "gs": 3260, "ga": 0}, {"t": "The Polygamist", "a": "Sue Nyathi", "y": 2012, "w": 55461, "p": 0.0, "g": 0.0, "gs": 4952, "ga": 0}, {"t": "Two Hangmen, One Scaffold - Book I", "a": "Basil Diki", "y": 2012, "w": 104911, "p": 0.0, "g": 0.0, "gs": 7520, "ga": 0}, {"t": "Two Hangmen, One Scaffold - Book II", "a": "Basil Diki", "y": 2012, "w": 96950, "p": 0.0, "g": 0.0, "gs": 7750, "ga": 0}, {"t": "Zimbabwe: Mired in Transition", "a": "Eldred V. Masunungure and Jabusile M. Shumba (editors)", "y": 2012, "w": 91955, "p": 0.0, "g": 0.0, "gs": 3879, "ga": 0}, {"t": "The Hard Road to Reform: The Politics of Zimbabwe’s Global Political Agreement", "a": "Brian Raftopoulos (editor)", "y": 2013, "w": 81089, "p": 0.0, "g": 0.0, "gs": 2789, "ga": 0}, {"t": "We Need New Names", "a": "NoViolet Bulawayo", "y": 2013, "w": 76759, "p": 0.0, "g": 0.0, "gs": 4677, "ga": 0}, {"t": "Writing Lives", "a": "Irene Staunton (editor)", "y": 2013, "w": 34837, "p": 0.0, "g": 0.0, "gs": 2523, "ga": 0}, {"t": "A History of Zimbabwe", "a": "Alois S. Mlambo", "y": 2014, "w": 82682, "p": 0.0, "g": 0.0, "gs": 2868, "ga": 0}, {"t": "The Maestro, the Magistrate & the Mathematician", "a": "Tendai Huchu", "y": 2014, "w": 92276, "p": 0.0, "g": 0.0, "gs": 7620, "ga": 0}, {"t": "In Pursuit of Freedom and Justice: A Memoir", "a": "Cephas G. Msipa", "y": 2015, "w": 56251, "p": 0.0, "g": 0.0, "gs": 3391, "ga": 0}, {"t": "Labour Law in Zimbabwe", "a": "Lovemore Madhuku", "y": 2015, "w": 172900, "p": 0.0, "g": 0.0, "gs": 8157, "ga": 0}, {"t": "Leaving Before the Rains Come", "a": "Alexandra Fuller", "y": 2015, "w": 76532, "p": 0.0, "g": 0.0, "gs": 4529, "ga": 0}, {"t": "Sweet Medicine", "a": "Panashe Chigumadzi", "y": 2015, "w": 56141, "p": 0.0, "g": 0.0, "gs": 4003, "ga": 0}, {"t": "The Book of Memory", "a": "Petina Gappah", "y": 2015, "w": 77061, "p": 0.0, "g": 0.0, "gs": 4785, "ga": 0}, {"t": "Writing Mystery & Mayhem", "a": "Irene Staunton (editor)", "y": 2015, "w": 39521, "p": 0.0, "g": 0.0, "gs": 3072, "ga": 0}, {"t": "Facets of Power: Politics, Profits and People in the Making of Zimbabwe’s Blood Diamonds", "a": "Richard Saunders and Tinashe Nyamunda (editors)", "y": 2016, "w": 64892, "p": 0.0, "g": 0.0, "gs": 2388, "ga": 0}, {"t": "Grace and Other Stories", "a": "Bongani Sibanda", "y": 2016, "w": 37760, "p": 0.0, "g": 0.0, "gs": 2574, "ga": 0}, {"t": "Rotten Row", "a": "Petina Gappah", "y": 2016, "w": 91329, "p": 0.0, "g": 0.0, "gs": 5678, "ga": 0}, {"t": "The Struggle Continues: 50 Years of Tyranny in Zimbabwe", "a": "David Coltart", "y": 2016, "w": 246820, "p": 0.0, "g": 0.0, "gs": 10483, "ga": 0}, {"t": "Quiet Until the Thaw", "a": "Alexandra Fuller", "y": 2017, "w": 36925, "p": 0.0, "g": 0.0, "gs": 2702, "ga": 0}, {"t": "Big Noise and Other Noises", "a": "Christopher Kudyahakudadirwe", "y": 2018, "w": 46005, "p": 0.0, "g": 0.0, "gs": 3097, "ga": 0}, {"t": "Building from the Rubble: The Labour Movement in Zimbabwe since 2000", "a": "Lloyd Sachikonye, Brian Raftopoulos and Godfrey Kanyenze (editors)", "y": 2018, "w": 76810, "p": 0.0, "g": 0.0, "gs": 3398, "ga": 0}, {"t": "House of Stone", "a": "Novuyo Rosa Tshuma", "y": 2018, "w": 109640, "p": 0.0, "g": 0.0, "gs": 6903, "ga": 0}, {"t": "Junctions", "a": "Daniel Mandishona", "y": 2018, "w": 25374, "p": 0.0, "g": 0.0, "gs": 1572, "ga": 0}, {"t": "The Graceless Fall of Robert Mugabe: The End of a Dictator’s Reign", "a": "Geoffrey Nyarota", "y": 2018, "w": 47745, "p": 0.0, "g": 0.0, "gs": 2104, "ga": 0}, {"t": "The Theory of Flight", "a": "Siphiwe Gloria Ndlovu", "y": 2018, "w": 87150, "p": 0.0, "g": 0.0, "gs": 6659, "ga": 0}, {"t": "These Bones Will Rise Again", "a": "Panashe Chigumadzi", "y": 2018, "w": 27541, "p": 0.0, "g": 0.0, "gs": 1297, "ga": 0}, {"t": "This Mournable Body", "a": "Tsitsi Dangarembga", "y": 2018, "w": 94925, "p": 0.0, "g": 0.0, "gs": 8146, "ga": 0}, {"t": "My Totem Came Calling", "a": "Blessing Musariri and Thorsten Nesch", "y": 2019, "w": 43287, "p": 0.0, "g": 0.0, "gs": 3792, "ga": 0}, {"t": "Out of Darkness, Shining Light", "a": "Petina Gappah", "y": 2019, "w": 87052, "p": 0.0, "g": 0.0, "gs": 4640, "ga": 0}, {"t": "Travel Light, Move Fast", "a": "Alexandra Fuller", "y": 2019, "w": 62860, "p": 0.0, "g": 0.0, "gs": 4701, "ga": 0}, {"t": "Two Weeks in November", "a": "Douglas Rogers", "y": 2019, "w": 73202, "p": 0.0, "g": 0.0, "gs": 4273, "ga": 0}, {"t": "Windows into Zimbabwe: An Anthology of Short Stories", "a": "Various Zimbabwean contributors", "y": 2019, "w": 88558, "p": 0.0, "g": 0.0, "gs": 6766, "ga": 0}, {"t": "A Family Affair", "a": "Sue Nyathi", "y": 2020, "w": 135675, "p": 0.0, "g": 0.0, "gs": 10560, "ga": 0}, {"t": "All Come to Dust", "a": "Bryony Rheam", "y": 2020, "w": 169026, "p": 0.0, "g": 0.0, "gs": 16388, "ga": 0}, {"t": "An Act of Defiance", "a": "Irene Sabatini", "y": 2020, "w": 85284, "p": 0.0, "g": 0.0, "gs": 7401, "ga": 0}, {"t": "Seeking Urban Transformation: Alternative Urban Futures in Zimbabwe", "a": "Davison Muchadenyika", "y": 2020, "w": 64635, "p": 0.0, "g": 0.0, "gs": 3677, "ga": 0}, {"t": "The Army and Politics in Zimbabwe: Mujuru, the Liberation Fighter and Kingmaker", "a": "Blessing-Miles Tendi", "y": 2020, "w": 129314, "p": 0.0, "g": 0.0, "gs": 6767, "ga": 0}, {"t": "The History of Man", "a": "Siphiwe Gloria Ndlovu", "y": 2020, "w": 90819, "p": 0.0, "g": 0.0, "gs": 5127, "ga": 0}, {"t": "I Am a Girl from Africa", "a": "Elizabeth Nyamayaro", "y": 2021, "w": 78565, "p": 0.0, "g": 0.0, "gs": 4360, "ga": 0}, {"t": "The Library of the Dead", "a": "T. L. Huchu", "y": 2021, "w": 86242, "p": 0.0, "g": 0.0, "gs": 7975, "ga": 0}, {"t": "An Angel's Demise", "a": "Sue Nyathi", "y": 2022, "w": 96394, "p": 0.0, "g": 0.0, "gs": 7573, "ga": 0}, {"t": "Black and Female: Essays", "a": "Tsitsi Dangarembga", "y": 2022, "w": 29021, "p": 0.0, "g": 0.0, "gs": 1345, "ga": 0}, {"t": "Glory", "a": "NoViolet Bulawayo", "y": 2022, "w": 126399, "p": 0.0, "g": 0.0, "gs": 7014, "ga": 0}, {"t": "Our Lady of Mysterious Ailments", "a": "T. L. Huchu", "y": 2022, "w": 91596, "p": 0.0, "g": 0.0, "gs": 7550, "ga": 0}, {"t": "The Quality of Mercy", "a": "Siphiwe Gloria Ndlovu", "y": 2022, "w": 119562, "p": 0.0, "g": 0.0, "gs": 7282, "ga": 0}, {"t": "All That It Ever Meant", "a": "Blessing Musariri", "y": 2023, "w": 40997, "p": 0.0, "g": 0.0, "gs": 3162, "ga": 0}, {"t": "Avenues by Train", "a": "Farai Mudzingwa", "y": 2023, "w": 82804, "p": 0.0, "g": 0.0, "gs": 6701, "ga": 0}, {"t": "Digging Stars", "a": "Novuyo Rosa Tshuma", "y": 2023, "w": 79305, "p": 0.0, "g": 0.0, "gs": 6190, "ga": 0}, {"t": "Drinking from Graveyard Wells", "a": "Yvette Lisa Ndlovu", "y": 2023, "w": 45912, "p": 0.0, "g": 0.0, "gs": 3746, "ga": 0}, {"t": "The Mystery at Dunvegan Castle", "a": "T. L. Huchu", "y": 2023, "w": 96902, "p": 0.0, "g": 0.0, "gs": 9533, "ga": 0}, {"t": "Exit Wounds: A Story of Love, Loss and Occasional Wars", "a": "Peter Godwin", "y": 2024, "w": 74591, "p": 0.0, "g": 0.0, "gs": 5079, "ga": 0}, {"t": "Fi: A Memoir of My Son", "a": "Alexandra Fuller", "y": 2024, "w": 57284, "p": 0.0, "g": 0.0, "gs": 4113, "ga": 0}, {"t": "The Creation of Half-Broken People", "a": "Siphiwe Gloria Ndlovu", "y": 2024, "w": 95777, "p": 0.0, "g": 0.0, "gs": 5777, "ga": 0}, {"t": "The Legacy of Arniston House", "a": "T. L. Huchu", "y": 2024, "w": 104888, "p": 0.0, "g": 0.0, "gs": 8780, "ga": 0}, {"t": "When It's Your Turn for Midnight", "a": "Blessing Musariri", "y": 2024, "w": 38098, "p": 0.0, "g": 0.0, "gs": 3472, "ga": 0}, {"t": "Rubies and Rain", "a": "Busisekile Khumalo", "y": 2025, "w": 90052, "p": 0.0, "g": 0.0, "gs": 5935, "ga": 0}, {"t": "Secrets of the First School", "a": "T. L. Huchu", "y": 2025, "w": 103650, "p": 0.0, "g": 0.0, "gs": 8991, "ga": 0}, {"t": "Shamiso", "a": "Brian Chikwava", "y": 2025, "w": 37049, "p": 0.0, "g": 0.0, "gs": 2847, "ga": 0}, {"t": "Trapped", "a": "Valerie Tagwira", "y": 2025, "w": 92946, "p": 0.0, "g": 0.0, "gs": 8066, "ga": 0}];
+const N = BOOKS.length;
+const max = Math.max(...BOOKS.map(b => b.w));
+const fmt = new Intl.NumberFormat("en-US");
+const esc = s => s.replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const hash = s => { let h = 7; for (const c of s) h = (h * 31 + c.charCodeAt(0)) >>> 0; return h; };
+BOOKS.forEach((b, i) => { b.id = i; b.c = `var(--s${hash(b.t) % 8 + 1})`; });
+
+const shelf = document.getElementById("shelf");
+const cap = document.getElementById("caption");
+const byYear = [...BOOKS].sort((x, y) => x.y - y.y || x.t.localeCompare(y.t));
+shelf.innerHTML = byYear.map((b, i) =>
+  `<div class="spine" tabindex="0" role="button" data-id="${b.id}" style="--i:${i};background:${b.c};height:${(22 + 78 * b.w / max).toFixed(1)}%" aria-label="${esc(b.t)} by ${esc(b.a)}, ${b.y}, ${fmt.format(b.w)} words, Pangram ${(b.p*100).toFixed(2)}% AI, GPTZero ${(b.g*100).toFixed(2)}% AI"></div>`).join("");
+function showCap(b){
+  cap.innerHTML = `<span class="ct">${esc(b.t)}</span><span class="cm">${esc(b.a)} · ${b.y} · ${fmt.format(b.w)} words · Pangram ${(b.p*100).toFixed(2)}% · GPTZero ${(b.g*100).toFixed(2)}%</span>`;
+}
+shelf.addEventListener("pointerover", e => { const s = e.target.closest(".spine"); if (s) showCap(BOOKS[s.dataset.id]); });
+shelf.addEventListener("focusin", e => { const s = e.target.closest(".spine"); if (s) showCap(BOOKS[s.dataset.id]); });
+function jump(s){
+  const b = BOOKS[s.dataset.id];
+  showCap(b);
+  shelf.querySelectorAll(".on").forEach(o => o.classList.remove("on"));
+  s.classList.add("on");
+  q.value = ""; render();
+  const row = document.getElementById("b" + b.id);
+  if (row){ row.scrollIntoView({behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center"}); row.classList.add("flash"); setTimeout(() => row.classList.remove("flash"), 1600); }
+}
+shelf.addEventListener("click", e => { const s = e.target.closest(".spine"); if (s) jump(s); });
+shelf.addEventListener("keydown", e => { const s = e.target.closest(".spine"); if (s && (e.key === "Enter" || e.key === " ")) { e.preventDefault(); jump(s); } });
+setTimeout(() => shelf.classList.remove("rise"), 2000);
+document.getElementById("years").innerHTML = [2001, 2009, 2017, 2025].map(y => {
+  const i = byYear.findIndex(b => b.y === y);
+  const pos = (i + 0.5) / N * 100;
+  const align = y === 2025 ? "right:0" : y === 2001 ? "left:0" : `left:${pos.toFixed(2)}%;transform:translateX(-50%)`;
+  return `<span style="position:absolute;${align}">${y}</span>`;
+}).join("");
+
+const tbody = document.getElementById("rows");
+const q = document.getElementById("q");
+const count = document.getElementById("count");
+let sortKey = "y", dir = 1;
+
+function row(b){
+  return `<tr class="book" id="b${b.id}">
+    <td><div class="t">${esc(b.t)}</div><div class="a"><span class="dot" style="background:${b.c}"></span>${esc(b.a)}</div></td>
+    <td class="num yr">${b.y}</td>
+    <td class="num"><div class="words"><span>${fmt.format(b.w)}</span><span class="track"><i style="width:${(b.w / max * 100).toFixed(1)}%"></i></span></div></td>
+    <td class="num"><span class="pill">${(b.p * 100).toFixed(2)}%</span></td>
+    <td class="num"><span class="pill">${(b.g * 100).toFixed(2)}%</span></td>
+  </tr>`;
+}
+function render(){
+  const term = q.value.trim().toLowerCase();
+  let list = BOOKS.filter(b => !term || b.t.toLowerCase().includes(term) || b.a.toLowerCase().includes(term));
+  list.sort((x, y) => {
+    let r = sortKey === "t" ? x.t.localeCompare(y.t) : (x[sortKey] - y[sortKey]);
+    if (r === 0) r = x.y - y.y || x.t.localeCompare(y.t);
+    return r * dir;
+  });
+  let html = "", last = null;
+  for (const b of list){
+    if (sortKey === "y" && b.y !== last){ html += `<tr class="grp"><td colspan="5">${b.y}</td></tr>`; last = b.y; }
+    html += row(b);
+  }
+  tbody.innerHTML = list.length ? html : `<tr><td colspan="5" class="empty">No book or author matches “${esc(q.value)}”.</td></tr>`;
+  count.textContent = `${list.length} of ${N} books`;
+  document.getElementById("footLabel").textContent = term ? `${list.length} matching book${list.length === 1 ? "" : "s"}` : `All ${N} books`;
+  document.getElementById("footWords").textContent = fmt.format(list.reduce((s, b) => s + b.w, 0));
+}
+document.querySelectorAll("th[data-k]").forEach(th => {
+  th.querySelector("button").addEventListener("click", () => {
+    const k = th.dataset.k;
+    if (k === sortKey) dir = -dir; else { sortKey = k; dir = (k === "w") ? -1 : 1; }
+    document.querySelectorAll("th[data-k]").forEach(o => { o.removeAttribute("aria-sort"); o.querySelector(".arrow").textContent = "↕"; });
+    th.setAttribute("aria-sort", dir === 1 ? "ascending" : "descending");
+    th.querySelector(".arrow").textContent = dir === 1 ? "↑" : "↓";
+    render();
+  });
+});
+q.addEventListener("input", render);
+render();
+</script>
+</body>
+</html>
