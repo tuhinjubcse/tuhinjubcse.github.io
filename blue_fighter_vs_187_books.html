@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Blue Fighter vs 187 books</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* layout: legend row, then a 2x2 grid of year-by-rate strip plots */
+:root {
+  --bg: #f4f6f8;
+  --surface: #ffffff;
+  --ink: #16191d;
+  --muted: #5c636c;
+  --rule: #dce1e7;
+  --dot: #98a0aa;
+  --accent: #2346c8;
+  --accent-soft: #e4e9fb;
+  --flag: #d95926;
+  --display: "Newsreader", Georgia, "Times New Roman", serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #101215; --surface: #171a1e; --ink: #eceef1; --muted: #a0a7b0;
+    --rule: #2a2f36; --dot: #69717c; --accent: #7d97ff; --accent-soft: #1d2440; --flag: #f07a45;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #101215; --surface: #171a1e; --ink: #eceef1; --muted: #a0a7b0;
+  --rule: #2a2f36; --dot: #69717c; --accent: #7d97ff; --accent-soft: #1d2440; --flag: #f07a45;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.55; }
+.wrap { max-width: 1080px; margin: 0 auto; padding: 20px 20px 32px; display: flex; flex-direction: column; gap: 24px; }
+.legend { display: flex; flex-wrap: wrap; gap: 18px; font-size: 13px; color: var(--muted); align-items: center; }
+.legend i { display: inline-block; vertical-align: -1px; margin-right: 6px; }
+.k-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--dot); }
+.k-bf { width: 10px; height: 10px; background: var(--accent); transform: rotate(45deg); }
+.k-old { width: 9px; height: 9px; border: 1.5px solid var(--ink); transform: rotate(45deg); }
+.k-max { width: 18px; border-top: 1.5px dashed var(--muted); vertical-align: 3px !important; }
+.k-med { width: 18px; border-top: 1.5px solid var(--muted); vertical-align: 3px !important; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 14px; }
+.panel { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 14px 14px 6px; min-width: 0; }
+.panel h2 { font-size: 15px; font-weight: 500; margin: 0; }
+.panel p { margin: 2px 0 6px; font-size: 13px; color: var(--muted); }
+.panel p q { font-family: var(--display); font-style: italic; font-size: 14px; color: var(--ink); quotes: "\201C" "\201D"; }
+.chart { width: 100%; }
+.chart svg { display: block; overflow: visible; }
+.axis text, .axis-ab { fill: var(--muted); font-family: var(--mono); font-size: 11px; }
+.k-flag { width: 10px; height: 10px; border-radius: 1.5px; background: var(--flag); }
+.axis line, .axis path { stroke: var(--rule); }
+.gridline { stroke: var(--rule); stroke-width: 1; }
+.lbl { font-family: var(--body); font-size: 12px; fill: var(--ink); paint-order: stroke; stroke: var(--surface); stroke-width: 3.5px; stroke-linejoin: round; }
+.lbl.acc { fill: var(--accent); font-weight: 500; }
+.lbl.mut { fill: var(--muted); }
+.tip { position: fixed; pointer-events: none; background: var(--surface); color: var(--ink); border: 1px solid var(--rule); border-radius: 8px; padding: 8px 10px; font-size: 12.5px; line-height: 1.4; max-width: 260px; box-shadow: 0 4px 14px rgba(0,0,0,.12); opacity: 0; transition: opacity .1s; z-index: 5; }
+.tip .t { font-weight: 500; }
+.tip .m { color: var(--muted); }
+.tip .v { font-family: var(--mono); }
+@media (prefers-reduced-motion: reduce) { .tip { transition: none; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="legend" aria-hidden="true">
+    <span><i class="k-dot"></i>Book (187)</span>
+    <span><i class="k-bf"></i>The Blue Fighter, 2025</span>
+    <span><i class="k-old"></i>A Way Out, 2018 · The Whistleblower, 2021</span>
+    <span><i class="k-flag"></i>Shy Girl (SG) and Daggermouth (DM), 2025</span>
+    <span><i class="k-max"></i>Highest book</span>
+    <span><i class="k-med"></i>Median book</span>
+  </div>
+
+  <section class="grid" id="panels"></section>
+</div>
+<div class="tip" id="tip" role="status" aria-live="polite"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script>
+const BOOKS = [{"y":2001,"t":"Don't Let's Go to the Dogs Tonight An African Childhood","a":"Alexandra Fuller","w":84769,"n":0.047,"s":0.779,"p":3.999,"h":1.746},{"y":2002,"t":"The Stone Virgins","a":"Yvonne Vera","w":53860,"n":0.576,"s":1.578,"p":4.734,"h":2.339},{"y":2003,"t":"Masimba","a":"Chiedza Musengezi (editor), Zimbabwe Women Writers","w":29426,"n":0.0,"s":0.0,"p":0.0,"h":0.0},{"y":2003,"t":"Short Writings from Bulawayo","a":"Various Zimbabwean contributors","w":42214,"n":0.237,"s":0.805,"p":4.169,"h":1.516},{"y":2003,"t":"Writing Still New Stories from Zimbabwe","a":"Irene Staunton (editor)","w":80938,"n":0.235,"s":0.951,"p":2.644,"h":1.495},{"y":2004,"t":"Scribbling the Cat Travels with an African Soldier","a":"Alexandra Fuller","w":74472,"n":0.121,"s":1.007,"p":2.202,"h":1.182},{"y":2004,"t":"Tale of Tamari","a":"Shimmer Chinodya","w":14976,"n":0.067,"s":0.668,"p":4.474,"h":0.401},{"y":2005,"t":"Last Orders at Harrods An African Tale","a":"Michael Holman","w":85406,"n":0.304,"s":0.246,"p":2.869,"h":0.82},{"y":2005,"t":"Short Writings from Bulawayo II","a":"Various Zimbabwean contributors","w":34582,"n":0.231,"s":0.665,"p":2.95,"h":1.475},{"y":2005,"t":"Unfeeling","a":"Ian Holding","w":70056,"n":0.3,"s":0.642,"p":6.466,"h":1.684},{"y":2006,"t":"Hatchings","a":"John Eppel","w":51036,"n":0.333,"s":0.137,"p":1.078,"h":0.647},{"y":2006,"t":"Short Writings from Bulawayo III","a":"Various Zimbabwean contributors","w":54754,"n":0.201,"s":0.895,"p":3.397,"h":1.479},{"y":2006,"t":"Strife","a":"Shimmer Chinodya","w":79546,"n":0.088,"s":0.377,"p":4.136,"h":1.094},{"y":2006,"t":"The Book of Not","a":"Tsitsi Dangarembga","w":88253,"n":0.227,"s":1.303,"p":3.422,"h":1.394},{"y":2006,"t":"The Uncertainty of Hope","a":"Valerie Tagwira","w":131425,"n":0.221,"s":1.05,"p":2.831,"h":1.217},{"y":2006,"t":"When a Crocodile Eats the Sun","a":"Peter Godwin","w":115399,"n":0.078,"s":0.321,"p":2.886,"h":0.728},{"y":2007,"t":"Laughing Now","a":"Various Zimbabwean contributors","w":41770,"n":0.287,"s":0.766,"p":2.37,"h":0.575},{"y":2007,"t":"White Man Crawling","a":"John Eppel","w":21407,"n":0.467,"s":0.28,"p":1.822,"h":0.561},{"y":2008,"t":"Dancing with Life Tales from the Township","a":"Christopher Mlalazi","w":27682,"n":0.144,"s":1.264,"p":3.757,"h":0.759},{"y":2008,"t":"Long Time Coming Short Writings from Zimbabwe","a":"Jane Morris (editor)","w":53150,"n":0.301,"s":0.677,"p":2.916,"h":1.411},{"y":2008,"t":"The Legend of Colton H. Bryant","a":"Alexandra Fuller","w":50985,"n":0.098,"s":0.785,"p":2.981,"h":0.961},{"y":2008,"t":"Women Writing Zimbabwe","a":"Irene Staunton (editor)","w":50004,"n":0.34,"s":0.8,"p":3.28,"h":1.72},{"y":2009,"t":"Absent The English Teacher","a":"John Eppel","w":47368,"n":0.19,"s":0.127,"p":1.647,"h":0.971},{"y":2009,"t":"An Elegy for Easterly","a":"Petina Gappah","w":53940,"n":0.148,"s":0.315,"p":1.669,"h":0.389},{"y":2009,"t":"Harare North","a":"Brian Chikwava","w":68440,"n":0.073,"s":0.161,"p":1.344,"h":1.081},{"y":2009,"t":"The Boy Next Door","a":"Irene Sabatini","w":100290,"n":0.17,"s":0.977,"p":2.991,"h":1.266},{"y":2009,"t":"The Last Resort A Memoir of Zimbabwe","a":"Douglas Rogers","w":116086,"n":0.224,"s":0.517,"p":2.696,"h":0.749},{"y":2009,"t":"This September Sun","a":"Bryony Rheam","w":129685,"n":0.231,"s":1.303,"p":3.948,"h":1.18},{"y":2009,"t":"White Gods Black Demons","a":"Daniel Mandishona","w":43236,"n":0.069,"s":0.347,"p":2.521,"h":0.648},{"y":2010,"t":"The Hairdresser of Harare","a":"Tendai Huchu","w":60411,"n":0.017,"s":1.473,"p":2.168,"h":0.612},{"y":2011,"t":"Beyond the Enclave","a":"Godfrey Kanyenze et al","w":197727,"n":0.046,"s":0.015,"p":2.524,"h":0.025},{"y":2011,"t":"Cocktail Hour Under the Tree of Forgetfulness","a":"Alexandra Fuller","w":63466,"n":0.205,"s":1.087,"p":1.749,"h":0.583},{"y":2011,"t":"The Fear Robert Mugabe and the Martyrdom of Zimbabwe","a":"Peter Godwin","w":115012,"n":0.07,"s":0.209,"p":2.895,"h":0.417},{"y":2011,"t":"When a State Turns on Its Citizens","a":"Lloyd Sachikonye","w":43727,"n":0.069,"s":0.046,"p":0.846,"h":0.069},{"y":2011,"t":"Zimbabwe's Lost Decade Politics, Development and Society","a":"Lloyd Sachikonye","w":77296,"n":0.091,"s":0.0,"p":1.333,"h":0.323},{"y":2012,"t":"Chioniso and Other Stories","a":"Shimmer Chinodya","w":63346,"n":0.142,"s":0.458,"p":3.047,"h":0.821},{"y":2012,"t":"Running with Mother","a":"Christopher Mlalazi","w":43747,"n":0.046,"s":2.537,"p":2.583,"h":1.897},{"y":2012,"t":"The Polygamist","a":"Sue Nyathi","w":55688,"n":0.377,"s":0.036,"p":1.203,"h":0.305},{"y":2012,"t":"Two Hangmen, One Scaffold - Book I","a":"Basil Diki","w":105734,"n":0.057,"s":0.492,"p":2.62,"h":0.634},{"y":2012,"t":"Two Hangmen, One Scaffold - Book II","a":"Basil Diki","w":97597,"n":0.072,"s":0.43,"p":2.469,"h":0.686},{"y":2012,"t":"Zimbabwe Mired in Transition","a":"Eldred V. Masunungure and Jabusile M. Shumba (editors)","w":93096,"n":0.011,"s":0.032,"p":2.105,"h":0.15},{"y":2013,"t":"The Hard Road to Reform","a":"Brian Raftopoulos (editor)","w":82558,"n":0.073,"s":0.036,"p":1.805,"h":0.363},{"y":2013,"t":"We Need New Names","a":"NoViolet Bulawayo","w":77177,"n":0.065,"s":0.764,"p":3.395,"h":1.011},{"y":2013,"t":"Writing Lives","a":"Irene Staunton (editor)","w":35307,"n":0.227,"s":0.906,"p":3.172,"h":1.02},{"y":2014,"t":"A History of Zimbabwe","a":"Alois S. Mlambo","w":83782,"n":0.275,"s":0.084,"p":2.769,"h":0.072},{"y":2014,"t":"The Maestro, the Magistrate & the Mathematician","a":"Tendai Huchu","w":93181,"n":0.064,"s":1.009,"p":5.645,"h":0.429},{"y":2015,"t":"In Pursuit of Freedom and Justice A Memoir","a":"Cephas G. Msipa","w":56490,"n":0.089,"s":0.283,"p":1.239,"h":0.142},{"y":2015,"t":"Labour Law in Zimbabwe","a":"Lovemore Madhuku","w":173886,"n":0.035,"s":0.052,"p":0.943,"h":0.063},{"y":2015,"t":"Leaving Before the Rains Come","a":"Alexandra Fuller","w":77485,"n":0.129,"s":2.026,"p":2.478,"h":0.839},{"y":2015,"t":"Sweet Medicine","a":"Panashe Chigumadzi","w":56296,"n":0.302,"s":0.941,"p":3.695,"h":1.581},{"y":2015,"t":"The Book of Memory","a":"Petina Gappah","w":77931,"n":0.115,"s":0.847,"p":1.873,"h":0.359},{"y":2015,"t":"Writing Mystery & Mayhem","a":"Irene Staunton (editor)","w":40040,"n":0.35,"s":0.824,"p":4.57,"h":1.099},{"y":2016,"t":"Facets of Power","a":"Richard Saunders and Tinashe Nyamunda (editors)","w":65428,"n":0.031,"s":0.031,"p":2.812,"h":0.214},{"y":2016,"t":"Grace and Other Stories","a":"Bongani Sibanda","w":38407,"n":0.234,"s":1.041,"p":4.166,"h":0.911},{"y":2016,"t":"Rotten Row","a":"Petina Gappah","w":92724,"n":0.237,"s":0.302,"p":1.531,"h":0.377},{"y":2016,"t":"The Struggle Continues 50 Years of Tyranny in Zimbabwe","a":"David Coltart","w":248032,"n":0.133,"s":0.129,"p":3.439,"h":0.31},{"y":2017,"t":"Quiet Until the Thaw","a":"Alexandra Fuller","w":37433,"n":0.24,"s":1.416,"p":2.057,"h":0.962},{"y":2018,"t":"Big Noise and Other Noises","a":"Christopher Kudyahakudadirwe","w":46255,"n":0.086,"s":0.973,"p":0.8,"h":0.8},{"y":2018,"t":"Building from the Rubble","a":"Lloyd Sachikonye et al","w":78162,"n":0.064,"s":0.026,"p":2.213,"h":0.0},{"y":2018,"t":"House of Stone","a":"Novuyo Rosa Tshuma","w":111457,"n":0.126,"s":0.915,"p":5.931,"h":0.538},{"y":2018,"t":"Junctions","a":"Daniel Mandishona","w":25818,"n":0.039,"s":0.697,"p":2.711,"h":0.891},{"y":2018,"t":"The Graceless Fall of Robert Mugabe","a":"Geoffrey Nyarota","w":48424,"n":0.124,"s":0.186,"p":1.693,"h":0.248},{"y":2018,"t":"The Theory of Flight","a":"Siphiwe Gloria Ndlovu","w":88189,"n":0.34,"s":0.658,"p":3.175,"h":0.998},{"y":2018,"t":"These Bones Will Rise Again","a":"Panashe Chigumadzi","w":27995,"n":0.036,"s":0.393,"p":3.215,"h":0.143},{"y":2018,"t":"This Mournable Body","a":"Tsitsi Dangarembga","w":95599,"n":0.178,"s":1.025,"p":3.347,"h":1.6},{"y":2019,"t":"My Totem Came Calling","a":"Blessing Musariri and Thorsten Nesch","w":43139,"n":0.325,"s":0.788,"p":2.434,"h":0.927},{"y":2019,"t":"Out of Darkness, Shining Light","a":"Petina Gappah","w":87240,"n":0.126,"s":0.63,"p":1.261,"h":0.447},{"y":2019,"t":"Travel Light, Move Fast","a":"Alexandra Fuller","w":63378,"n":0.237,"s":1.436,"p":2.099,"h":0.647},{"y":2019,"t":"Two Weeks in November","a":"Douglas Rogers","w":73300,"n":0.164,"s":0.327,"p":3.138,"h":0.368},{"y":2019,"t":"Windows into Zimbabwe An Anthology of Short Stories","a":"Various Zimbabwean contributors","w":89767,"n":0.178,"s":0.902,"p":2.852,"h":1.058},{"y":2020,"t":"A Family Affair","a":"Sue Nyathi","w":138875,"n":0.194,"s":0.13,"p":4.14,"h":0.77},{"y":2020,"t":"All Come to Dust","a":"Bryony Rheam","w":173903,"n":0.357,"s":1.42,"p":3.858,"h":1.616},{"y":2020,"t":"An Act of Defiance","a":"Irene Sabatini","w":87291,"n":0.183,"s":1.592,"p":5.808,"h":1.283},{"y":2020,"t":"Seeking Urban Transformation","a":"Davison Muchadenyika","w":66463,"n":0.0,"s":0.015,"p":1.595,"h":0.015},{"y":2020,"t":"The Army and Politics in Zimbabwe","a":"Blessing-Miles Tendi","w":130119,"n":0.008,"s":0.1,"p":1.837,"h":0.254},{"y":2020,"t":"The History of Man","a":"Siphiwe Gloria Ndlovu","w":91560,"n":0.208,"s":0.601,"p":1.988,"h":0.71},{"y":2021,"t":"I Am a Girl from Africa","a":"Elizabeth Nyamayaro","w":79269,"n":0.038,"s":0.82,"p":5.273,"h":0.946},{"y":2021,"t":"The Library of the Dead","a":"T. L. Huchu","w":87466,"n":0.412,"s":0.549,"p":4.299,"h":0.629},{"y":2022,"t":"An Angel's Demise","a":"Sue Nyathi","w":98164,"n":0.132,"s":0.275,"p":5.532,"h":0.856},{"y":2022,"t":"Black and Female Essays","a":"Tsitsi Dangarembga","w":29176,"n":0.069,"s":0.103,"p":2.331,"h":0.308},{"y":2022,"t":"Glory","a":"NoViolet Bulawayo","w":127917,"n":0.094,"s":0.664,"p":2.744,"h":1.165},{"y":2022,"t":"Our Lady of Mysterious Ailments","a":"T. L. Huchu","w":93563,"n":0.47,"s":0.395,"p":4.66,"h":0.417},{"y":2022,"t":"The Quality of Mercy","a":"Siphiwe Gloria Ndlovu","w":121042,"n":0.198,"s":0.727,"p":2.363,"h":0.826},{"y":2023,"t":"All That It Ever Meant","a":"Blessing Musariri","w":41199,"n":0.267,"s":0.631,"p":1.335,"h":0.995},{"y":2023,"t":"Avenues by Train","a":"Farai Mudzingwa","w":83102,"n":0.241,"s":0.445,"p":2.022,"h":0.602},{"y":2023,"t":"Digging Stars","a":"Novuyo Rosa Tshuma","w":80150,"n":0.1,"s":1.185,"p":7.436,"h":0.736},{"y":2023,"t":"Drinking from Graveyard Wells","a":"Yvette Lisa Ndlovu","w":46101,"n":0.087,"s":1.106,"p":2.581,"h":0.694},{"y":2023,"t":"The Mystery at Dunvegan Castle","a":"T. L. Huchu","w":98323,"n":0.437,"s":0.468,"p":4.455,"h":0.478},{"y":2024,"t":"Exit Wounds A Story of Love, Loss and Occasional Wars","a":"Peter Godwin","w":75804,"n":0.171,"s":0.409,"p":4.868,"h":0.646},{"y":2024,"t":"Fi A Memoir of My Son","a":"Alexandra Fuller","w":58179,"n":0.43,"s":1.117,"p":3.506,"h":0.688},{"y":2024,"t":"The Creation of Half-Broken People","a":"Siphiwe Gloria Ndlovu","w":96220,"n":0.218,"s":0.436,"p":2.141,"h":0.842},{"y":2024,"t":"The Legacy of Arniston House","a":"T. L. Huchu","w":106321,"n":0.395,"s":1.138,"p":5.389,"h":0.668},{"y":2024,"t":"When It's Your Turn for Midnight","a":"Blessing Musariri","w":39114,"n":0.153,"s":1.329,"p":2.378,"h":1.125},{"y":2025,"t":"Rubies and Rain","a":"Busisekile Khumalo","w":91110,"n":0.165,"s":0.889,"p":2.963,"h":1.054},{"y":2025,"t":"Secrets of the First School","a":"T. L. Huchu","w":105358,"n":0.275,"s":0.626,"p":4.423,"h":0.598},{"y":2025,"t":"Shamiso","a":"Brian Chikwava","w":37619,"n":0.292,"s":1.196,"p":3.27,"h":1.17},{"y":2025,"t":"Trapped","a":"Valerie Tagwira","w":94897,"n":0.506,"s":0.674,"p":3.066,"h":0.727},{"y":2021,"t":"Dear Senthuran","a":"Akwaeke Emezi","w":66681,"n":0.09,"s":0.465,"p":3.704,"h":0.69},{"y":2024,"t":"Nightbloom","a":"Peace Adzo Medie","w":116808,"n":0.197,"s":1.498,"p":1.772,"h":0.745},{"y":2025,"t":"Everything Is Fine Here","a":"Iryn Tushabe","w":74963,"n":0.2,"s":1.854,"p":3.602,"h":0.814},{"y":2024,"t":"Rinsing M\u0169kami's Soul","a":"Njambi McGrath","w":90818,"n":0.242,"s":1.663,"p":3.358,"h":0.749},{"y":2025,"t":"No One Dies Yet","a":"Kobby Ben Ben","w":116672,"n":0.266,"s":1.063,"p":3.78,"h":0.917},{"y":2021,"t":"How Beautiful We Were","a":"Imbolo Mbue","w":130143,"n":0.123,"s":0.569,"p":3.281,"h":0.63},{"y":2021,"t":"Chronicles from the Land of the Happiest People on Earth","a":"Wole Soyinka","w":166146,"n":0.313,"s":0.716,"p":2.377,"h":0.776},{"y":2026,"t":"On Morrison","a":"Namwali Serpell","w":137708,"n":0.073,"s":0.421,"p":1.205,"h":0.472},{"y":2020,"t":"Transcendent Kingdom","a":"Yaa Gyasi","w":75023,"n":0.12,"s":0.746,"p":4.132,"h":0.92},{"y":2020,"t":"A Girl is A Body of Water","a":"Jennifer Nansubuga Makumbi","w":132931,"n":0.241,"s":1.745,"p":1.715,"h":1.369},{"y":2025,"t":"Cursed Daughters","a":"Oyinkan Braithwaite","w":84800,"n":0.13,"s":1.321,"p":3.538,"h":1.132},{"y":2020,"t":"The Missing American","a":"Kwei Quartey","w":107619,"n":0.112,"s":0.344,"p":1.45,"h":0.836},{"y":2023,"t":"Anansi's Gold","a":"Yepoka Yeebo","w":123601,"n":0.016,"s":0.243,"p":1.739,"h":0.324},{"y":2024,"t":"The History of a Difficult Child","a":"Mihret Sibhat","w":109774,"n":0.1,"s":0.975,"p":3.671,"h":0.446},{"y":2024,"t":"Only Stars Know the Meaning of Space","a":"Remy Ngamije","w":76433,"n":0.314,"s":0.092,"p":3.376,"h":1.308},{"y":2021,"t":"The Fortune Men","a":"Nadifa Mohamed","w":96685,"n":0.186,"s":0.662,"p":4.251,"h":0.858},{"y":2023,"t":"Lucky Girl","a":"Irene Muchemi-Ndiritu","w":102101,"n":0.088,"s":0.676,"p":2.654,"h":1.019},{"y":2025,"t":"Dream Count","a":"Chimamanda Ngozi Adichie","w":146445,"n":0.137,"s":2.219,"p":3.558,"h":1.154},{"y":2024,"t":"An African History of Africa","a":"Zeinab Badawi","w":137428,"n":0.022,"s":0.116,"p":3.369,"h":0.153},{"y":2026,"t":"Scale Boy","a":"Patrice Nganang","w":127430,"n":0.33,"s":0.698,"p":2.605,"h":0.565},{"y":2020,"t":"The Perfect Nine","a":"Ng\u0169g\u0129 wa Thiong'o","w":22374,"n":0.089,"s":1.341,"p":1.654,"h":0.447},{"y":2022,"t":"Igifu","a":"Scholastique Mukasonga","w":28026,"n":0.214,"s":0.785,"p":2.426,"h":0.928},{"y":2024,"t":"And So I Roar","a":"Abi Dar\u00e9","w":111699,"n":0.206,"s":1.594,"p":4.432,"h":1.45},{"y":2024,"t":"Lost Ark Dreaming","a":"Suyi Davies Okungbowa","w":39194,"n":0.153,"s":0.357,"p":3.674,"h":0.663},{"y":2026,"t":"The Fist of Memory","a":"Wole Talabi","w":120071,"n":0.358,"s":0.267,"p":5.522,"h":1.499},{"y":2022,"t":"Things They Lost","a":"Okwiri Oduor","w":97960,"n":0.286,"s":0.694,"p":4.635,"h":1.235},{"y":2024,"t":"Obligations to the Wounded","a":"Mubanga Kalimamukwento","w":41631,"n":0.096,"s":1.009,"p":5.236,"h":1.441},{"y":2025,"t":"Dealing with the Dead","a":"Alain Mabanckou","w":57369,"n":0.105,"s":0.976,"p":3.992,"h":0.505},{"y":2022,"t":"On Rotation","a":"Shirlene Obuobi","w":103139,"n":0.301,"s":0.378,"p":5.633,"h":0.96},{"y":2022,"t":"Harry Sylvester Bird","a":"Chinelo Okparanta","w":88180,"n":0.181,"s":0.873,"p":2.347,"h":1.486},{"y":2023,"t":"Gaslight","a":"Femi Kayode","w":94999,"n":0.326,"s":0.779,"p":2.474,"h":0.842},{"y":2023,"t":"And Then He Sang a Lullaby","a":"Ani Kayode","w":75191,"n":0.106,"s":0.944,"p":2.234,"h":1.091},{"y":2023,"t":"Ghost Season","a":"Fatin Abbas","w":86614,"n":0.219,"s":0.762,"p":5.392,"h":0.912},{"y":2020,"t":"Stranger Faces","a":"Namwali Serpell","w":35862,"n":0.084,"s":0.502,"p":1.729,"h":0.474},{"y":2026,"t":"The Shipikisha Club","a":"Mubanga Kalimamukwento","w":82403,"n":0.461,"s":0.983,"p":5.946,"h":1.723},{"y":2021,"t":"New York, My Village","a":"Uwem Akpan","w":125140,"n":0.12,"s":0.919,"p":1.982,"h":0.847},{"y":2026,"t":"The Daughter Who Remains","a":"Nnedi Okorafor","w":36917,"n":0.433,"s":0.433,"p":2.6,"h":1.815},{"y":2024,"t":"Only Big Bumbum Matters Tomorrow","a":"Damilare Kuku","w":62795,"n":0.032,"s":0.733,"p":1.911,"h":1.115},{"y":2025,"t":"A Season of Light","a":"Julie Iromuanya","w":64284,"n":0.311,"s":0.809,"p":3.718,"h":1.011},{"y":2025,"t":"Only Because It's You","a":"Rebecca Fissesha","w":83417,"n":0.396,"s":2.158,"p":4.615,"h":1.103},{"y":2026,"t":"One Leg on Earth","a":"Pemi Aguda","w":49994,"n":0.34,"s":0.98,"p":5.281,"h":1.36},{"y":2023,"t":"Dazzling","a":"Chikodili Emelumadu","w":104101,"n":0.192,"s":1.595,"p":6.273,"h":0.961},{"y":2020,"t":"Little Family","a":"Ishmael Beah","w":80073,"n":0.062,"s":0.562,"p":3.147,"h":1.124},{"y":2026,"t":"Before We Hit the Ground","a":"Selali Fiamanya","w":96123,"n":0.031,"s":0.572,"p":5.274,"h":1.352},{"y":2021,"t":"The House of Rust","a":"Khadija Abdalla Bajaber","w":81083,"n":0.259,"s":1.64,"p":5.673,"h":1.677},{"y":2025,"t":"The Tiny Things Are Heavier","a":"Esther Ifesinachi Okonkwo","w":92243,"n":0.239,"s":1.106,"p":3.946,"h":2.081},{"y":2020,"t":"The Girl with the Louding Voice","a":"Abi Dar\u00e9","w":106317,"n":0.31,"s":1.872,"p":3.273,"h":0.799},{"y":2025,"t":"Death of the Author","a":"Nnedi Okorafor","w":137573,"n":0.363,"s":0.378,"p":3.293,"h":1.359},{"y":2020,"t":"His Only Wife","a":"Peace Adzo Medie","w":81194,"n":0.123,"s":0.887,"p":1.207,"h":0.727},{"y":2022,"t":"Against Decolonisation","a":"Olufemi Taiwo","w":85877,"n":0.058,"s":0.442,"p":1.048,"h":0.023},{"y":2025,"t":"Theft","a":"Abdulrazak Gurnah","w":84013,"n":0.131,"s":1.226,"p":4.095,"h":1.44},{"y":2025,"t":"The Friendship Bench","a":"Dixon Chibanda","w":50684,"n":0.118,"s":0.355,"p":1.855,"h":1.204},{"y":2023,"t":"Someday, Maybe","a":"Onyi Nwabineli","w":99011,"n":0.212,"s":0.293,"p":2.202,"h":1.071},{"y":2020,"t":"Love in Colour","a":"Bolu Babalola","w":76317,"n":0.17,"s":0.996,"p":3.669,"h":1.402},{"y":2023,"t":"A Spell of Good Things","a":"Ayobami Adebayo","w":122747,"n":0.367,"s":1.092,"p":2.917,"h":0.464},{"y":2025,"t":"Necessary Fiction","a":"Eloghosa Osunde","w":95995,"n":0.344,"s":0.094,"p":2.823,"h":1.49},{"y":2022,"t":"Honey & Spice","a":"Bolu Babalola","w":112813,"n":0.301,"s":0.638,"p":2.819,"h":1.17},{"y":2022,"t":"Vagabonds!","a":"Eloghosa Osunde","w":92226,"n":0.163,"s":0.304,"p":2.96,"h":1.041},{"y":2024,"t":"Ghostroots","a":"Pemi Aguda","w":53544,"n":0.112,"s":1.177,"p":6.275,"h":1.345},{"y":2021,"t":"Sankofa","a":"Chibundu Onuzo","w":78463,"n":0.229,"s":0.153,"p":2.957,"h":0.548},{"y":2024,"t":"Blessings","a":"Chukwuebuka Ibeh","w":77362,"n":0.065,"s":1.422,"p":7.29,"h":1.616},{"y":2024,"t":"The Road to the Country","a":"Chigozie Obioma","w":120466,"n":0.075,"s":1.884,"p":5.744,"h":1.237},{"y":2020,"t":"Butter Honey Pig Bread","a":"Francesca Ekwuyasi","w":91668,"n":0.142,"s":0.404,"p":1.473,"h":2.018},{"y":2026,"t":"Season of the Serpent","a":"Suyi Davies Okungbowa","w":104791,"n":0.401,"s":0.248,"p":4.666,"h":1.164},{"y":2021,"t":"Aftershocks","a":"Nadia Owusu","w":85229,"n":0.199,"s":0.399,"p":1.783,"h":0.739},{"y":2022,"t":"Kibogo","a":"Scholastique Mukasonga","w":35056,"n":0.057,"s":0.456,"p":1.369,"h":0.428},{"y":2021,"t":"In the Company of Men","a":"V\u00e9ronique Tadjo","w":27522,"n":0.182,"s":0.182,"p":2.907,"h":0.654},{"y":2023,"t":"The Five Sorrowful Mysteries of Andy Africa","a":"Stephen Buoro","w":90896,"n":0.176,"s":1.254,"p":5.116,"h":1.012},{"y":2026,"t":"Grace","a":"Chika Unigwe","w":67006,"n":0.284,"s":2.06,"p":3.403,"h":0.687},{"y":2026,"t":"A Siege of Owls","a":"Uchenna Awoke","w":74889,"n":0.027,"s":0.641,"p":2.096,"h":1.242},{"y":2021,"t":"Open Water","a":"Caleb Azumah Nelson","w":42839,"n":0.14,"s":0.28,"p":7.563,"h":2.031},{"y":2021,"t":"An Ordinary Wonder","a":"Buki Papillon","w":101620,"n":0.344,"s":1.309,"p":3.444,"h":1.889},{"y":2020,"t":"The Death of Vivek Oji","a":"Akwaeke Emezi","w":63016,"n":0.095,"s":1.555,"p":5.633,"h":1.603},{"y":2021,"t":"Notes on Grief","a":"Chimamanda Ngozi Adichie","w":10229,"n":0.0,"s":0.587,"p":3.422,"h":0.782},{"y":2022,"t":"Co-Wives, Co-Widows","a":"Adrienne Yabouza","w":28686,"n":0.105,"s":1.081,"p":2.44,"h":1.116},{"y":2020,"t":"The Waiting","a":"Martin Egblewogbe","w":46107,"n":0.217,"s":0.39,"p":3.253,"h":1.15},{"y":2026,"t":"The Comfort of Distant Stars","a":"I. O. Echeruo","w":90483,"n":0.122,"s":0.763,"p":3.415,"h":1.094},{"y":2022,"t":"Africa Is Not a Country","a":"Dipo Faloyin","w":94161,"n":0.202,"s":0.202,"p":2.899,"h":0.425},{"y":2021,"t":"A Bigger Picture","a":"Vanessa Nakate","w":64369,"n":0.155,"s":0.109,"p":1.6,"h":0.249},{"y":2022,"t":"For You, I'd Steal a Goat","a":"Niq Mhlongo","w":52012,"n":0.115,"s":1.73,"p":2.269,"h":1.057},{"y":2024,"t":"Parasol Against the Axe","a":"Helen Oyeyemi","w":77785,"n":0.437,"s":0.759,"p":2.224,"h":0.476},{"y":2020,"t":"Ogadinma","a":"Ukamaka Olisakwe","w":82794,"n":0.072,"s":1.063,"p":4.034,"h":0.761},{"y":2023,"t":"A Down Home Meal for These Difficult Times","a":"Meron Hadero","w":63008,"n":0.19,"s":0.54,"p":2.666,"h":0.889},{"y":2022,"t":"God's Children Are Little Broken Things","a":"Arinze Ifeakandu","w":71303,"n":0.07,"s":1.262,"p":7.209,"h":2.076},{"y":2025,"t":"The Edge of Water","a":"Olufunke Grace Bankole","w":64930,"n":0.277,"s":1.001,"p":2.48,"h":0.662},{"y":2024,"t":"The Lions' Den","a":"Iris Mwanza","w":63368,"n":0.174,"s":0.6,"p":2.793,"h":0.726},{"y":2023,"t":"Little Rot","a":"Akwaeke Emezi","w":79851,"n":0.138,"s":1.052,"p":5.761,"h":1.365},{"y":2025,"t":"Salutation Road","a":"Salma Ibrahim","w":72968,"n":0.137,"s":1.028,"p":3.837,"h":1.055},{"y":2022,"t":"Call and Response","a":"Gothataone Moeng","w":86350,"n":0.139,"s":0.753,"p":5.188,"h":1.494},{"y":2023,"t":"The Dragons, the Giant, the Women","a":"Wayetu Moore","w":72750,"n":0.234,"s":0.852,"p":2.845,"h":0.962}];
+const STORIES = [
+  { y: 2018, t: "A Way Out", w: 3475, n: 0.29, s: 0.58, p: 2.01, h: 1.15, bf: false },
+  { y: 2021, t: "The Whistleblower", w: 5447, n: 0.18, s: 0.37, p: 3.31, h: 0.55, bf: false },
+  { y: 2025, t: "The Blue Fighter", w: 3529, n: 2.27, s: 2.83, p: 7.94, h: 5.95, bf: true }
+];
+const FLAGGED = [
+  { ab: "SG", t: "Shy Girl", a: "Mia Ballard", y: 2025, w: 55121, n: 0.417, s: 1.361, p: 9.434, h: 3.628, ai: "95%", xp: 2028.4 },
+  { ab: "DM", t: "Daggermouth", a: "H. M. Wolfe", y: 2025, w: 158343, n: 0.638, s: 0.714, p: 8.002, h: 2.64, ai: "61%", xp: 2030.7 }
+];
+const PANELS = [
+  { k: "n", id: "not", title: "Sentences that open with “Not…”", ex: "Not a question, but an accusation.", st: "0.09%", sn: 3 },
+  { k: "s", id: "asif", title: "“As if” / “as though”", ex: "as if the numbers themselves had become slippery", st: "1.5%", sn: 53 },
+  { k: "p", id: "trailing", title: "Trailing participle tails", ex: "I looked down at my hands, betraying him with my silence.", st: "1.1%", sn: 40 },
+  { k: "h", id: "quiet", title: "Silence, quiet, soft, gentle", ex: "We sat in silence for a while", st: "0.17%", sn: 6 }
+];
+const fmt = d3.format(".2f"), fmtW = d3.format(",");
+const tip = document.getElementById("tip");
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+
+function showTip(ev, html) {
+  tip.innerHTML = html;
+  tip.style.opacity = 1;
+  const r = tip.getBoundingClientRect();
+  let x = ev.clientX + 14, y = ev.clientY + 14;
+  if (x + r.width > window.innerWidth - 8) x = ev.clientX - r.width - 14;
+  if (y + r.height > window.innerHeight - 8) y = ev.clientY - r.height - 14;
+  tip.style.left = Math.max(8, x) + "px";
+  tip.style.top = Math.max(8, y) + "px";
+}
+function hideTip() { tip.style.opacity = 0; }
+function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]); }
+
+const host = d3.select("#panels");
+PANELS.forEach(P => {
+  const card = host.append("article").attr("class", "panel").attr("id", P.id);
+  card.append("h2").text(P.title);
+  card.append("p").html("e.g. <q>" + esc(P.ex) + "</q>");
+  card.append("div").attr("class", "chart");
+});
+
+function draw() {
+  PANELS.forEach(P => {
+    const box = d3.select("#" + P.id + " .chart");
+    box.selectAll("*").remove();
+    const W = box.node().clientWidth, H = 250;
+    const m = { t: 22, r: 14, b: 26, l: 40 };
+    const svg = box.append("svg").attr("width", W).attr("height", H)
+      .attr("role", "img").attr("aria-label", P.title + ": rate per 1,000 words by publication year for 97 books and three stories");
+    const maxBook = d3.max(BOOKS, d => d[P.k]);
+    const bf = STORIES[2][P.k];
+    const x = d3.scaleLinear().domain([2000.3, 2032]).range([m.l, W - m.r]);
+    const y = d3.scaleLinear().domain([0, Math.max(bf, maxBook, d3.max(FLAGGED, d => d[P.k])) * 1.12]).nice(4).range([H - m.b, m.t]);
+
+    svg.append("g").selectAll("line").data(y.ticks(4)).join("line")
+      .attr("class", "gridline").attr("x1", m.l).attr("x2", W - m.r).attr("y1", d => y(d)).attr("y2", d => y(d));
+    svg.append("g").attr("class", "axis").attr("transform", `translate(0,${H - m.b})`)
+      .call(d3.axisBottom(x).tickValues([2001, 2005, 2009, 2013, 2017, 2021, 2025]).tickFormat(d3.format("d")).tickSize(4))
+      .call(g => g.select(".domain").remove());
+    svg.append("g").attr("class", "axis").attr("transform", `translate(${m.l},0)`)
+      .call(d3.axisLeft(y).ticks(4).tickSize(0).tickPadding(8))
+      .call(g => g.select(".domain").remove());
+    svg.append("text").attr("class", "lbl mut").attr("x", m.l).attr("y", 10).attr("font-size", 11).text("per 1,000 words");
+
+    svg.append("line").attr("x1", m.l).attr("x2", W - m.r).attr("y1", y(maxBook)).attr("y2", y(maxBook))
+      .attr("stroke", css("--muted")).attr("stroke-dasharray", "4 4").attr("stroke-width", 1.2);
+    svg.append("text").attr("class", "lbl mut").attr("x", m.l + 4).attr("y", y(maxBook) - 5).attr("font-size", 11)
+      .text("highest book " + fmt(maxBook));
+
+    const med = d3.median(BOOKS, d => d[P.k]);
+    svg.append("line").attr("x1", m.l).attr("x2", W - m.r).attr("y1", y(med)).attr("y2", y(med))
+      .attr("stroke", css("--muted")).attr("stroke-width", 1.2).attr("stroke-opacity", 0.8);
+    svg.append("text").attr("class", "lbl mut").attr("x", m.l + 4).attr("y", y(med) - 5).attr("font-size", 11)
+      .text("median book " + fmt(med));
+
+    const jitter = d => ((d.t.length * 37 + d.w) % 100) / 100 * 0.6 - 0.3;
+    svg.append("g").selectAll("circle").data(BOOKS).join("circle")
+      .attr("cx", d => x(d.y + jitter(d))).attr("cy", d => y(d[P.k])).attr("r", 4.2)
+      .attr("fill", css("--dot")).attr("fill-opacity", 0.75).attr("stroke", css("--surface")).attr("stroke-width", 1)
+      .on("pointermove", (ev, d) => showTip(ev, `<div class="t">${esc(d.t)}</div><div class="m">${esc(d.a)} · ${d.y} · ${fmtW(d.w)} words</div><div class="v">${fmt(d[P.k])} per 1k words</div>`))
+      .on("pointerleave", hideTip);
+
+    const sym = d3.symbol().type(d3.symbolDiamond);
+    const g = svg.append("g");
+    STORIES.forEach(s => {
+      const cx = x(s.y), cy = y(s[P.k]);
+      g.append("path").attr("d", sym.size(s.bf ? 150 : 95)()).attr("transform", `translate(${cx},${cy})`)
+        .attr("fill", s.bf ? css("--accent") : css("--surface"))
+        .attr("stroke", s.bf ? css("--surface") : css("--ink")).attr("stroke-width", s.bf ? 2 : 1.6)
+        .style("cursor", "default")
+        .on("pointermove", ev => showTip(ev, `<div class="t">${esc(s.t)}</div><div class="m">Kundizeza · ${s.y} · ${fmtW(s.w)} words</div><div class="v">${fmt(s[P.k])} per 1k words</div>`))
+        .on("pointerleave", hideTip);
+    });
+    const dv = x(2027.0);
+    svg.append("rect").attr("x", dv).attr("y", m.t - 4).attr("width", W - m.r - dv + 4).attr("height", H - m.b - m.t + 4)
+      .attr("fill", css("--bg")).attr("opacity", 0.55).lower();
+    svg.append("line").attr("x1", dv).attr("x2", dv).attr("y1", m.t - 4).attr("y2", H - m.b).attr("stroke", css("--rule")).attr("stroke-width", 1);
+    svg.append("text").attr("class", "lbl mut").attr("x", (dv + W - m.r) / 2).attr("y", m.t - 8).attr("text-anchor", "middle").attr("font-size", 10.5).text("");
+    FLAGGED.forEach(f => {
+      const fx = x(f.xp), fy = y(f[P.k]);
+      svg.append("rect").attr("x", fx - 5.5).attr("y", fy - 5.5).attr("width", 11).attr("height", 11).attr("rx", 1.5)
+        .attr("fill", css("--flag")).attr("stroke", css("--surface")).attr("stroke-width", 1.5)
+        .on("pointermove", ev => showTip(ev, `<div class="t">${esc(f.t)}</div><div class="m">${esc(f.a)} · ${f.y} · ${fmtW(f.w)} words</div><div class="v">${fmt(f[P.k])} per 1k words</div>`))
+        .on("pointerleave", hideTip);
+      svg.append("text").attr("class", "axis-ab").attr("x", fx).attr("y", H - m.b + 15).attr("text-anchor", "middle").text(f.ab);
+    });
+    const bfS = STORIES[2];
+    const bx = x(bfS.y), by = y(bfS[P.k]);
+    svg.append("text").attr("class", "lbl acc").attr("x", bx - 12).attr("y", by - 15).attr("text-anchor", "end")
+      .text("The Blue Fighter " + fmt(bfS[P.k]));
+    const ratio = bfS[P.k] / maxBook;
+    svg.append("text").attr("class", "lbl mut").attr("x", bx - 12).attr("y", by - 2).attr("text-anchor", "end").attr("font-size", 11)
+      .text(d3.format(".1f")(bfS[P.k] / med) + "× the median · " + d3.format(".1f")(ratio) + "× the highest book");
+    svg.selectAll("text.lbl").raise();
+  });
+}
+draw();
+let rt; new ResizeObserver(() => { clearTimeout(rt); rt = setTimeout(draw, 80); }).observe(document.getElementById("panels"));
+new MutationObserver(draw).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
+matchMedia("(prefers-color-scheme: dark)").addEventListener("change", draw);
+</script>
+</body>
+</html>
